@@ -1,0 +1,28 @@
+{
+  "f-sf~bay~area~rg": {
+    "urlEnv": {
+      "source": "?operator_id=RG",
+      "result": "?api_key=env.bay_511&operator_id=RG",
+      "keys": [
+        "env.bay_511"
+      ]
+    }
+  },
+  "f-dp3-metra": {
+    "headers": {
+      "Authorization": "env.metra_authorization"
+    }
+  },
+  "f-9-amtrak~amtrakcalifornia~amtrakcharteredvehicle": {
+    "doAllShapes": true,
+    "colorReplacements": {
+      "000000": "5366c9",
+      "CAE4F1": "5366c9"
+    }
+  },
+  "f-dp3-cta": {
+    "colorReplacements": {
+      "565a5c": "949ca1"
+    }
+  }
+}

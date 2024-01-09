@@ -1,0 +1,169 @@
+{
+  "amtrak": {
+    "url": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+    "headers": {},
+    "urlEnv": [],
+    "doAllShapes": true,
+    "colorOverrides": {},
+    "colorReplacements": {
+      "CAE4F1": "5366c9"
+    },
+    
+    "disabled": false
+  },
+  "bart": {
+    "url": "https://www.bart.gov/dev/schedules/google_transit.zip",
+    "headers": {},
+    "urlEnv": [],
+    "doAllShapes": false,
+    "colorOverrides": {},
+    "colorReplacements": {},
+    "disabled": false
+  },
+  "RG": {
+    "name": "Regional GTFS",
+    "url": "https://api.511.org/transit/datafeeds?api_key=env.bay_511&operator_id=RG",
+    "headers": {},
+    "urlEnv": [
+      "env.bay_511"
+    ],
+    "doAllShapes": false,
+    "colorOverrides": {},
+    "colorReplacements": {},
+    "disabled": false
+  },
+  "metra": {
+    "name": "Metra",
+    "url": "https://gtfsapi.metrarail.com/gtfs/raw/schedule.zip",
+    "headers": {
+      "Authorization": "env.metra_authorization"
+    },
+    "urlEnv": [],
+    "doAllShapes": false,
+    "colorOverrides": {},
+    "colorReplacements": {},
+    "disabled": false
+  },
+  "nyct_subway": {
+    "name": "NYC Subway",
+    "url": "http://web.mta.info/developers/data/nyct/subway/google_transit.zip",
+    "headers": {},
+    "urlEnv": [],
+    "doAllShapes": false,
+    "colorOverrides": {},
+    "colorReplacements": {},
+    "disabled": false
+  },
+  "lirr": {
+    "name": "Long Island Railroad (MTA)",
+    "url": "http://web.mta.info/developers/data/lirr/google_transit.zip",
+    "headers": {},
+    "urlEnv": [],
+    "doAllShapes": false,
+    "colorOverrides": {},
+    "colorReplacements": {},
+    "disabled": true
+  },
+  "mnrr": {
+    "name": "Metro North (MTA)",
+    "url": "http://web.mta.info/developers/data/mnr/google_transit.zip",
+    "headers": {},
+    "urlEnv": [],
+    "doAllShapes": false,
+    "colorOverrides": {},
+    "colorReplacements": {},
+    "disabled": false
+  },
+  "nyct_bronx": {
+    "name": "NYC Bronx Buses",
+    "url": "http://web.mta.info/developers/data/nyct/bus/google_transit_bronx.zip",
+    "headers": {},
+    "urlEnv": [],
+    "doAllShapes": false,
+    "colorOverrides": {},
+    "colorReplacements": {},
+    "disabled": false
+  },
+  "nyct_brooklyn": {
+    "name": "NYC Brooklyn Buses",
+    "url": "http://web.mta.info/developers/data/nyct/bus/google_transit_brooklyn.zip",
+    "headers": {},
+    "urlEnv": [],
+    "doAllShapes": false,
+    "colorOverrides": {},
+    "colorReplacements": {},
+    "disabled": false
+  },
+  "nyct_manhattan": {
+    "name": "NYC Manhattan Buses",
+    "url": "http://web.mta.info/developers/data/nyct/bus/google_transit_manhattan.zip",
+    "headers": {},
+    "urlEnv": [],
+    "doAllShapes": false,
+    "colorOverrides": {},
+    "colorReplacements": {},
+    "disabled": false
+  },
+  "nyct_queens": {
+    "name": "NYC Queens Buses",
+    "url": "http://web.mta.info/developers/data/nyct/bus/google_transit_queens.zip",
+    "headers": {},
+    "urlEnv": [],
+    "doAllShapes": false,
+    "colorOverrides": {},
+    "colorReplacements": {},
+    "disabled": false
+  },
+  "nyct_staten_island": {
+    "name": "NYC Staten Island Buses",
+    "url": "http://web.mta.info/developers/data/nyct/bus/google_transit_staten_island.zip",
+    "headers": {},
+    "urlEnv": [],
+    "doAllShapes": false,
+    "colorOverrides": {},
+    "colorReplacements": {},
+    "disabled": false
+  },
+  "nyct_mta_bus_company": {
+    "name": "NYC MTA Bus Company",
+    "url": "http://web.mta.info/developers/data/busco/google_transit.zip",
+    "headers": {},
+    "urlEnv": [],
+    "doAllShapes": false,
+    "colorOverrides": {},
+    "colorReplacements": {},
+    "disabled": false
+  },
+  "cta": {
+    "name": "Chicago Transit Authority",
+    "url": "https://www.transitchicago.com/downloads/sch_data/google_transit.zip",
+    "headers": {},
+    "urlEnv": [],
+    "doAllShapes": false,
+    "colorOverrides": {},
+    "colorReplacements": {
+      "565a5c": "949ca1"
+    },
+    "trim": false,
+    "noSegments": true,
+    "disabled": false
+  },
+  "southshore": {
+    "name": "South Shore Line",
+    "url": "http://www.mysouthshoreline.com/google/google_transit.zip",
+    "headers": {},
+    "urlEnv": [],
+    "doAllShapes": false,
+    "colorOverrides": {
+      "so_shore": [
+        "EA6E10",
+        "000000"
+      ]
+    },
+    "colorReplacements": {},
+    "trim": false,
+    "noSegments": false,
+    "disabled": false,
+    "subfolder": "Working copy GTFS changes/"
+  }
+}

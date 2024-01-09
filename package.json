@@ -1,0 +1,22 @@
+{
+  "name": "gobbler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "downloadZips": "node ./scripts/downloadZips.js",
+    "extractZips": "node ./scripts/extractZips.js",
+    "processShapes": "node ./scripts/processShapes",
+    "fetchAdditionalShapes": "node ./scripts/fetchAdditionalShapes.js",
+    "combineFeatures": "node ./scripts/combineFeatures.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@turf/turf": "^6.5.0",
+    "dotenv": "^16.3.1",
+    "node-fetch": "^2.6.7",
+    "papaparse": "^5.4.1"
+  }
+}
