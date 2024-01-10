@@ -1,5 +1,6 @@
 const fs = require('fs');
 const passio = require('../additionalShapes/passio.json');
+const amtrak = require('../additionalShapes/amtrak.json');
 
 passio.forEach((agency) => {
   fetch(`https://passio.piemadd.com/data/${agency}`)
@@ -11,3 +12,5 @@ passio.forEach((agency) => {
       console.log(`Fetched ${agencyKey}`)
     })
 })
+
+fs.writeFileSync('./shapes/nationalRoute.json', JSON.stringify(amtrak), { encoding: 'utf8' });
