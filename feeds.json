@@ -8,7 +8,15 @@
     "colorReplacements": {
       "CAE4F1": "5366c9"
     },
-    
+    "disabled": false
+  },
+  "pace": {
+    "url": "https://www.pacebus.com/sites/default/files/2023-11/GTFS.zip",
+    "headers": {},
+    "urlEnv": [],
+    "doAllShapes": true,
+    "colorOverrides": {},
+    "colorReplacements": {},
     "disabled": false
   },
   "bart": {

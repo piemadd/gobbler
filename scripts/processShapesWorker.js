@@ -3,7 +3,7 @@ const fs = require('fs');
 const Papa = require('papaparse');
 const turf = require('@turf/turf');
 
-const additionalConfig = workerData.additionalConfig;
+const additionalConfig = workerData.feedConfigs;
 
 const processShapes = (chunk) => {
   chunk.forEach(async (folder) => {
@@ -16,7 +16,9 @@ const processShapes = (chunk) => {
     };
 
     let doAllShapes = false;
-    if (additionalConfig[folder] && additionalConfig[folder].doAllShapes) doAllShapes = true;
+    if (additionalConfig[folder].doAllShapes) doAllShapes = true;
+
+    console.log(folder, doAllShapes)
 
     try {
       console.log(`Parsing routes for ${folder}`)
@@ -88,11 +90,9 @@ const processShapes = (chunk) => {
                       shape.properties.routeColor = routes[shapeIdToRouteId[shapeID]].color ?? shape.properties.routeColor
                     }
 
-                    if (additionalConfig[folder]) { //if there is additional config
                       if (additionalConfig[folder].colorReplacements) { //if we need to replace colors
                         shape.properties.routeColor = additionalConfig[folder].colorReplacements[shape.properties.routeColor] ?? shape.properties.routeColor
                       }
-                    }
 
                     try {
                       const cleanedCoords = turf.cleanCoords(shape, { mutate: true });

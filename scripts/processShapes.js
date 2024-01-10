@@ -1,6 +1,6 @@
 const fs = require('fs');
 const { Worker } = require("worker_threads");
-const additionalConfig = require('../additionalConfig.json');
+const feedConfigs = require('../feeds.json');
 
 console.log('Cleaning up old files');
 
@@ -20,7 +20,7 @@ for (let i = 0; i < feeds.length; i += chunkSize) {
     {
       workerData: {
         chunk,
-        additionalConfig
+        feedConfigs
       }
     }
   );

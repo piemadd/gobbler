@@ -8,7 +8,8 @@
     "extractZips": "node ./scripts/extractZips.js",
     "processShapes": "node ./scripts/processShapes",
     "fetchAdditionalShapes": "node ./scripts/fetchAdditionalShapes.js",
-    "combineFeatures": "node ./scripts/combineFeatures.js"
+    "combineFeatures": "node ./scripts/combineFeatures.js",
+    "all": "npm run downloadZips && npm run extractZips && npm run processShapes && npm run fetchAdditionalShapes && npm run combineFeatures"
   },
   "keywords": [],
   "author": "",
