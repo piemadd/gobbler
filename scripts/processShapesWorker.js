@@ -90,9 +90,12 @@ const processShapes = (chunk) => {
                       shape.properties.routeColor = routes[shapeIdToRouteId[shapeID]].color ?? shape.properties.routeColor
                     }
 
-                      if (additionalConfig[folder].colorReplacements) { //if we need to replace colors
-                        shape.properties.routeColor = additionalConfig[folder].colorReplacements[shape.properties.routeColor] ?? shape.properties.routeColor
-                      }
+                    if (additionalConfig[folder].colorReplacements) { //if we need to replace colors
+                      shape.properties.routeColor = additionalConfig[folder].colorReplacements[shape.properties.routeColor] ?? shape.properties.routeColor
+                    }
+
+                    //adding # to color
+                    shape.properties.routeColor = `#${shape.properties.routeColor}`;
 
                     try {
                       const cleanedCoords = turf.cleanCoords(shape, { mutate: true });
