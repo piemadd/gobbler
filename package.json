@@ -9,6 +9,7 @@
     "processShapes": "node ./scripts/processShapes",
     "fetchAdditionalShapes": "node ./scripts/fetchAdditionalShapes.js",
     "combineFeatures": "node ./scripts/combineFeatures.js",
+    "exportColors": "node ./scripts/exportColors.js",
     "all": "npm run downloadZips && npm run extractZips && npm run processShapes && npm run fetchAdditionalShapes && npm run combineFeatures"
   },
   "keywords": [],
