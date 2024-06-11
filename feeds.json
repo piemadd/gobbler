@@ -9,7 +9,8 @@
       "CAE4F1": "5366c9",
       "000000": "5366c9"
     },
-    "disabled": false
+    "disabled": false,
+    "activeTypes": ["2"]
   },
   "pace": {
     "url": "https://www.pacebus.com/sites/default/files/2023-11/GTFS.zip",
@@ -18,7 +19,8 @@
     "doAllShapes": true,
     "colorOverrides": {},
     "colorReplacements": {},
-    "disabled": false
+    "disabled": false,
+    "activeTypes": []
   },
   "bart": {
     "url": "https://www.bart.gov/dev/schedules/google_transit.zip",
@@ -27,7 +29,8 @@
     "doAllShapes": false,
     "colorOverrides": {},
     "colorReplacements": {},
-    "disabled": false
+    "disabled": false,
+    "activeTypes": []
   },
   "RG": {
     "name": "Regional GTFS",
@@ -39,7 +42,8 @@
     "doAllShapes": false,
     "colorOverrides": {},
     "colorReplacements": {},
-    "disabled": false
+    "disabled": false,
+    "activeTypes": ["0", "1", "2", "3", "4", "5"]
   },
   "metra": {
     "name": "Metra",
@@ -51,7 +55,8 @@
     "doAllShapes": false,
     "colorOverrides": {},
     "colorReplacements": {},
-    "disabled": false
+    "disabled": false,
+    "activeTypes": ["2"]
   },
   "nyct_subway": {
     "name": "NYC Subway",
@@ -61,7 +66,8 @@
     "doAllShapes": false,
     "colorOverrides": {},
     "colorReplacements": {},
-    "disabled": false
+    "disabled": false,
+    "activeTypes": []
   },
   "lirr": {
     "name": "Long Island Railroad (MTA)",
@@ -71,7 +77,8 @@
     "doAllShapes": false,
     "colorOverrides": {},
     "colorReplacements": {},
-    "disabled": true
+    "disabled": true,
+    "activeTypes": []
   },
   "mnrr": {
     "name": "Metro North (MTA)",
@@ -81,7 +88,8 @@
     "doAllShapes": false,
     "colorOverrides": {},
     "colorReplacements": {},
-    "disabled": false
+    "disabled": false,
+    "activeTypes": []
   },
   "nyct_bronx": {
     "name": "NYC Bronx Buses",
@@ -91,7 +99,8 @@
     "doAllShapes": false,
     "colorOverrides": {},
     "colorReplacements": {},
-    "disabled": false
+    "disabled": false,
+    "activeTypes": []
   },
   "nyct_brooklyn": {
     "name": "NYC Brooklyn Buses",
@@ -101,7 +110,8 @@
     "doAllShapes": false,
     "colorOverrides": {},
     "colorReplacements": {},
-    "disabled": false
+    "disabled": false,
+    "activeTypes": []
   },
   "nyct_manhattan": {
     "name": "NYC Manhattan Buses",
@@ -111,7 +121,8 @@
     "doAllShapes": false,
     "colorOverrides": {},
     "colorReplacements": {},
-    "disabled": false
+    "disabled": false,
+    "activeTypes": []
   },
   "nyct_queens": {
     "name": "NYC Queens Buses",
@@ -121,7 +132,8 @@
     "doAllShapes": false,
     "colorOverrides": {},
     "colorReplacements": {},
-    "disabled": false
+    "disabled": false,
+    "activeTypes": []
   },
   "nyct_staten_island": {
     "name": "NYC Staten Island Buses",
@@ -131,7 +143,8 @@
     "doAllShapes": false,
     "colorOverrides": {},
     "colorReplacements": {},
-    "disabled": false
+    "disabled": false,
+    "activeTypes": []
   },
   "nyct_mta_bus_company": {
     "name": "NYC MTA Bus Company",
@@ -141,7 +154,8 @@
     "doAllShapes": false,
     "colorOverrides": {},
     "colorReplacements": {},
-    "disabled": false
+    "disabled": false,
+    "activeTypes": []
   },
   "cta": {
     "name": "Chicago Transit Authority",
@@ -154,7 +168,8 @@
       "565a5c": "949ca1"
     },
     "noSegments": true,
-    "disabled": false
+    "disabled": false,
+    "activeTypes": ["1"]
   },
   "southshore": {
     "name": "South Shore Line",
@@ -171,7 +186,8 @@
     "colorReplacements": {},
     "noSegments": false,
     "disabled": false,
-    "subfolder": "Working copy GTFS changes/"
+    "subfolder": "Working copy GTFS changes/",
+    "activeTypes": ["2"]
   },
   "casco_bay_lines": {
     "name": "Casco Bay Lines",
@@ -181,7 +197,8 @@
     "doAllShapes": false,
     "colorOverrides": {},
     "colorReplacements": {},
-    "disabled": false
+    "disabled": false,
+    "activeTypes": []
   },
   "gp_metro": {
     "name": "GP Metro",
@@ -191,7 +208,8 @@
     "doAllShapes": false,
     "colorOverrides": {},
     "colorReplacements": {},
-    "disabled": false
+    "disabled": false,
+    "activeTypes": []
   },
   "south_portland": {
     "name": "South Portland Bus Lines",
@@ -201,7 +219,8 @@
     "doAllShapes": false,
     "colorOverrides": {},
     "colorReplacements": {},
-    "disabled": false
+    "disabled": false,
+    "activeTypes": []
   },
   "marta": {
     "name": "MARTA",
@@ -211,6 +230,7 @@
     "doAllShapes": false,
     "colorOverrides": {},
     "colorReplacements": {},
-    "disabled": false
+    "disabled": false,
+    "activeTypes": ["1"]
   }
 }

@@ -76,7 +76,8 @@ const processShapes = (chunk) => {
                     let shape = {
                       "type": "Feature",
                       "properties": {
-                        routeColor: '000000'
+                        routeColor: '000000',
+                        routeType: '0'
                       },
                       "geometry": {
                         "coordinates": shapes[shapeID].sort((a, b) => a[2] - b[2]).map((row) => [row[0], row[1]]),
@@ -88,7 +89,11 @@ const processShapes = (chunk) => {
 
                     if (routes[shapeIdToRouteId[shapeID]]) { //if there is additional data
                       shape.properties.routeColor = routes[shapeIdToRouteId[shapeID]].color ?? shape.properties.routeColor
+                      shape.properties.routeType = routes[shapeIdToRouteId[shapeID]].type ?? shape.properties.routeType
                     }
+
+                    //only adding shapes we are using
+                    if (!additionalConfig[folder].activeTypes.includes(shape.properties.routeType)) return;
 
                     if (additionalConfig[folder].colorReplacements) { //if we need to replace colors
                       shape.properties.routeColor = additionalConfig[folder].colorReplacements[shape.properties.routeColor] ?? shape.properties.routeColor
