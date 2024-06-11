@@ -21,6 +21,12 @@ const feedKeys = Object.keys(feeds);
 
 feedKeys.forEach((feedKey, i) => {
   const feed = feeds[feedKey];
+
+  if (feed.disabled || feed.activeTypes.length == 0) {
+    console.log(`${feed.name} is disabled`)
+    return;
+  }
+
   console.log(`Starting on ${feed.name}`);
 
   fetch(processURL(feed.url, feed.urlEnv), {

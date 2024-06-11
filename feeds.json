@@ -1,5 +1,6 @@
 {
   "amtrak": {
+    "name": "Amtrak",
     "url": "https://content.amtrak.com/content/gtfs/GTFS.zip",
     "headers": {},
     "urlEnv": [],
@@ -9,10 +10,11 @@
       "CAE4F1": "5366c9",
       "000000": "5366c9"
     },
-    "disabled": false,
+    "disabled": true,
     "activeTypes": ["2"]
   },
   "pace": {
+    "name": "Pace Bus",
     "url": "https://www.pacebus.com/sites/default/files/2023-11/GTFS.zip",
     "headers": {},
     "urlEnv": [],
@@ -23,6 +25,7 @@
     "activeTypes": []
   },
   "bart": {
+    "name": "BART",
     "url": "https://www.bart.gov/dev/schedules/google_transit.zip",
     "headers": {},
     "urlEnv": [],
