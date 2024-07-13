@@ -1086,7 +1086,8 @@
       "type": "Feature",
       "id": 2,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -12578,7 +12579,8 @@
       "type": "Feature",
       "id": 3,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -15414,7 +15416,8 @@
       "type": "Feature",
       "id": 4,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -17910,7 +17913,8 @@
       "type": "Feature",
       "id": 5,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -20742,7 +20746,8 @@
       "type": "Feature",
       "id": 6,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -22274,7 +22279,8 @@
       "type": "Feature",
       "id": 7,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -28014,7 +28020,8 @@
       "type": "Feature",
       "id": 8,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -28150,7 +28157,8 @@
       "type": "Feature",
       "id": 9,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -29246,7 +29254,8 @@
       "type": "Feature",
       "id": 10,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -32870,7 +32879,8 @@
       "type": "Feature",
       "id": 11,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -36750,7 +36760,8 @@
       "type": "Feature",
       "id": 12,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -41142,7 +41153,8 @@
       "type": "Feature",
       "id": 13,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -42066,7 +42078,8 @@
       "type": "Feature",
       "id": 14,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -42630,7 +42643,8 @@
       "type": "Feature",
       "id": 15,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -54358,7 +54372,8 @@
       "type": "Feature",
       "id": 16,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -67882,7 +67897,8 @@
       "type": "Feature",
       "id": 17,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -69370,7 +69386,8 @@
       "type": "Feature",
       "id": 18,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -74350,7 +74367,8 @@
       "type": "Feature",
       "id": 19,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -74554,7 +74572,8 @@
       "type": "Feature",
       "id": 20,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -77326,7 +77345,8 @@
       "type": "Feature",
       "id": 21,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -77370,7 +77390,8 @@
       "type": "Feature",
       "id": 22,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -79062,7 +79083,8 @@
       "type": "Feature",
       "id": 23,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -84806,7 +84828,8 @@
       "type": "Feature",
       "id": 24,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -85858,7 +85881,8 @@
       "type": "Feature",
       "id": 25,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -86882,7 +86906,8 @@
       "type": "Feature",
       "id": 26,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -87942,7 +87967,8 @@
       "type": "Feature",
       "id": 27,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -89438,7 +89464,8 @@
       "type": "Feature",
       "id": 28,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -89574,7 +89601,8 @@
       "type": "Feature",
       "id": 29,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -91914,7 +91942,8 @@
       "type": "Feature",
       "id": 30,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -112718,7 +112747,8 @@
       "type": "Feature",
       "id": 31,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -113182,7 +113212,8 @@
       "type": "Feature",
       "id": 32,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -115074,7 +115105,8 @@
       "type": "Feature",
       "id": 33,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -116054,7 +116086,8 @@
       "type": "Feature",
       "id": 34,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -117182,7 +117215,8 @@
       "type": "Feature",
       "id": 35,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -123714,7 +123748,8 @@
       "type": "Feature",
       "id": 36,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -124082,7 +124117,8 @@
       "type": "Feature",
       "id": 37,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -127438,7 +127474,8 @@
       "type": "Feature",
       "id": 38,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -127694,7 +127731,8 @@
       "type": "Feature",
       "id": 39,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -127734,7 +127772,8 @@
       "type": "Feature",
       "id": 40,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -130034,7 +130073,8 @@
       "type": "Feature",
       "id": 41,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -138566,7 +138606,8 @@
       "type": "Feature",
       "id": 42,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -141926,7 +141967,8 @@
       "type": "Feature",
       "id": 43,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -148654,7 +148696,8 @@
       "type": "Feature",
       "id": 44,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -152546,7 +152589,8 @@
       "type": "Feature",
       "id": 45,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -153926,7 +153970,8 @@
       "type": "Feature",
       "id": 46,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -154218,7 +154263,8 @@
       "type": "Feature",
       "id": 47,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -155022,7 +155068,8 @@
       "type": "Feature",
       "id": 48,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -155202,7 +155249,8 @@
       "type": "Feature",
       "id": 49,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -156222,7 +156270,8 @@
       "type": "Feature",
       "id": 50,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -157074,7 +157123,8 @@
       "type": "Feature",
       "id": 51,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -158234,7 +158284,8 @@
       "type": "Feature",
       "id": 52,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -159346,7 +159397,8 @@
       "type": "Feature",
       "id": 53,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -162186,7 +162238,8 @@
       "type": "Feature",
       "id": 54,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -163618,7 +163671,8 @@
       "type": "Feature",
       "id": 55,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -164962,7 +165016,8 @@
       "type": "Feature",
       "id": 56,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -165378,7 +165433,8 @@
       "type": "Feature",
       "id": 57,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -165558,7 +165614,8 @@
       "type": "Feature",
       "id": 58,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -175242,7 +175299,8 @@
       "type": "Feature",
       "id": 59,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -175682,7 +175740,8 @@
       "type": "Feature",
       "id": 60,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -176018,7 +176077,8 @@
       "type": "Feature",
       "id": 61,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -178278,7 +178338,8 @@
       "type": "Feature",
       "id": 62,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -178482,7 +178543,8 @@
       "type": "Feature",
       "id": 63,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -178762,7 +178824,8 @@
       "type": "Feature",
       "id": 64,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -179902,7 +179965,8 @@
       "type": "Feature",
       "id": 65,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -180134,7 +180198,8 @@
       "type": "Feature",
       "id": 66,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -180822,7 +180887,8 @@
       "type": "Feature",
       "id": 67,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -181698,7 +181764,8 @@
       "type": "Feature",
       "id": 68,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -182094,7 +182161,8 @@
       "type": "Feature",
       "id": 69,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -182222,7 +182290,8 @@
       "type": "Feature",
       "id": 70,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -182946,7 +183015,8 @@
       "type": "Feature",
       "id": 71,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -183278,7 +183348,8 @@
       "type": "Feature",
       "id": 72,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -184094,7 +184165,8 @@
       "type": "Feature",
       "id": 73,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -184830,7 +184902,8 @@
       "type": "Feature",
       "id": 74,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -185326,7 +185399,8 @@
       "type": "Feature",
       "id": 75,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -187002,7 +187076,8 @@
       "type": "Feature",
       "id": 76,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -196682,7 +196757,8 @@
       "type": "Feature",
       "id": 77,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -196946,7 +197022,8 @@
       "type": "Feature",
       "id": 78,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -198854,7 +198931,8 @@
       "type": "Feature",
       "id": 79,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -199238,7 +199316,8 @@
       "type": "Feature",
       "id": 80,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -199586,7 +199665,8 @@
       "type": "Feature",
       "id": 81,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -199858,7 +199938,8 @@
       "type": "Feature",
       "id": 82,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -200270,7 +200351,8 @@
       "type": "Feature",
       "id": 83,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -200974,7 +201056,8 @@
       "type": "Feature",
       "id": 84,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -201090,7 +201173,8 @@
       "type": "Feature",
       "id": 85,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -201350,7 +201434,8 @@
       "type": "Feature",
       "id": 86,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -202138,7 +202223,8 @@
       "type": "Feature",
       "id": 87,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -202554,7 +202640,8 @@
       "type": "Feature",
       "id": 88,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
@@ -203694,7 +203781,8 @@
       "type": "Feature",
       "id": 89,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",
