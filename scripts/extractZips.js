@@ -1,8 +1,6 @@
 const fs = require('fs');
 const { execSync } = require('child_process');
 
-const filesToExtract = fs.readdirSync('./zips');
-
 console.log('Cleaning up old files');
 
 //handling csvs folder

@@ -5,7 +5,8 @@
       "type": "Feature",
       "id": 1,
       "properties": {
-        "routeColor": "#5366c9"
+        "routeColor": "#5366c9",
+        "provider": "amtrak"
       },
       "geometry": {
         "type": "LineString",

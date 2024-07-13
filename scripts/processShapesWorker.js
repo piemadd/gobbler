@@ -77,7 +77,8 @@ const processShapes = (chunk) => {
                       "type": "Feature",
                       "properties": {
                         routeColor: '000000',
-                        routeType: '0'
+                        routeType: '0',
+                        provider: folder
                       },
                       "geometry": {
                         "coordinates": shapes[shapeID].sort((a, b) => a[2] - b[2]).map((row) => [row[0], row[1]]),

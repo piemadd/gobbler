@@ -11,6 +11,19 @@
       "000000": "5366c9"
     },
     "disabled": true,
+    "activeTypes": [
+      "2"
+    ]
+  },
+  "via_rail": {
+    "name": "VIA Rail",
+    "url": "https://www.viarail.ca/sites/all/files/gtfs/viarail.zip",
+    "headers": {},
+    "urlEnv": [],
+    "doAllShapes": true,
+    "colorOverrides": {},
+    "colorReplacements": {},
+    "disabled": false,
     "activeTypes": ["2"]
   },
   "pace": {
@@ -46,7 +59,14 @@
     "colorOverrides": {},
     "colorReplacements": {},
     "disabled": false,
-    "activeTypes": ["0", "1", "2", "3", "4", "5"]
+    "activeTypes": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
   },
   "metra": {
     "name": "Metra",
@@ -59,7 +79,9 @@
     "colorOverrides": {},
     "colorReplacements": {},
     "disabled": false,
-    "activeTypes": ["2"]
+    "activeTypes": [
+      "2"
+    ]
   },
   "nyct_subway": {
     "name": "NYC Subway",
@@ -172,7 +194,9 @@
     },
     "noSegments": true,
     "disabled": false,
-    "activeTypes": ["1"]
+    "activeTypes": [
+      "1"
+    ]
   },
   "southshore": {
     "name": "South Shore Line",
@@ -190,7 +214,9 @@
     "noSegments": false,
     "disabled": false,
     "subfolder": "Working copy GTFS changes/",
-    "activeTypes": ["2"]
+    "activeTypes": [
+      "2"
+    ]
   },
   "casco_bay_lines": {
     "name": "Casco Bay Lines",
@@ -234,6 +260,8 @@
     "colorOverrides": {},
     "colorReplacements": {},
     "disabled": false,
-    "activeTypes": ["1"]
+    "activeTypes": [
+      "1"
+    ]
   }
 }
