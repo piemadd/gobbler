@@ -10,9 +10,22 @@
       "CAE4F1": "5366c9",
       "000000": "5366c9"
     },
-    "disabled": true,
+    "disabled": false,
     "activeTypes": [
       "2"
+    ]
+  },
+  "flixbus_us": {
+    "name": "Flixbus US",
+    "url": "https://gtfs.gis.flix.tech/gtfs_generic_us.zip",
+    "headers": {},
+    "urlEnv": [],
+    "doAllShapes": true,
+    "colorOverrides": {},
+    "colorReplacements": {},
+    "disabled": false,
+    "activeTypes": [
+      "3"
     ]
   },
   "via_rail": {
