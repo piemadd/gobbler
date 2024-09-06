@@ -211,6 +211,20 @@
       "1"
     ]
   },
+  "mdot_metro": {
+    "name": "MDOT (Maryland) Metro",
+    "url": "https://feeds.mta.maryland.gov/gtfs/metro",
+    "headers": {},
+    "urlEnv": [],
+    "doAllShapes": false,
+    "colorOverrides": {},
+    "colorReplacements": {},
+    "noSegments": true,
+    "disabled": false,
+    "activeTypes": [
+      "1"
+    ]
+  },
   "southshore": {
     "name": "South Shore Line",
     "url": "http://www.mysouthshoreline.com/google/google_transit.zip",
