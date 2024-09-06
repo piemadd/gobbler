@@ -7,11 +7,14 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/15863880",
+        "@id": "15863880",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "30 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -20,9 +23,7 @@
         "tiger:cfcc": "B11",
         "tiger:county": "Clinton, IA",
         "tiger:name_base": "Union Pacific Railroad",
-        "usage": "main",
-        "routeColor": "#feca00",
-        "provider": "bigboy"
+        "usage": "main"
       },
       "geometry": {
         "type": "LineString",
@@ -141,16 +142,19 @@
           ]
         ]
       },
-      "id": "way/15863880"
+      "id": "15863880"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/21816438",
+        "@id": "21816438",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -251,16 +255,19 @@
           ]
         ]
       },
-      "id": "way/21816438"
+      "id": "21816438"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/21840028",
+        "@id": "21840028",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -285,16 +292,19 @@
           ]
         ]
       },
-      "id": "way/21840028"
+      "id": "21840028"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/22051223",
+        "@id": "22051223",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -318,18 +328,21 @@
           ]
         ]
       },
-      "id": "way/22051223"
+      "id": "22051223"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/22051237",
+        "@id": "22051237",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "30 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -355,17 +368,20 @@
           ]
         ]
       },
-      "id": "way/22051237"
+      "id": "22051237"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/22095006",
+        "@id": "22095006",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -573,16 +589,19 @@
           ]
         ]
       },
-      "id": "way/22095006"
+      "id": "22095006"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/22095047",
+        "@id": "22095047",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -741,16 +760,19 @@
           ]
         ]
       },
-      "id": "way/22095047"
+      "id": "22095047"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/22095245",
+        "@id": "22095245",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -905,16 +927,19 @@
           ]
         ]
       },
-      "id": "way/22095245"
+      "id": "22095245"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/22095255",
+        "@id": "22095255",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -960,17 +985,20 @@
           ]
         ]
       },
-      "id": "way/22095255"
+      "id": "22095255"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/22095321",
+        "@id": "22095321",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -1010,16 +1038,19 @@
           ]
         ]
       },
-      "id": "way/22095321"
+      "id": "22095321"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/22113269",
+        "@id": "22113269",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -1138,17 +1169,20 @@
           ]
         ]
       },
-      "id": "way/22113269"
+      "id": "22113269"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/22115597",
+        "@id": "22115597",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -1188,16 +1222,19 @@
           ]
         ]
       },
-      "id": "way/22115597"
+      "id": "22115597"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/37927058",
+        "@id": "37927058",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "30 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -1225,16 +1262,19 @@
           ]
         ]
       },
-      "id": "way/37927058"
+      "id": "37927058"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/37927059",
+        "@id": "37927059",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "30 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -1440,18 +1480,21 @@
           ]
         ]
       },
-      "id": "way/37927059"
+      "id": "37927059"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/37927062",
+        "@id": "37927062",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "30 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -1475,16 +1518,19 @@
           ]
         ]
       },
-      "id": "way/37927062"
+      "id": "37927062"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/37927073",
+        "@id": "37927073",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "30 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -1508,18 +1554,21 @@
           ]
         ]
       },
-      "id": "way/37927073"
+      "id": "37927073"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/37927074",
+        "@id": "37927074",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "30 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -1543,16 +1592,19 @@
           ]
         ]
       },
-      "id": "way/37927074"
+      "id": "37927074"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/37927075",
+        "@id": "37927075",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "40 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -1652,18 +1704,21 @@
           ]
         ]
       },
-      "id": "way/37927075"
+      "id": "37927075"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/48783771",
+        "@id": "48783771",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -1687,18 +1742,21 @@
           ]
         ]
       },
-      "id": "way/48783771"
+      "id": "48783771"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/52066357",
+        "@id": "52066357",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -1719,18 +1777,21 @@
           ]
         ]
       },
-      "id": "way/52066357"
+      "id": "52066357"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/72860942",
+        "@id": "72860942",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -1757,16 +1818,19 @@
           ]
         ]
       },
-      "id": "way/72860942"
+      "id": "72860942"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/72860943",
+        "@id": "72860943",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -1801,18 +1865,21 @@
           ]
         ]
       },
-      "id": "way/72860943"
+      "id": "72860943"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/72860944",
+        "@id": "72860944",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -1839,16 +1906,19 @@
           ]
         ]
       },
-      "id": "way/72860944"
+      "id": "72860944"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/72860945",
+        "@id": "72860945",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -1967,18 +2037,21 @@
           ]
         ]
       },
-      "id": "way/72860945"
+      "id": "72860945"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/72860950",
+        "@id": "72860950",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2005,16 +2078,19 @@
           ]
         ]
       },
-      "id": "way/72860950"
+      "id": "72860950"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/72860953",
+        "@id": "72860953",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2073,18 +2149,21 @@
           ]
         ]
       },
-      "id": "way/72860953"
+      "id": "72860953"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/72860955",
+        "@id": "72860955",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2111,18 +2190,21 @@
           ]
         ]
       },
-      "id": "way/72860955"
+      "id": "72860955"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/72860957",
+        "@id": "72860957",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2149,16 +2231,19 @@
           ]
         ]
       },
-      "id": "way/72860957"
+      "id": "72860957"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/72860958",
+        "@id": "72860958",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2193,18 +2278,21 @@
           ]
         ]
       },
-      "id": "way/72860958"
+      "id": "72860958"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/72860960",
+        "@id": "72860960",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2231,16 +2319,19 @@
           ]
         ]
       },
-      "id": "way/72860960"
+      "id": "72860960"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/72860961",
+        "@id": "72860961",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2275,18 +2366,21 @@
           ]
         ]
       },
-      "id": "way/72860961"
+      "id": "72860961"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/92809899",
+        "@id": "92809899",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2313,16 +2407,19 @@
           ]
         ]
       },
-      "id": "way/92809899"
+      "id": "92809899"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/92809909",
+        "@id": "92809909",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2349,18 +2446,21 @@
           ]
         ]
       },
-      "id": "way/92809909"
+      "id": "92809909"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/108533181",
+        "@id": "108533181",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2386,16 +2486,19 @@
           ]
         ]
       },
-      "id": "way/108533181"
+      "id": "108533181"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/108533182",
+        "@id": "108533182",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2441,18 +2544,21 @@
           ]
         ]
       },
-      "id": "way/108533182"
+      "id": "108533182"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/108533183",
+        "@id": "108533183",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2478,18 +2584,21 @@
           ]
         ]
       },
-      "id": "way/108533183"
+      "id": "108533183"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/111410425",
+        "@id": "111410425",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2516,18 +2625,21 @@
           ]
         ]
       },
-      "id": "way/111410425"
+      "id": "111410425"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/111411956",
+        "@id": "111411956",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2554,18 +2666,21 @@
           ]
         ]
       },
-      "id": "way/111411956"
+      "id": "111411956"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/118401024",
+        "@id": "118401024",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2590,18 +2705,21 @@
           ]
         ]
       },
-      "id": "way/118401024"
+      "id": "118401024"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/155375080",
+        "@id": "155375080",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2625,16 +2743,19 @@
           ]
         ]
       },
-      "id": "way/155375080"
+      "id": "155375080"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/155375081",
+        "@id": "155375081",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2662,18 +2783,21 @@
           ]
         ]
       },
-      "id": "way/155375081"
+      "id": "155375081"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/155375082",
+        "@id": "155375082",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2694,16 +2818,19 @@
           ]
         ]
       },
-      "id": "way/155375082"
+      "id": "155375082"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/155375083",
+        "@id": "155375083",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2728,16 +2855,19 @@
           ]
         ]
       },
-      "id": "way/155375083"
+      "id": "155375083"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/155375084",
+        "@id": "155375084",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2762,18 +2892,21 @@
           ]
         ]
       },
-      "id": "way/155375084"
+      "id": "155375084"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/155375784",
+        "@id": "155375784",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2794,16 +2927,19 @@
           ]
         ]
       },
-      "id": "way/155375784"
+      "id": "155375784"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/155375785",
+        "@id": "155375785",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2827,18 +2963,21 @@
           ]
         ]
       },
-      "id": "way/155375785"
+      "id": "155375785"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/155375786",
+        "@id": "155375786",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2862,16 +3001,19 @@
           ]
         ]
       },
-      "id": "way/155375786"
+      "id": "155375786"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/155375787",
+        "@id": "155375787",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "40 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -2968,16 +3110,19 @@
           ]
         ]
       },
-      "id": "way/155375787"
+      "id": "155375787"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/166747461",
+        "@id": "166747461",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -3019,18 +3164,21 @@
           ]
         ]
       },
-      "id": "way/166747461"
+      "id": "166747461"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/171198250",
+        "@id": "171198250",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "30 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -3051,18 +3199,21 @@
           ]
         ]
       },
-      "id": "way/171198250"
+      "id": "171198250"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/171198253",
+        "@id": "171198253",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "30 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -3083,18 +3234,21 @@
           ]
         ]
       },
-      "id": "way/171198253"
+      "id": "171198253"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/171198255",
+        "@id": "171198255",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "30 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -3115,16 +3269,19 @@
           ]
         ]
       },
-      "id": "way/171198255"
+      "id": "171198255"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/171198256",
+        "@id": "171198256",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "30 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -3149,16 +3306,19 @@
           ]
         ]
       },
-      "id": "way/171198256"
+      "id": "171198256"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/171198258",
+        "@id": "171198258",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "30 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -3183,16 +3343,19 @@
           ]
         ]
       },
-      "id": "way/171198258"
+      "id": "171198258"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/171198261",
+        "@id": "171198261",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "30 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -3357,16 +3520,19 @@
           ]
         ]
       },
-      "id": "way/171198261"
+      "id": "171198261"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/195240708",
+        "@id": "195240708",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -3421,18 +3587,21 @@
           ]
         ]
       },
-      "id": "way/195240708"
+      "id": "195240708"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/195240709",
+        "@id": "195240709",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -3459,17 +3628,20 @@
           ]
         ]
       },
-      "id": "way/195240709"
+      "id": "195240709"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/209332759",
+        "@id": "209332759",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -3629,12 +3801,12 @@
           ]
         ]
       },
-      "id": "way/209332759"
+      "id": "209332759"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/209332763",
+        "@id": "209332763",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
@@ -3642,6 +3814,9 @@
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -3665,12 +3840,12 @@
           ]
         ]
       },
-      "id": "way/209332763"
+      "id": "209332763"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/209332765",
+        "@id": "209332765",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
@@ -3678,6 +3853,9 @@
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -3701,12 +3879,12 @@
           ]
         ]
       },
-      "id": "way/209332765"
+      "id": "209332765"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/209332767",
+        "@id": "209332767",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
@@ -3714,6 +3892,9 @@
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -3737,16 +3918,19 @@
           ]
         ]
       },
-      "id": "way/209332767"
+      "id": "209332767"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/220993123",
+        "@id": "220993123",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -3773,18 +3957,21 @@
           ]
         ]
       },
-      "id": "way/220993123"
+      "id": "220993123"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/220993124",
+        "@id": "220993124",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -3811,16 +3998,19 @@
           ]
         ]
       },
-      "id": "way/220993124"
+      "id": "220993124"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232087512",
+        "@id": "232087512",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -3989,18 +4179,21 @@
           ]
         ]
       },
-      "id": "way/232087512"
+      "id": "232087512"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232087513",
+        "@id": "232087513",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -4025,18 +4218,21 @@
           ]
         ]
       },
-      "id": "way/232087513"
+      "id": "232087513"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232087514",
+        "@id": "232087514",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -4061,16 +4257,19 @@
           ]
         ]
       },
-      "id": "way/232087514"
+      "id": "232087514"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232087515",
+        "@id": "232087515",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -4099,16 +4298,19 @@
           ]
         ]
       },
-      "id": "way/232087515"
+      "id": "232087515"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232090670",
+        "@id": "232090670",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -4213,18 +4415,21 @@
           ]
         ]
       },
-      "id": "way/232090670"
+      "id": "232090670"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232090671",
+        "@id": "232090671",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -4249,16 +4454,19 @@
           ]
         ]
       },
-      "id": "way/232090671"
+      "id": "232090671"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232090672",
+        "@id": "232090672",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -4359,18 +4567,21 @@
           ]
         ]
       },
-      "id": "way/232090672"
+      "id": "232090672"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232090673",
+        "@id": "232090673",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -4395,17 +4606,20 @@
           ]
         ]
       },
-      "id": "way/232090673"
+      "id": "232090673"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232093261",
+        "@id": "232093261",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -4430,16 +4644,19 @@
           ]
         ]
       },
-      "id": "way/232093261"
+      "id": "232093261"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232093262",
+        "@id": "232093262",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -4540,18 +4757,21 @@
           ]
         ]
       },
-      "id": "way/232093262"
+      "id": "232093262"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232093263",
+        "@id": "232093263",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -4576,16 +4796,19 @@
           ]
         ]
       },
-      "id": "way/232093263"
+      "id": "232093263"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232093265",
+        "@id": "232093265",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -4642,17 +4865,20 @@
           ]
         ]
       },
-      "id": "way/232093265"
+      "id": "232093265"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232093266",
+        "@id": "232093266",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -4677,16 +4903,19 @@
           ]
         ]
       },
-      "id": "way/232093266"
+      "id": "232093266"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232093267",
+        "@id": "232093267",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -4711,16 +4940,19 @@
           ]
         ]
       },
-      "id": "way/232093267"
+      "id": "232093267"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232093270",
+        "@id": "232093270",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -4885,17 +5117,20 @@
           ]
         ]
       },
-      "id": "way/232093270"
+      "id": "232093270"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232093276",
+        "@id": "232093276",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -4920,16 +5155,19 @@
           ]
         ]
       },
-      "id": "way/232093276"
+      "id": "232093276"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232093277",
+        "@id": "232093277",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -5046,18 +5284,21 @@
           ]
         ]
       },
-      "id": "way/232093277"
+      "id": "232093277"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232095195",
+        "@id": "232095195",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -5082,16 +5323,19 @@
           ]
         ]
       },
-      "id": "way/232095195"
+      "id": "232095195"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232095196",
+        "@id": "232095196",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -5148,16 +5392,19 @@
           ]
         ]
       },
-      "id": "way/232095196"
+      "id": "232095196"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232095197",
+        "@id": "232095197",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -5190,18 +5437,21 @@
           ]
         ]
       },
-      "id": "way/232095197"
+      "id": "232095197"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232095198",
+        "@id": "232095198",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -5226,16 +5476,19 @@
           ]
         ]
       },
-      "id": "way/232095198"
+      "id": "232095198"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232095200",
+        "@id": "232095200",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -5388,18 +5641,21 @@
           ]
         ]
       },
-      "id": "way/232095200"
+      "id": "232095200"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232095204",
+        "@id": "232095204",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -5424,16 +5680,19 @@
           ]
         ]
       },
-      "id": "way/232095204"
+      "id": "232095204"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232095205",
+        "@id": "232095205",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -5458,18 +5717,21 @@
           ]
         ]
       },
-      "id": "way/232095205"
+      "id": "232095205"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232095206",
+        "@id": "232095206",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -5494,18 +5756,21 @@
           ]
         ]
       },
-      "id": "way/232095206"
+      "id": "232095206"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232095207",
+        "@id": "232095207",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -5530,16 +5795,19 @@
           ]
         ]
       },
-      "id": "way/232095207"
+      "id": "232095207"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232095208",
+        "@id": "232095208",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -5564,16 +5832,19 @@
           ]
         ]
       },
-      "id": "way/232095208"
+      "id": "232095208"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232287330",
+        "@id": "232287330",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -5607,16 +5878,19 @@
           ]
         ]
       },
-      "id": "way/232287330"
+      "id": "232287330"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232287472",
+        "@id": "232287472",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -5654,16 +5928,19 @@
           ]
         ]
       },
-      "id": "way/232287472"
+      "id": "232287472"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232290669",
+        "@id": "232290669",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -5736,17 +6013,20 @@
           ]
         ]
       },
-      "id": "way/232290669"
+      "id": "232290669"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232290670",
+        "@id": "232290670",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -5771,16 +6051,19 @@
           ]
         ]
       },
-      "id": "way/232290670"
+      "id": "232290670"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232290948",
+        "@id": "232290948",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -5925,17 +6208,20 @@
           ]
         ]
       },
-      "id": "way/232290948"
+      "id": "232290948"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232290949",
+        "@id": "232290949",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -5960,17 +6246,20 @@
           ]
         ]
       },
-      "id": "way/232290949"
+      "id": "232290949"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232290950",
+        "@id": "232290950",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -5995,16 +6284,19 @@
           ]
         ]
       },
-      "id": "way/232290950"
+      "id": "232290950"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232290951",
+        "@id": "232290951",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -6037,16 +6329,19 @@
           ]
         ]
       },
-      "id": "way/232290951"
+      "id": "232290951"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232290952",
+        "@id": "232290952",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -6079,17 +6374,20 @@
           ]
         ]
       },
-      "id": "way/232290952"
+      "id": "232290952"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232290953",
+        "@id": "232290953",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -6114,16 +6412,19 @@
           ]
         ]
       },
-      "id": "way/232290953"
+      "id": "232290953"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232290957",
+        "@id": "232290957",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "45 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -6252,18 +6553,21 @@
           ]
         ]
       },
-      "id": "way/232290957"
+      "id": "232290957"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232290958",
+        "@id": "232290958",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -6284,16 +6588,19 @@
           ]
         ]
       },
-      "id": "way/232290958"
+      "id": "232290958"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232291167",
+        "@id": "232291167",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -6490,17 +6797,20 @@
           ]
         ]
       },
-      "id": "way/232291167"
+      "id": "232291167"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232291168",
+        "@id": "232291168",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -6525,18 +6835,21 @@
           ]
         ]
       },
-      "id": "way/232291168"
+      "id": "232291168"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232291557",
+        "@id": "232291557",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "60 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -6557,16 +6870,19 @@
           ]
         ]
       },
-      "id": "way/232291557"
+      "id": "232291557"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232291558",
+        "@id": "232291558",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "60 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -6619,18 +6935,21 @@
           ]
         ]
       },
-      "id": "way/232291558"
+      "id": "232291558"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232291780",
+        "@id": "232291780",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -6651,16 +6970,19 @@
           ]
         ]
       },
-      "id": "way/232291780"
+      "id": "232291780"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232291781",
+        "@id": "232291781",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -6725,17 +7047,20 @@
           ]
         ]
       },
-      "id": "way/232291781"
+      "id": "232291781"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232291784",
+        "@id": "232291784",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -6760,16 +7085,19 @@
           ]
         ]
       },
-      "id": "way/232291784"
+      "id": "232291784"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232291785",
+        "@id": "232291785",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "45 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -6898,18 +7226,21 @@
           ]
         ]
       },
-      "id": "way/232291785"
+      "id": "232291785"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232291787",
+        "@id": "232291787",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -6930,16 +7261,19 @@
           ]
         ]
       },
-      "id": "way/232291787"
+      "id": "232291787"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232291788",
+        "@id": "232291788",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -7168,18 +7502,21 @@
           ]
         ]
       },
-      "id": "way/232291788"
+      "id": "232291788"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232291789",
+        "@id": "232291789",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "60 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -7200,16 +7537,19 @@
           ]
         ]
       },
-      "id": "way/232291789"
+      "id": "232291789"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232291790",
+        "@id": "232291790",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "60 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -7258,16 +7598,19 @@
           ]
         ]
       },
-      "id": "way/232291790"
+      "id": "232291790"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232833108",
+        "@id": "232833108",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -7322,18 +7665,21 @@
           ]
         ]
       },
-      "id": "way/232833108"
+      "id": "232833108"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232833109",
+        "@id": "232833109",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -7356,16 +7702,19 @@
           ]
         ]
       },
-      "id": "way/232833109"
+      "id": "232833109"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232833110",
+        "@id": "232833110",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -7428,16 +7777,19 @@
           ]
         ]
       },
-      "id": "way/232833110"
+      "id": "232833110"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232833560",
+        "@id": "232833560",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -7492,15 +7844,18 @@
           ]
         ]
       },
-      "id": "way/232833560"
+      "id": "232833560"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232833561",
+        "@id": "232833561",
         "electrified": "no",
         "gauge": "1435",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -7526,16 +7881,19 @@
           ]
         ]
       },
-      "id": "way/232833561"
+      "id": "232833561"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232833562",
+        "@id": "232833562",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -7586,18 +7944,21 @@
           ]
         ]
       },
-      "id": "way/232833562"
+      "id": "232833562"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232835898",
+        "@id": "232835898",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -7624,16 +7985,19 @@
           ]
         ]
       },
-      "id": "way/232835898"
+      "id": "232835898"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232835899",
+        "@id": "232835899",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "55 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -8368,18 +8732,21 @@
           ]
         ]
       },
-      "id": "way/232835899"
+      "id": "232835899"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232835900",
+        "@id": "232835900",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -8406,16 +8773,19 @@
           ]
         ]
       },
-      "id": "way/232835900"
+      "id": "232835900"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232835901",
+        "@id": "232835901",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "55 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -9150,17 +9520,20 @@
           ]
         ]
       },
-      "id": "way/232835901"
+      "id": "232835901"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232840848",
+        "@id": "232840848",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -9216,17 +9589,20 @@
           ]
         ]
       },
-      "id": "way/232840848"
+      "id": "232840848"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232840850",
+        "@id": "232840850",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -9266,17 +9642,20 @@
           ]
         ]
       },
-      "id": "way/232840850"
+      "id": "232840850"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232840851",
+        "@id": "232840851",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -9300,17 +9679,20 @@
           ]
         ]
       },
-      "id": "way/232840851"
+      "id": "232840851"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/232842417",
+        "@id": "232842417",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -9522,16 +9904,19 @@
           ]
         ]
       },
-      "id": "way/232842417"
+      "id": "232842417"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312003001",
+        "@id": "312003001",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -9622,16 +10007,19 @@
           ]
         ]
       },
-      "id": "way/312003001"
+      "id": "312003001"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312003002",
+        "@id": "312003002",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -9726,18 +10114,21 @@
           ]
         ]
       },
-      "id": "way/312003002"
+      "id": "312003002"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312003003",
+        "@id": "312003003",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -9764,18 +10155,21 @@
           ]
         ]
       },
-      "id": "way/312003003"
+      "id": "312003003"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312003004",
+        "@id": "312003004",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -9802,16 +10196,19 @@
           ]
         ]
       },
-      "id": "way/312003004"
+      "id": "312003004"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312013482",
+        "@id": "312013482",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -9866,16 +10263,19 @@
           ]
         ]
       },
-      "id": "way/312013482"
+      "id": "312013482"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312013484",
+        "@id": "312013484",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "55 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -10170,18 +10570,21 @@
           ]
         ]
       },
-      "id": "way/312013484"
+      "id": "312013484"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312015819",
+        "@id": "312015819",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -10208,18 +10611,21 @@
           ]
         ]
       },
-      "id": "way/312015819"
+      "id": "312015819"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312015820",
+        "@id": "312015820",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -10246,16 +10652,19 @@
           ]
         ]
       },
-      "id": "way/312015820"
+      "id": "312015820"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312015821",
+        "@id": "312015821",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -10406,16 +10815,19 @@
           ]
         ]
       },
-      "id": "way/312015821"
+      "id": "312015821"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312015822",
+        "@id": "312015822",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "55 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -10682,18 +11094,21 @@
           ]
         ]
       },
-      "id": "way/312015822"
+      "id": "312015822"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312015841",
+        "@id": "312015841",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -10720,16 +11135,19 @@
           ]
         ]
       },
-      "id": "way/312015841"
+      "id": "312015841"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312015842",
+        "@id": "312015842",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "55 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -11060,16 +11478,19 @@
           ]
         ]
       },
-      "id": "way/312015842"
+      "id": "312015842"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312153730",
+        "@id": "312153730",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -11128,16 +11549,19 @@
           ]
         ]
       },
-      "id": "way/312153730"
+      "id": "312153730"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312153731",
+        "@id": "312153731",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "55 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -11880,18 +12304,21 @@
           ]
         ]
       },
-      "id": "way/312153731"
+      "id": "312153731"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312153732",
+        "@id": "312153732",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -11918,18 +12345,21 @@
           ]
         ]
       },
-      "id": "way/312153732"
+      "id": "312153732"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312153733",
+        "@id": "312153733",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -11956,18 +12386,21 @@
           ]
         ]
       },
-      "id": "way/312153733"
+      "id": "312153733"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312153734",
+        "@id": "312153734",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -11994,18 +12427,21 @@
           ]
         ]
       },
-      "id": "way/312153734"
+      "id": "312153734"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312153735",
+        "@id": "312153735",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -12032,16 +12468,19 @@
           ]
         ]
       },
-      "id": "way/312153735"
+      "id": "312153735"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312153736",
+        "@id": "312153736",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -12160,17 +12599,20 @@
           ]
         ]
       },
-      "id": "way/312153736"
+      "id": "312153736"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312153737",
+        "@id": "312153737",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -12330,16 +12772,19 @@
           ]
         ]
       },
-      "id": "way/312153737"
+      "id": "312153737"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312153740",
+        "@id": "312153740",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -12398,18 +12843,21 @@
           ]
         ]
       },
-      "id": "way/312153740"
+      "id": "312153740"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312153741",
+        "@id": "312153741",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -12436,18 +12884,21 @@
           ]
         ]
       },
-      "id": "way/312153741"
+      "id": "312153741"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312153743",
+        "@id": "312153743",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -12474,17 +12925,20 @@
           ]
         ]
       },
-      "id": "way/312153743"
+      "id": "312153743"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312153745",
+        "@id": "312153745",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -12632,12 +13086,12 @@
           ]
         ]
       },
-      "id": "way/312153745"
+      "id": "312153745"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312156066",
+        "@id": "312156066",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
@@ -12645,6 +13099,9 @@
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -12668,12 +13125,12 @@
           ]
         ]
       },
-      "id": "way/312156066"
+      "id": "312156066"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312156067",
+        "@id": "312156067",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
@@ -12681,6 +13138,9 @@
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -12704,12 +13164,12 @@
           ]
         ]
       },
-      "id": "way/312156067"
+      "id": "312156067"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312156068",
+        "@id": "312156068",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
@@ -12717,6 +13177,9 @@
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -12740,12 +13203,12 @@
           ]
         ]
       },
-      "id": "way/312156068"
+      "id": "312156068"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312156069",
+        "@id": "312156069",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
@@ -12753,6 +13216,9 @@
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -12776,17 +13242,20 @@
           ]
         ]
       },
-      "id": "way/312156069"
+      "id": "312156069"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312156070",
+        "@id": "312156070",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -12810,17 +13279,20 @@
           ]
         ]
       },
-      "id": "way/312156070"
+      "id": "312156070"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312156071",
+        "@id": "312156071",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -13000,17 +13472,20 @@
           ]
         ]
       },
-      "id": "way/312156071"
+      "id": "312156071"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312156072",
+        "@id": "312156072",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -13038,17 +13513,20 @@
           ]
         ]
       },
-      "id": "way/312156072"
+      "id": "312156072"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312156073",
+        "@id": "312156073",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -13208,17 +13686,20 @@
           ]
         ]
       },
-      "id": "way/312156073"
+      "id": "312156073"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312156079",
+        "@id": "312156079",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -13242,12 +13723,12 @@
           ]
         ]
       },
-      "id": "way/312156079"
+      "id": "312156079"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312156080",
+        "@id": "312156080",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
@@ -13255,6 +13736,9 @@
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -13278,12 +13762,12 @@
           ]
         ]
       },
-      "id": "way/312156080"
+      "id": "312156080"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312156081",
+        "@id": "312156081",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
@@ -13291,6 +13775,9 @@
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -13314,17 +13801,20 @@
           ]
         ]
       },
-      "id": "way/312156081"
+      "id": "312156081"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312156083",
+        "@id": "312156083",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -13497,16 +13987,19 @@
           ]
         ]
       },
-      "id": "way/312156083"
+      "id": "312156083"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/312157351",
+        "@id": "312157351",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -13553,17 +14046,20 @@
           ]
         ]
       },
-      "id": "way/312157351"
+      "id": "312157351"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/339156809",
+        "@id": "339156809",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "maxspeed:freight": "50 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -13815,17 +14311,20 @@
           ]
         ]
       },
-      "id": "way/339156809"
+      "id": "339156809"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/354894379",
+        "@id": "354894379",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -13846,17 +14345,20 @@
           ]
         ]
       },
-      "id": "way/354894379"
+      "id": "354894379"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/354894380",
+        "@id": "354894380",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -13877,16 +14379,19 @@
           ]
         ]
       },
-      "id": "way/354894380"
+      "id": "354894380"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/354894399",
+        "@id": "354894399",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -14079,16 +14584,19 @@
           ]
         ]
       },
-      "id": "way/354894399"
+      "id": "354894399"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/354894400",
+        "@id": "354894400",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -14285,17 +14793,20 @@
           ]
         ]
       },
-      "id": "way/354894400"
+      "id": "354894400"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/354971002",
+        "@id": "354971002",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "60 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -14384,18 +14895,21 @@
           ]
         ]
       },
-      "id": "way/354971002"
+      "id": "354971002"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/354971004",
+        "@id": "354971004",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -14416,18 +14930,21 @@
           ]
         ]
       },
-      "id": "way/354971004"
+      "id": "354971004"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/354971005",
+        "@id": "354971005",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "60 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -14448,18 +14965,21 @@
           ]
         ]
       },
-      "id": "way/354971005"
+      "id": "354971005"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/354971007",
+        "@id": "354971007",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -14480,18 +15000,21 @@
           ]
         ]
       },
-      "id": "way/354971007"
+      "id": "354971007"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/354971008",
+        "@id": "354971008",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "60 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -14512,18 +15035,21 @@
           ]
         ]
       },
-      "id": "way/354971008"
+      "id": "354971008"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/354971009",
+        "@id": "354971009",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "60 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -14544,18 +15070,21 @@
           ]
         ]
       },
-      "id": "way/354971009"
+      "id": "354971009"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/354971011",
+        "@id": "354971011",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "60 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -14576,17 +15105,20 @@
           ]
         ]
       },
-      "id": "way/354971011"
+      "id": "354971011"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/354971014",
+        "@id": "354971014",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "60 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -14683,16 +15215,19 @@
           ]
         ]
       },
-      "id": "way/354971014"
+      "id": "354971014"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/354971017",
+        "@id": "354971017",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "60 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -14805,16 +15340,19 @@
           ]
         ]
       },
-      "id": "way/354971017"
+      "id": "354971017"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/354971024",
+        "@id": "354971024",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "60 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -14931,16 +15469,19 @@
           ]
         ]
       },
-      "id": "way/354971024"
+      "id": "354971024"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/354971153",
+        "@id": "354971153",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -15037,16 +15578,19 @@
           ]
         ]
       },
-      "id": "way/354971153"
+      "id": "354971153"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/354971155",
+        "@id": "354971155",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -15143,16 +15687,19 @@
           ]
         ]
       },
-      "id": "way/354971155"
+      "id": "354971155"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365431591",
+        "@id": "365431591",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -15208,16 +15755,19 @@
           ]
         ]
       },
-      "id": "way/365431591"
+      "id": "365431591"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365431592",
+        "@id": "365431592",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -15270,18 +15820,21 @@
           ]
         ]
       },
-      "id": "way/365431592"
+      "id": "365431592"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365431593",
+        "@id": "365431593",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -15302,18 +15855,21 @@
           ]
         ]
       },
-      "id": "way/365431593"
+      "id": "365431593"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365431594",
+        "@id": "365431594",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -15337,18 +15893,21 @@
           ]
         ]
       },
-      "id": "way/365431594"
+      "id": "365431594"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365431595",
+        "@id": "365431595",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -15369,18 +15928,21 @@
           ]
         ]
       },
-      "id": "way/365431595"
+      "id": "365431595"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365431596",
+        "@id": "365431596",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -15401,18 +15963,21 @@
           ]
         ]
       },
-      "id": "way/365431596"
+      "id": "365431596"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365431597",
+        "@id": "365431597",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -15436,18 +16001,21 @@
           ]
         ]
       },
-      "id": "way/365431597"
+      "id": "365431597"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365431598",
+        "@id": "365431598",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -15471,18 +16039,21 @@
           ]
         ]
       },
-      "id": "way/365431598"
+      "id": "365431598"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365431599",
+        "@id": "365431599",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -15503,16 +16074,19 @@
           ]
         ]
       },
-      "id": "way/365431599"
+      "id": "365431599"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365431600",
+        "@id": "365431600",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -15628,16 +16202,19 @@
           ]
         ]
       },
-      "id": "way/365431600"
+      "id": "365431600"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365431601",
+        "@id": "365431601",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -15750,16 +16327,19 @@
           ]
         ]
       },
-      "id": "way/365431601"
+      "id": "365431601"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365431602",
+        "@id": "365431602",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -15935,16 +16515,19 @@
           ]
         ]
       },
-      "id": "way/365431602"
+      "id": "365431602"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365431603",
+        "@id": "365431603",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16117,16 +16700,19 @@
           ]
         ]
       },
-      "id": "way/365431603"
+      "id": "365431603"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441671",
+        "@id": "365441671",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16198,16 +16784,19 @@
           ]
         ]
       },
-      "id": "way/365441671"
+      "id": "365441671"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441672",
+        "@id": "365441672",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16276,16 +16865,19 @@
           ]
         ]
       },
-      "id": "way/365441672"
+      "id": "365441672"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441673",
+        "@id": "365441673",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16373,16 +16965,19 @@
           ]
         ]
       },
-      "id": "way/365441673"
+      "id": "365441673"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441674",
+        "@id": "365441674",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16467,18 +17062,21 @@
           ]
         ]
       },
-      "id": "way/365441674"
+      "id": "365441674"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441675",
+        "@id": "365441675",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16499,18 +17097,21 @@
           ]
         ]
       },
-      "id": "way/365441675"
+      "id": "365441675"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441676",
+        "@id": "365441676",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16534,18 +17135,21 @@
           ]
         ]
       },
-      "id": "way/365441676"
+      "id": "365441676"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441677",
+        "@id": "365441677",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16566,18 +17170,21 @@
           ]
         ]
       },
-      "id": "way/365441677"
+      "id": "365441677"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441678",
+        "@id": "365441678",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16601,18 +17208,21 @@
           ]
         ]
       },
-      "id": "way/365441678"
+      "id": "365441678"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441679",
+        "@id": "365441679",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16636,18 +17246,21 @@
           ]
         ]
       },
-      "id": "way/365441679"
+      "id": "365441679"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441680",
+        "@id": "365441680",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16668,18 +17281,21 @@
           ]
         ]
       },
-      "id": "way/365441680"
+      "id": "365441680"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441682",
+        "@id": "365441682",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16700,18 +17316,21 @@
           ]
         ]
       },
-      "id": "way/365441682"
+      "id": "365441682"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441684",
+        "@id": "365441684",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16732,18 +17351,21 @@
           ]
         ]
       },
-      "id": "way/365441684"
+      "id": "365441684"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441687",
+        "@id": "365441687",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16767,18 +17389,21 @@
           ]
         ]
       },
-      "id": "way/365441687"
+      "id": "365441687"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441690",
+        "@id": "365441690",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16799,18 +17424,21 @@
           ]
         ]
       },
-      "id": "way/365441690"
+      "id": "365441690"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441691",
+        "@id": "365441691",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16831,18 +17459,21 @@
           ]
         ]
       },
-      "id": "way/365441691"
+      "id": "365441691"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441692",
+        "@id": "365441692",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16866,16 +17497,19 @@
           ]
         ]
       },
-      "id": "way/365441692"
+      "id": "365441692"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441693",
+        "@id": "365441693",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16896,18 +17530,21 @@
           ]
         ]
       },
-      "id": "way/365441693"
+      "id": "365441693"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441694",
+        "@id": "365441694",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16931,18 +17568,21 @@
           ]
         ]
       },
-      "id": "way/365441694"
+      "id": "365441694"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441695",
+        "@id": "365441695",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16966,16 +17606,19 @@
           ]
         ]
       },
-      "id": "way/365441695"
+      "id": "365441695"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441696",
+        "@id": "365441696",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -16999,16 +17642,19 @@
           ]
         ]
       },
-      "id": "way/365441696"
+      "id": "365441696"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441697",
+        "@id": "365441697",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -17029,16 +17675,19 @@
           ]
         ]
       },
-      "id": "way/365441697"
+      "id": "365441697"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441698",
+        "@id": "365441698",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -17063,16 +17712,19 @@
           ]
         ]
       },
-      "id": "way/365441698"
+      "id": "365441698"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441699",
+        "@id": "365441699",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -17100,16 +17752,19 @@
           ]
         ]
       },
-      "id": "way/365441699"
+      "id": "365441699"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441700",
+        "@id": "365441700",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -17138,16 +17793,19 @@
           ]
         ]
       },
-      "id": "way/365441700"
+      "id": "365441700"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441701",
+        "@id": "365441701",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -17183,16 +17841,19 @@
           ]
         ]
       },
-      "id": "way/365441701"
+      "id": "365441701"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441702",
+        "@id": "365441702",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -17441,16 +18102,19 @@
           ]
         ]
       },
-      "id": "way/365441702"
+      "id": "365441702"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441703",
+        "@id": "365441703",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -17714,16 +18378,19 @@
           ]
         ]
       },
-      "id": "way/365441703"
+      "id": "365441703"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441704",
+        "@id": "365441704",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -17767,16 +18434,19 @@
           ]
         ]
       },
-      "id": "way/365441704"
+      "id": "365441704"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/365441705",
+        "@id": "365441705",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -17825,15 +18495,18 @@
           ]
         ]
       },
-      "id": "way/365441705"
+      "id": "365441705"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/664144434",
+        "@id": "664144434",
         "electrified": "no",
         "gauge": "1435",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -17863,16 +18536,19 @@
           ]
         ]
       },
-      "id": "way/664144434"
+      "id": "664144434"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/763271382",
+        "@id": "763271382",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -17901,16 +18577,19 @@
           ]
         ]
       },
-      "id": "way/763271382"
+      "id": "763271382"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/763500853",
+        "@id": "763500853",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -17936,16 +18615,19 @@
           ]
         ]
       },
-      "id": "way/763500853"
+      "id": "763500853"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/763500854",
+        "@id": "763500854",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -17971,16 +18653,19 @@
           ]
         ]
       },
-      "id": "way/763500854"
+      "id": "763500854"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/763500858",
+        "@id": "763500858",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "55 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18031,16 +18716,19 @@
           ]
         ]
       },
-      "id": "way/763500858"
+      "id": "763500858"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/763500861",
+        "@id": "763500861",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18077,16 +18765,19 @@
           ]
         ]
       },
-      "id": "way/763500861"
+      "id": "763500861"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/763500862",
+        "@id": "763500862",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18111,16 +18802,19 @@
           ]
         ]
       },
-      "id": "way/763500862"
+      "id": "763500862"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/763500863",
+        "@id": "763500863",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18145,16 +18839,19 @@
           ]
         ]
       },
-      "id": "way/763500863"
+      "id": "763500863"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/763500864",
+        "@id": "763500864",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18191,16 +18888,19 @@
           ]
         ]
       },
-      "id": "way/763500864"
+      "id": "763500864"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/804342457",
+        "@id": "804342457",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18246,17 +18946,20 @@
           ]
         ]
       },
-      "id": "way/804342457"
+      "id": "804342457"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1017502323",
+        "@id": "1017502323",
         "electrified": "no",
         "gauge": "1435",
         "layer": "-1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18284,17 +18987,20 @@
           ]
         ]
       },
-      "id": "way/1017502323"
+      "id": "1017502323"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1017502324",
+        "@id": "1017502324",
         "electrified": "no",
         "gauge": "1435",
         "layer": "-1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18322,16 +19028,19 @@
           ]
         ]
       },
-      "id": "way/1017502324"
+      "id": "1017502324"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1017502325",
+        "@id": "1017502325",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18366,16 +19075,19 @@
           ]
         ]
       },
-      "id": "way/1017502325"
+      "id": "1017502325"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1017502326",
+        "@id": "1017502326",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18418,16 +19130,19 @@
           ]
         ]
       },
-      "id": "way/1017502326"
+      "id": "1017502326"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1084924046",
+        "@id": "1084924046",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18456,16 +19171,19 @@
           ]
         ]
       },
-      "id": "way/1084924046"
+      "id": "1084924046"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1084924047",
+        "@id": "1084924047",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18490,16 +19208,19 @@
           ]
         ]
       },
-      "id": "way/1084924047"
+      "id": "1084924047"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1084924050",
+        "@id": "1084924050",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18524,16 +19245,19 @@
           ]
         ]
       },
-      "id": "way/1084924050"
+      "id": "1084924050"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1084924067",
+        "@id": "1084924067",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18638,16 +19362,19 @@
           ]
         ]
       },
-      "id": "way/1084924067"
+      "id": "1084924067"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1084924068",
+        "@id": "1084924068",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18672,16 +19399,19 @@
           ]
         ]
       },
-      "id": "way/1084924068"
+      "id": "1084924068"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1084924129",
+        "@id": "1084924129",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18706,16 +19436,19 @@
           ]
         ]
       },
-      "id": "way/1084924129"
+      "id": "1084924129"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1084924130",
+        "@id": "1084924130",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18740,16 +19473,19 @@
           ]
         ]
       },
-      "id": "way/1084924130"
+      "id": "1084924130"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1084924131",
+        "@id": "1084924131",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18774,16 +19510,19 @@
           ]
         ]
       },
-      "id": "way/1084924131"
+      "id": "1084924131"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1084924133",
+        "@id": "1084924133",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18812,16 +19551,19 @@
           ]
         ]
       },
-      "id": "way/1084924133"
+      "id": "1084924133"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1149557684",
+        "@id": "1149557684",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18851,16 +19593,19 @@
           ]
         ]
       },
-      "id": "way/1149557684"
+      "id": "1149557684"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1149557685",
+        "@id": "1149557685",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18891,16 +19636,19 @@
           ]
         ]
       },
-      "id": "way/1149557685"
+      "id": "1149557685"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1255038338",
+        "@id": "1255038338",
         "electrified": "no",
         "gauge": "1435",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18925,18 +19673,21 @@
           ]
         ]
       },
-      "id": "way/1255038338"
+      "id": "1255038338"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/1255038339",
+        "@id": "1255038339",
         "bridge": "yes",
         "electrified": "no",
         "gauge": "1435",
         "layer": "1",
         "maxspeed": "70 mph",
         "name": "UP Geneva Subdivision",
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy",
         "old_railway_operator": "C&NW",
         "operator": "Union Pacific Railroad",
         "operator:wikidata": "Q725793",
@@ -18957,7 +19708,7 @@
           ]
         ]
       },
-      "id": "way/1255038339"
+      "id": "1255038339"
     }
   ]
 }

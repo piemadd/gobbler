@@ -5,7 +5,8 @@
       "type": "Feature",
       "properties": {
         "routeColor": "#feca00",
-        "provider": "bigboy"
+        "provider": "bigboy",
+        "routeID": "BigBoy"
       },
       "geometry": {
         "coordinates": [
@@ -231,7 +232,11 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy"
+      },
       "geometry": {
         "coordinates": [
           [
@@ -1644,7 +1649,11 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy"
+      },
       "geometry": {
         "coordinates": [
           [
@@ -1997,7 +2006,11 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "routeColor": "#feca00",
+        "provider": "bigboy",
+        "routeID": "BigBoy"
+      },
       "geometry": {
         "coordinates": [
           [
