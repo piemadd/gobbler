@@ -15,6 +15,30 @@
       "2"
     ]
   },
+  "via_rail": {
+    "name": "VIA Rail",
+    "url": "https://www.viarail.ca/sites/all/files/gtfs/viarail.zip",
+    "headers": {},
+    "urlEnv": [],
+    "doAllShapes": true,
+    "colorOverrides": {},
+    "colorReplacements": {},
+    "disabled": false,
+    "activeTypes": ["2"]
+  },
+  "brightline": {
+    "name": "Brightline",
+    "url": "http://feed.gobrightline.com/bl_gtfs.zip",
+    "headers": {},
+    "urlEnv": [],
+    "doAllShapes": true,
+    "colorOverrides": {},
+    "colorReplacements": {},
+    "disabled": true,
+    "activeTypes": [
+      "2"
+    ]
+  },
   "flixbus_us": {
     "name": "Flixbus US",
     "url": "https://gtfs.gis.flix.tech/gtfs_generic_us.zip",
@@ -27,17 +51,6 @@
     "activeTypes": [
       "3"
     ]
-  },
-  "via_rail": {
-    "name": "VIA Rail",
-    "url": "https://www.viarail.ca/sites/all/files/gtfs/viarail.zip",
-    "headers": {},
-    "urlEnv": [],
-    "doAllShapes": true,
-    "colorOverrides": {},
-    "colorReplacements": {},
-    "disabled": false,
-    "activeTypes": ["2"]
   },
   "pace": {
     "name": "Pace Bus",
