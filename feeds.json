@@ -34,7 +34,7 @@
     "doAllShapes": true,
     "colorOverrides": {},
     "colorReplacements": {},
-    "disabled": true,
+    "disabled": false,
     "activeTypes": [
       "2"
     ]
