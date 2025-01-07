@@ -309,6 +309,8 @@ const processShapes = (chunk) => {
                                         { encoding: 'utf8' }
                                       );
                                     }
+
+                                    console.log(`Done with schedules for ${folder}`)
                                   } catch (e) {
                                     console.error(e)
                                   }
