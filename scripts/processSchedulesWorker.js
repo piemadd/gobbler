@@ -8,8 +8,13 @@ const feedConfigs = require('../feeds.js');
 // https://stackoverflow.com/questions/4413590/javascript-get-array-of-dates-between-2-dates
 const getDaysArray = (start, end) => {
   const arr = [];
-  for (const dt = new Date(start); dt <= new Date(end); dt.setDate(dt.getDate() + 1)) {
-    arr.push(new Date(dt));
+  for (const dt = new Date(start); dt <= new Date(end); dt.setUTCDate(dt.getUTCDate() + 1)) {
+    const nd = new Date(dt);
+    nd.setUTCHours(0);
+    nd.setUTCMinutes(0);
+    nd.setUTCSeconds(0);
+    nd.setUTCMilliseconds(0);
+    arr.push(nd);
   }
   return arr;
 };
@@ -35,13 +40,13 @@ const daysOfWeek = {
 
 const processShapes = (chunk) => {
   chunk.forEach(async (folder) => {
+    //if (folder != 'metra') return;
     let agencyTZ = undefined;
     let routes = {};
     let trips = {};
     let services = {};
     let next10DaysOfServices = {};
     let headsignsArr = [];
-    let headsignsIndex = {};
     let stops = {};
 
     try {
@@ -196,6 +201,7 @@ const processShapes = (chunk) => {
                                     hour: timeParsed[0],
                                     minute: timeParsed[1],
                                     second: timeParsed[2],
+                                    timeNum: parseInt(timeParsed.map((n) => n.toString().padStart(2, "0")).join('')),
                                     stopID: stopTime.stop_id,
                                     sequence: stopTime.stop_sequence,
                                   });
@@ -211,6 +217,7 @@ const processShapes = (chunk) => {
                                     hour: timeParsed[0],
                                     minute: timeParsed[1],
                                     second: timeParsed[2],
+                                    timeNum: parseInt(timeParsed.map((n) => n.toString().padStart(2, "0")).join('')),
                                     routeID: trip.routeID,
                                     tripID: feedConfigs[folder].convertTripID ?
                                       feedConfigs[folder].convertTripID(trip.tripID) : trip.tripID,
@@ -240,6 +247,7 @@ const processShapes = (chunk) => {
                                       const todayKey = today.toISOString().split('T')[0];
                                       const todayNum = parseInt(todayKey.replaceAll('-', ''));
                                       const todayDayOfWeek = daysOfWeek[today.getDay()];
+                                      const todayStart = Math.floor(today.valueOf() / 1000);
 
                                       const validServices = Object.values(services).filter((service) => {
                                         if (service.removals.includes(todayNum)) return false;
@@ -253,31 +261,52 @@ const processShapes = (chunk) => {
                                       Object.keys(stops).forEach((stopID) => {
                                         const stop = stops[stopID];
 
-                                        next10DaysOfServices[todayKey][stopID] = {
-                                          stopID,
-                                          trips: [],
-                                        }
+                                        next10DaysOfServices[todayKey][stopID] = [];
 
                                         validServices.forEach((validService) => {
-                                          next10DaysOfServices[todayKey][stopID].trips.push(
+                                          next10DaysOfServices[todayKey][stopID].push(
                                             ...stop.services[validService].trips
                                           );
                                         })
 
-                                        next10DaysOfServices[todayKey][stopID].trips =
-                                          next10DaysOfServices[todayKey][stopID].trips.map((trip) => {
-                                            const todayClone = new Date(today);
-                                            todayClone.setUTCHours(trip.hour + stop.tzOffset[0]);
-                                            todayClone.setUTCMinutes(trip.minute + stop.tzOffset[0]);
-                                            todayClone.setUTCSeconds(trip.second);
+                                        let lastTimeStamp = parseInt(todayStart);
 
-                                            return {
-                                              tripID: trip.tripID,
-                                              routeID: trip.routeID,
-                                              time: todayClone.valueOf(),
-                                              headsign: trips[trip.realTripID].headsignIndex
-                                            }
-                                          })
+                                        next10DaysOfServices[todayKey][stopID] =
+                                          next10DaysOfServices[todayKey][stopID]
+                                            .sort((aTrip, bTrip) => aTrip.timeNum - bTrip.timeNum)
+                                            .map((trip, i, arr) => {
+                                              const todayClone = new Date(today);
+                                              todayClone.setUTCHours(trip.hour + stop.tzOffset[0]);
+                                              todayClone.setUTCMinutes(trip.minute + stop.tzOffset[1]);
+                                              todayClone.setUTCSeconds(trip.second);
+                                              const todayCloneSeconds = Math.floor(todayClone.valueOf() / 1000);
+
+                                              const secondsDiff = todayCloneSeconds - lastTimeStamp;
+                                              lastTimeStamp = todayCloneSeconds;
+
+                                              let final = [
+                                                secondsDiff
+                                              ];
+
+                                              if (i == 0) {
+                                                final.push(trips[trip.realTripID].headsignIndex);
+                                                final.push(trip.routeID);
+                                                return final;
+                                              }
+
+                                              //add headsign if not the same
+                                              if (trips[trip.realTripID].headsignIndex != trips[arr[i - 1].realTripID].headsignIndex) {
+                                                final.push(trips[trip.realTripID].headsignIndex);
+                                              }
+
+                                              //add route ID if not the same
+                                              if (trip.routeID != arr[i - 1].routeID) {
+                                                if (final.length < 2) final.push(-1); // need to keep array order
+                                                final.push(trip.routeID);
+                                              }
+
+                                              return final;
+                                            })
                                       })
                                     });
 
