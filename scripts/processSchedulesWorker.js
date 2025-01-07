@@ -41,6 +41,7 @@ const daysOfWeek = {
 const processShapes = (chunk) => {
   chunk.forEach(async (folder) => {
     //if (folder != 'metra') return;
+    if (!feedConfigs[folder].generateSchedules) return;
     let agencyTZ = undefined;
     let routes = {};
     let trips = {};
