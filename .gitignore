@@ -4,3 +4,4 @@ node_modules
 shapes
 all.geojson
 schedules
+.env
