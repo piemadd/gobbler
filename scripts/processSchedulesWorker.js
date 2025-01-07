@@ -283,6 +283,7 @@ const processShapes = (chunk) => {
 
                                     console.log(`Saving files for ${folder}`)
 
+                                    if (fs.existsSync(`./schedules/${folder}`)) fs.rmSync(`./schedules/${folder}`, { recursive: true, force: true })
                                     fs.mkdirSync(`./schedules/${folder}`);
 
                                     //headsigns
@@ -302,9 +303,9 @@ const processShapes = (chunk) => {
                                     );
 
                                     //dates keys
-                                    for (let i = 0; i < next10DaysOfServices.length; i++) {
+                                    for (let i = 0; i < dateKeys.length; i++) {
                                       fs.writeFileSync(
-                                        `./schedules/${folder}/${date}.json`,
+                                        `./schedules/${folder}/${dateKeys[i]}.json`,
                                         JSON.stringify(next10DaysOfServices[dateKeys[i]]),
                                         { encoding: 'utf8' }
                                       );
