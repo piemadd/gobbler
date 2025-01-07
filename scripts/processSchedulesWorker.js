@@ -3,18 +3,45 @@ const fs = require('fs');
 const Papa = require('papaparse');
 const findTZ = require('geo-tz').find;
 const turf = require('@turf/turf');
+const feedConfigs = require('../feeds.js');
 
-const additionalConfig = workerData.feedConfigs;
+// https://stackoverflow.com/questions/4413590/javascript-get-array-of-dates-between-2-dates
+const getDaysArray = (start, end) => {
+  const arr = [];
+  for (const dt = new Date(start); dt <= new Date(end); dt.setDate(dt.getDate() + 1)) {
+    arr.push(new Date(dt));
+  }
+  return arr;
+};
+
+// slightly modified
+// https://stackoverflow.com/questions/21327371/get-timezone-offset-from-timezone-name-using-javascript
+const getOffset = (timeZone = 'UTC', date = new Date()) => {
+  const utcDate = new Date(date.toLocaleString('en-US', { timeZone: 'UTC' }));
+  const tzDate = new Date(date.toLocaleString('en-US', { timeZone }));
+  const minutesDiff = (tzDate.getTime() - utcDate.getTime()) / 6e4;
+  return [0 - Math.floor(minutesDiff / 60), 0 - (minutesDiff % 60)];
+}
+
+const daysOfWeek = {
+  0: 'sunday',
+  1: 'monday',
+  2: 'tuesday',
+  3: 'wednesday',
+  4: 'thursday',
+  5: 'friday',
+  6: 'saturday',
+};
 
 const processShapes = (chunk) => {
   chunk.forEach(async (folder) => {
     let agencyTZ = undefined;
-    let timeZones = {};
     let routes = {};
     let trips = {};
     let services = {};
-    let serviceAdditions = {};
-    let next30DaysOfServices = {};
+    let next10DaysOfServices = {};
+    let headsignsArr = [];
+    let headsignsIndex = {};
     let stops = {};
 
     try {
@@ -63,8 +90,12 @@ const processShapes = (chunk) => {
                   const trip = row.data;
 
                   trips[trip.trip_id] = {
+                    tripID: trip.trip_id,
                     routeID: trip.route_id,
                     serviceID: trip.service_id,
+                    times: [],
+                    headsign: "",
+                    headsignIndex: -1,
                   }
                 },
                 complete: () => {
@@ -81,16 +112,17 @@ const processShapes = (chunk) => {
 
                       services[calendar.service_id] = {
                         serviceID: calendar.service_id,
-                        startDate: calendar.start_date,
-                        endDate: calendar.end_date,
-                        monday: calendar.monday,
-                        tuesday: calendar.tuesday,
-                        wednesday: calendar.wednesday,
-                        thursday: calendar.thursday,
-                        friday: calendar.friday,
-                        saturday: calendar.saturday,
-                        sunday: calendar.sunday,
-                        exceptions: [],
+                        startDate: parseInt(calendar.start_date),
+                        endDate: parseInt(calendar.end_date),
+                        monday: calendar.monday == '1' ? true : false,
+                        tuesday: calendar.tuesday == '1' ? true : false,
+                        wednesday: calendar.wednesday == '1' ? true : false,
+                        thursday: calendar.thursday == '1' ? true : false,
+                        friday: calendar.friday == '1' ? true : false,
+                        saturday: calendar.saturday == '1' ? true : false,
+                        sunday: calendar.sunday == '1' ? true : false,
+                        additions: [],
+                        removals: [],
                       };
                     },
                     complete: () => {
@@ -107,10 +139,9 @@ const processShapes = (chunk) => {
 
                           switch (calendarDate.exception_type) {
                             case '1': //addition
-                              if (!serviceAdditions[calendarDate.date]) serviceAdditions[calendarDate.date] = [];
-                              serviceAdditions[calendarDate.date].push(calendarDate.service_id);
+                              services[calendarDate.service_id].additions.push(parseInt(calendarDate.date));
                             case '2': //removal
-                              services[calendarDate.service_id].exceptions.push(calendarDate.date);
+                              services[calendarDate.service_id].removals.push(parseInt(calendarDate.date));
                           }
                         },
                         complete: () => {
@@ -126,19 +157,25 @@ const processShapes = (chunk) => {
                               const stop = row.data;
 
                               stops[stop.stop_id] = {
+                                name: stop.stop_name,
                                 tz: stop.stop_timezone ?? agencyTZ,
                                 services: {},
                               };
 
-                              if (!stops[stop.stop_id].services || stops[stop.stop_id].length == 0) {
-                                stops[stop.stop_id] = findTZ(stop.stop_lat, stop.stop_lon);
+                              if (!stops[stop.stop_id].tz || stops[stop.stop_id].tz.length == 0) {
+                                stops[stop.stop_id].tz = findTZ(stop.stop_lat, stop.stop_lon);
                               }
+
+                              stops[stop.stop_id].tzOffset = getOffset(stops[stop.stop_id].tz)
                             },
                             complete: () => {
                               console.log(`Adding services to stops for ${folder}`)
                               const allServiceIDs = Object.keys(services);
+
                               Object.keys(stops).forEach((stopID) => {
-                                stops[stopID].services
+                                allServiceIDs.forEach((serviceID) => {
+                                  stops[stopID].services[serviceID] = { trips: [] };
+                                })
                               })
 
                               console.log(`Parsing stop_times for ${folder}`)
@@ -152,19 +189,136 @@ const processShapes = (chunk) => {
                                 step: async (row) => {
                                   const stopTime = row.data;
 
-                                  //console.log(stopTime)
+                                  if (!stopTime.arrival_time && !stopTime.departure_time) return;
+                                  const timeParsed = (stopTime.departure_time ?? stopTime.arrival_time).split(':').map((n) => parseInt(n));
 
-                                  //console.log(row.data)
+                                  trips[stopTime.trip_id].times.push({
+                                    hour: timeParsed[0],
+                                    minute: timeParsed[1],
+                                    second: timeParsed[2],
+                                    stopID: stopTime.stop_id,
+                                    sequence: stopTime.stop_sequence,
+                                  });
+
+                                  if (stopTime.stop_sequence > trips[stopTime.trip_id].headsignIndex) {
+                                    trips[stopTime.trip_id].headsign = stops[stopTime.stop_id].name;
+                                    trips[stopTime.trip_id].headsignIndex = stopTime.stop_sequence;
+                                  }
+
+                                  const trip = trips[stopTime.trip_id];
+
+                                  stops[stopTime.stop_id].services[trip.serviceID].trips.push({
+                                    hour: timeParsed[0],
+                                    minute: timeParsed[1],
+                                    second: timeParsed[2],
+                                    routeID: trip.routeID,
+                                    tripID: feedConfigs[folder].convertTripID ?
+                                      feedConfigs[folder].convertTripID(trip.tripID) : trip.tripID,
+                                    realTripID: trip.tripID,
+                                  })
                                 },
                                 complete: () => {
-                                  console.log(`Sorting/processing shapes for ${folder}`)
+                                  try {
+                                    console.log(`Reprocessing headsigns for ${folder}`)
+                                    Object.values(trips).forEach((trip) => {
+                                      const headsign = trip.headsign;
 
-                                  fs.mkdirSync(`./schedules/${folder}`);
-                                  /*
-                                  fs.writeFile(`./shapes/${folder}.geojson`, JSON.stringify(featureCollection), { encoding: 'utf8' }, () => {
-                                    console.log(`Done with ${folder}`);
-                                  })
-                                  */
+                                      if (!headsignsArr.includes(headsign)) {
+                                        headsignsArr.push(headsign);
+                                      }
+
+                                      trips[trip.tripID].headsignIndex = headsignsArr.indexOf(headsign);
+                                    })
+
+                                    console.log(`Generating actual schedule for ${folder}`)
+
+                                    const now = new Date();
+                                    const in10Days = new Date(now.valueOf() + (1000 * 60 * 60 * 24 * 10));
+                                    const dates = getDaysArray(now, in10Days);
+
+                                    dates.forEach((today) => {
+                                      const todayKey = today.toISOString().split('T')[0];
+                                      const todayNum = parseInt(todayKey.replaceAll('-', ''));
+                                      const todayDayOfWeek = daysOfWeek[today.getDay()];
+
+                                      const validServices = Object.values(services).filter((service) => {
+                                        if (service.removals.includes(todayNum)) return false;
+                                        if (todayNum <= service.endDate && todayNum >= service.startDate) return true;
+                                        if (service.additions.includes(todayNum)) return true;
+                                        return false;
+                                      }).filter((service) => service[todayDayOfWeek]).map((service) => service.serviceID);
+
+                                      next10DaysOfServices[todayKey] = {};
+
+                                      Object.keys(stops).forEach((stopID) => {
+                                        const stop = stops[stopID];
+
+                                        next10DaysOfServices[todayKey][stopID] = {
+                                          stopID,
+                                          trips: [],
+                                        }
+
+                                        validServices.forEach((validService) => {
+                                          next10DaysOfServices[todayKey][stopID].trips.push(
+                                            ...stop.services[validService].trips
+                                          );
+                                        })
+
+                                        next10DaysOfServices[todayKey][stopID].trips =
+                                          next10DaysOfServices[todayKey][stopID].trips.map((trip) => {
+                                            const todayClone = new Date(today);
+                                            todayClone.setUTCHours(trip.hour + stop.tzOffset[0]);
+                                            todayClone.setUTCMinutes(trip.minute + stop.tzOffset[0]);
+                                            todayClone.setUTCSeconds(trip.second);
+
+                                            return {
+                                              tripID: trip.tripID,
+                                              routeID: trip.routeID,
+                                              time: todayClone.valueOf(),
+                                              headsign: trips[trip.realTripID].headsignIndex
+                                            }
+                                          })
+                                      })
+                                    });
+
+                                    console.log(`Saving files for ${folder}`)
+
+                                    fs.mkdirSync(`./schedules/${folder}`);
+
+                                    //headsigns
+                                    fs.writeFile(
+                                      `./schedules/${folder}/headsigns.json`,
+                                      JSON.stringify(headsignsArr),
+                                      { encoding: 'utf8' },
+                                      (err) => {
+                                        console.log(`Wrote ./schedules/${folder}/headsigns.json`);
+                                      }
+                                    );
+
+                                    //date keys
+                                    fs.writeFile(
+                                      `./schedules/${folder}/dateKeys.json`,
+                                      JSON.stringify(Object.keys(next10DaysOfServices)),
+                                      { encoding: 'utf8' },
+                                      (err) => {
+                                        console.log(`Wrote ./schedules/${folder}/dateKeys.json`);
+                                      }
+                                    );
+
+                                    Object.keys(next10DaysOfServices).forEach((date) => {
+                                      //dates keys
+                                      fs.writeFile(
+                                        `./schedules/${folder}/${date}.json`,
+                                        JSON.stringify(next10DaysOfServices[date]),
+                                        { encoding: 'utf8' },
+                                        (err) => {
+                                          console.log(`Wrote ./schedules/${folder}/${date}.json`);
+                                        }
+                                      );
+                                    })
+                                  } catch (e) {
+                                    console.error(e)
+                                  }
                                 }
                               })
                             }

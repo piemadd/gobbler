@@ -2,8 +2,7 @@ const { parentPort, workerData } = require("worker_threads");
 const fs = require('fs');
 const Papa = require('papaparse');
 const turf = require('@turf/turf');
-
-const additionalConfig = workerData.feedConfigs;
+const feedConfigs = require('../feeds.js');
 
 const processShapes = (chunk) => {
   chunk.forEach(async (folder) => {
@@ -16,7 +15,7 @@ const processShapes = (chunk) => {
     };
 
     let doAllShapes = false;
-    if (additionalConfig[folder].doAllShapes) doAllShapes = true;
+    if (feedConfigs[folder].doAllShapes) doAllShapes = true;
 
     console.log(folder, doAllShapes)
 
@@ -94,10 +93,10 @@ const processShapes = (chunk) => {
                     }
 
                     //only adding shapes we are using
-                    if (!additionalConfig[folder].activeTypes.includes(shape.properties.routeType)) return;
+                    if (!feedConfigs[folder].activeTypes.includes(shape.properties.routeType)) return;
 
-                    if (additionalConfig[folder].colorReplacements) { //if we need to replace colors
-                      shape.properties.routeColor = additionalConfig[folder].colorReplacements[shape.properties.routeColor] ?? shape.properties.routeColor
+                    if (feedConfigs[folder].colorReplacements) { //if we need to replace colors
+                      shape.properties.routeColor = feedConfigs[folder].colorReplacements[shape.properties.routeColor] ?? shape.properties.routeColor
                     }
 
                     //adding # to color

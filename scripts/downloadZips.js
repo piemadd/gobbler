@@ -4,7 +4,7 @@ const {
 } = require('./helpers.js');
 const fs = require('fs');
 const fetch = require('node-fetch');
-const feeds = require('../feeds.json');
+const feeds = require('../feeds.js');
 
 // dot env
 require('dotenv').config();

@@ -1,6 +1,5 @@
 const fs = require('fs');
 const { Worker } = require("worker_threads");
-const feedConfigs = require('../feeds.json');
 
 console.log('Cleaning up old files');
 
@@ -21,21 +20,17 @@ for (let i = 0; i < feeds.length; i += chunkSize) {
     __dirname + "/processShapesWorker.js",
     {
       workerData: {
-        chunk,
-        feedConfigs
+        chunk
       }
     }
   );
 
-  /*
   new Worker(
     __dirname + "/processSchedulesWorker.js",
     {
       workerData: {
-        chunk,
-        feedConfigs
+        chunk
       }
     }
   );
-  */
 }
