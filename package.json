@@ -10,7 +10,8 @@
     "fetchAdditionalShapes": "node ./scripts/fetchAdditionalShapes.js",
     "combineFeatures": "node ./scripts/combineFeatures.js",
     "exportColors": "node ./scripts/exportColors.js",
-    "all": "npm run downloadZips && npm run extractZips && npm run processGTFS && npm run fetchAdditionalShapes && npm run combineFeatures"
+    "all": "npm run downloadZips && npm run extractZips && npm run processGTFS && npm run fetchAdditionalShapes && npm run combineFeatures",
+    "allCF": "npm run downloadZips && npm run extractZips && npm run processGTFS"
   },
   "keywords": [],
   "author": "",
