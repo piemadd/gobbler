@@ -12,7 +12,7 @@ fs.mkdirSync('./schedules');
 const feeds = fs.readdirSync('./csv');
 
 console.log('Dispatching workers')
-const chunkSize = feeds.length / 16;
+const chunkSize = feeds.length / (process.env.CF_PAGES ? process.env.CF_PAGES : 16); // only 1 at a time on cf pages
 for (let i = 0; i < feeds.length; i += chunkSize) {
   const chunk = feeds.slice(i, i + chunkSize);
 
