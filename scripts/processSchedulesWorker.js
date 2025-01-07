@@ -286,36 +286,29 @@ const processShapes = (chunk) => {
                                     fs.mkdirSync(`./schedules/${folder}`);
 
                                     //headsigns
-                                    fs.writeFile(
+                                    fs.writeFileSync(
                                       `./schedules/${folder}/headsigns.json`,
                                       JSON.stringify(headsignsArr),
-                                      { encoding: 'utf8' },
-                                      (err) => {
-                                        console.log(`Wrote ./schedules/${folder}/headsigns.json`);
-                                      }
+                                      { encoding: 'utf8' }
                                     );
+
+                                    const dateKeys = Object.keys(next10DaysOfServices);
 
                                     //date keys
-                                    fs.writeFile(
+                                    fs.writeFileSync(
                                       `./schedules/${folder}/dateKeys.json`,
-                                      JSON.stringify(Object.keys(next10DaysOfServices)),
-                                      { encoding: 'utf8' },
-                                      (err) => {
-                                        console.log(`Wrote ./schedules/${folder}/dateKeys.json`);
-                                      }
+                                      JSON.stringify(dateKeys),
+                                      { encoding: 'utf8' }
                                     );
 
-                                    Object.keys(next10DaysOfServices).forEach((date) => {
-                                      //dates keys
-                                      fs.writeFile(
+                                    //dates keys
+                                    for (let i = 0; i < next10DaysOfServices.length; i++) {
+                                      fs.writeFileSync(
                                         `./schedules/${folder}/${date}.json`,
-                                        JSON.stringify(next10DaysOfServices[date]),
-                                        { encoding: 'utf8' },
-                                        (err) => {
-                                          console.log(`Wrote ./schedules/${folder}/${date}.json`);
-                                        }
+                                        JSON.stringify(next10DaysOfServices[dateKeys[i]]),
+                                        { encoding: 'utf8' }
                                       );
-                                    })
+                                    }
                                   } catch (e) {
                                     console.error(e)
                                   }
