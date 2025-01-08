@@ -40,7 +40,7 @@ const daysOfWeek = {
 
 const processShapes = (chunk) => {
   chunk.forEach(async (folder) => {
-    //if (folder != 'cta') return;
+    //if (folder != 'metra') return;
     if (!feedConfigs[folder].generateSchedules) return;
     let agencyTZ = undefined;
     let routes = {};
@@ -48,6 +48,7 @@ const processShapes = (chunk) => {
     let services = {};
     let next10DaysOfServices = {};
     let headsignsArr = [];
+    let headsignsIndex = {};
     let stops = {};
     let parentStops = {};
 
@@ -101,7 +102,7 @@ const processShapes = (chunk) => {
                     routeID: trip.route_id,
                     serviceID: trip.service_id,
                     times: [],
-                    headsign: trip.trip_headsign ?? "",
+                    headsign: trip.trip_headsign,
                     headsignIndex: -1,
                   }
                 },
@@ -200,7 +201,7 @@ const processShapes = (chunk) => {
                                 transform: (v) => v.trim(),
                                 step: async (row) => {
                                   const stopTime = row.data;
-                                  const stopID = parentStops[stopTime.stop_id] ?? stopTime.stop_id; 
+                                  const stopID = parentStops[stopTime.stop_id] ?? stopTime.stop_id;
 
                                   if (!stopTime.arrival_time && !stopTime.departure_time) return;
                                   const timeParsed = (stopTime.departure_time ?? stopTime.arrival_time).split(':').map((n) => parseInt(n));
@@ -214,12 +215,9 @@ const processShapes = (chunk) => {
                                     sequence: stopTime.stop_sequence,
                                   });
 
-                                  // eh
-                                  if (stopTime.stop_headsign && trips[stopTime.trip_id].headsign.length == 0) {
-                                    trips[stopTime.trip_id].headsign = stopTime.stop_headsign
-                                  }
-
                                   const trip = trips[stopTime.trip_id];
+
+                                  const headsign = stopTime.stop_headsign ?? trips[stopTime.trip_id].headsign ?? "";
 
                                   stops[stopID].services[trip.serviceID].trips.push({
                                     hour: timeParsed[0],
@@ -229,22 +227,19 @@ const processShapes = (chunk) => {
                                     routeID: trip.routeID,
                                     tripID: feedConfigs[folder].convertTripID ?
                                       feedConfigs[folder].convertTripID(trip.tripID) : trip.tripID,
-                                    realTripID: trip.tripID,
+                                    headsign: headsign,
                                   })
+
+                                  headsignsIndex[headsign] = 1; // trust the process here
                                 },
                                 complete: () => {
                                   try {
                                     // looping through twice because js is stupid and for some reason fucks up here
                                     console.log(`Reprocessing headsigns for ${folder}`)
-                                    Object.values(trips).forEach((trip) => {
-                                      if (!headsignsArr.includes(trip.headsign)) headsignsArr.push(trip.headsign);
-                                    });
+                                    headsignsArr = Object.keys(headsignsIndex).sort();
 
-                                    // sort it cuz why not
-                                    headsignsArr = headsignsArr.sort();
-
-                                    Object.values(trips).forEach((trip) => {
-                                      trips[trip.tripID].headsignIndex = headsignsArr.indexOf(trip.headsign);
+                                    headsignsArr.forEach((headsign, i) => {
+                                      headsignsIndex[headsign] = i;
                                     })
 
                                     console.log(`Generating actual schedule for ${folder}`)
@@ -299,14 +294,14 @@ const processShapes = (chunk) => {
                                               ];
 
                                               if (i == 0) {
-                                                final.push(trips[trip.realTripID].headsignIndex);
+                                                final.push(headsignsIndex[trip.headsign]);
                                                 final.push(trip.routeID);
                                                 return final;
                                               }
 
                                               //add headsign if not the same
-                                              if (trips[trip.realTripID].headsignIndex != trips[arr[i - 1].realTripID].headsignIndex) {
-                                                final.push(trips[trip.realTripID].headsignIndex);
+                                              if (trip.headsign != arr[i - 1].headsign) {
+                                                final.push(headsignsIndex[trip.headsign]);
                                               }
 
                                               //add route ID if not the same
@@ -325,10 +320,12 @@ const processShapes = (chunk) => {
                                     if (fs.existsSync(`./schedules/${folder}`)) fs.rmSync(`./schedules/${folder}`, { recursive: true, force: true })
                                     fs.mkdirSync(`./schedules/${folder}`);
 
-                                    //headsigns
+                                    //metadata
                                     fs.writeFileSync(
-                                      `./schedules/${folder}/headsigns.json`,
-                                      JSON.stringify(headsignsArr),
+                                      `./schedules/${folder}/metadata.json`,
+                                      JSON.stringify({
+                                        headsigns: headsignsArr,
+                                      }),
                                       { encoding: 'utf8' }
                                     );
 
