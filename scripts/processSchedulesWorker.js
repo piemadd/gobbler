@@ -163,7 +163,7 @@ const processShapes = (chunk) => {
                             step: async (row) => {
                               const stop = row.data;
 
-                              if (stop.parent_station.length > 0) {
+                              if (stop.parent_station && stop.parent_station.length > 0) {
                                 parentStops[stop.stop_id] = stop.parent_station
                               } else {
 
