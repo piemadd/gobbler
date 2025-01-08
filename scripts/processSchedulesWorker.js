@@ -100,7 +100,7 @@ const processShapes = (chunk) => {
                     routeID: trip.route_id,
                     serviceID: trip.service_id,
                     times: [],
-                    headsign: "",
+                    headsign: trip.trip_headsign ?? "",
                     headsignIndex: -1,
                   }
                 },
@@ -207,12 +207,10 @@ const processShapes = (chunk) => {
                                     sequence: stopTime.stop_sequence,
                                   });
 
-                                  /* DO NOT REACTIVATE - WHY DID I DO THIS????
-                                  if (stopTime.stop_sequence > trips[stopTime.trip_id].headsignIndex) {
-                                    trips[stopTime.trip_id].headsign = stops[stopTime.stop_id].name;
-                                    trips[stopTime.trip_id].headsignIndex = stopTime.stop_sequence;
+                                  // eh
+                                  if (stopTime.stop_headsign && trips[stopTime.trip_id].headsign.length == 0) {
+                                    trips[stopTime.trip_id].headsign = stopTime.stop_headsign
                                   }
-                                  */
 
                                   const trip = trips[stopTime.trip_id];
 
@@ -229,15 +227,17 @@ const processShapes = (chunk) => {
                                 },
                                 complete: () => {
                                   try {
+                                    // looping through twice because js is stupid and for some reason fucks up here
                                     console.log(`Reprocessing headsigns for ${folder}`)
                                     Object.values(trips).forEach((trip) => {
-                                      const headsign = trip.headsign;
+                                      if (!headsignsArr.includes(trip.headsign)) headsignsArr.push(trip.headsign);
+                                    });
 
-                                      if (!headsignsArr.includes(headsign)) {
-                                        headsignsArr.push(headsign);
-                                      }
+                                    // sort it cuz why not
+                                    headsignsArr = headsignsArr.sort();
 
-                                      trips[trip.tripID].headsignIndex = headsignsArr.indexOf(headsign);
+                                    Object.values(trips).forEach((trip) => {
+                                      trips[trip.tripID].headsignIndex = headsignsArr.indexOf(trip.headsign);
                                     })
 
                                     console.log(`Generating actual schedule for ${folder}`)

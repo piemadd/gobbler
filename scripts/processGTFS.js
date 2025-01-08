@@ -25,7 +25,7 @@ for (let i = 0; i < feeds.length; i += chunkSize) {
       }
     }
   );
-
+  
   new Worker(
     __dirname + "/processSchedulesWorker.js",
     {
