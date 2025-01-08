@@ -207,10 +207,12 @@ const processShapes = (chunk) => {
                                     sequence: stopTime.stop_sequence,
                                   });
 
+                                  /* DO NOT REACTIVATE - WHY DID I DO THIS????
                                   if (stopTime.stop_sequence > trips[stopTime.trip_id].headsignIndex) {
                                     trips[stopTime.trip_id].headsign = stops[stopTime.stop_id].name;
                                     trips[stopTime.trip_id].headsignIndex = stopTime.stop_sequence;
                                   }
+                                  */
 
                                   const trip = trips[stopTime.trip_id];
 
