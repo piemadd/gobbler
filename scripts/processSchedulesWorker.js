@@ -40,7 +40,7 @@ const daysOfWeek = {
 
 const processShapes = (chunk) => {
   chunk.forEach(async (folder) => {
-    //if (folder != 'metra') return;
+    //if (folder != 'cta') return;
     if (!feedConfigs[folder].generateSchedules) return;
     let agencyTZ = undefined;
     let routes = {};
@@ -49,6 +49,7 @@ const processShapes = (chunk) => {
     let next10DaysOfServices = {};
     let headsignsArr = [];
     let stops = {};
+    let parentStops = {};
 
     try {
       console.log(`Parsing agency for ${folder}`)
@@ -162,17 +163,22 @@ const processShapes = (chunk) => {
                             step: async (row) => {
                               const stop = row.data;
 
-                              stops[stop.stop_id] = {
-                                name: stop.stop_name,
-                                tz: stop.stop_timezone ?? agencyTZ,
-                                services: {},
-                              };
+                              if (stop.parent_station.length > 0) {
+                                parentStops[stop.stop_id] = stop.parent_station
+                              } else {
 
-                              if (!stops[stop.stop_id].tz || stops[stop.stop_id].tz.length == 0) {
-                                stops[stop.stop_id].tz = findTZ(stop.stop_lat, stop.stop_lon);
+                                stops[stop.stop_id] = {
+                                  name: stop.stop_name,
+                                  tz: stop.stop_timezone ?? agencyTZ,
+                                  services: {},
+                                };
+
+                                if (!stops[stop.stop_id].tz || stops[stop.stop_id].tz.length == 0) {
+                                  stops[stop.stop_id].tz = findTZ(stop.stop_lat, stop.stop_lon);
+                                }
+
+                                stops[stop.stop_id].tzOffset = getOffset(stops[stop.stop_id].tz)
                               }
-
-                              stops[stop.stop_id].tzOffset = getOffset(stops[stop.stop_id].tz)
                             },
                             complete: () => {
                               console.log(`Adding services to stops for ${folder}`)
@@ -194,6 +200,7 @@ const processShapes = (chunk) => {
                                 transform: (v) => v.trim(),
                                 step: async (row) => {
                                   const stopTime = row.data;
+                                  const stopID = parentStops[stopTime.stop_id] ?? stopTime.stop_id; 
 
                                   if (!stopTime.arrival_time && !stopTime.departure_time) return;
                                   const timeParsed = (stopTime.departure_time ?? stopTime.arrival_time).split(':').map((n) => parseInt(n));
@@ -203,7 +210,7 @@ const processShapes = (chunk) => {
                                     minute: timeParsed[1],
                                     second: timeParsed[2],
                                     timeNum: parseInt(timeParsed.map((n) => n.toString().padStart(2, "0")).join('')),
-                                    stopID: stopTime.stop_id,
+                                    stopID: stopID,
                                     sequence: stopTime.stop_sequence,
                                   });
 
@@ -214,7 +221,7 @@ const processShapes = (chunk) => {
 
                                   const trip = trips[stopTime.trip_id];
 
-                                  stops[stopTime.stop_id].services[trip.serviceID].trips.push({
+                                  stops[stopID].services[trip.serviceID].trips.push({
                                     hour: timeParsed[0],
                                     minute: timeParsed[1],
                                     second: timeParsed[2],
