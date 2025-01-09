@@ -65,8 +65,9 @@ const daysOfWeek = {
   6: 'saturday',
 };
 
-const processShapes = (chunk) => {
-  chunk.forEach(async (folder) => {
+const processShapes = async (chunk) => {
+  for (let i = 0; i < chunk.length; i++) {
+    const folder = chunk[i];
     if (!feedConfigs[folder].generateSchedules) return;
     let agencyTZ = undefined;
     let routes = {};
@@ -264,7 +265,7 @@ const processShapes = (chunk) => {
                                     second: timeParsed[2],
                                     timeNum: parseInt(timeParsed.map((n) => n.toString().padStart(2, "0")).join('')),
                                     routeID: trip.routeID,
-                                    tripID: feedConfigs[folder].convertTripID ? 
+                                    tripID: feedConfigs[folder].convertTripID ?
                                       feedConfigs[folder].convertTripID(trip.tripID) : trip.tripID,
                                     headsign: headsign,
                                   })
@@ -413,7 +414,7 @@ const processShapes = (chunk) => {
     } catch (e) {
       console.log(`Error parsing csv for ${folder}`)
     }
-  })
+  }
 }
 
 processShapes(workerData.chunk);
