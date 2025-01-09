@@ -2,7 +2,7 @@ const { parentPort, workerData } = require("worker_threads");
 const fs = require('fs');
 const Papa = require('papaparse');
 const findTZ = require('geo-tz').find;
-const turf = require('@turf/turf');
+const protobuf = require('protobufjs');
 const feedConfigs = require('../feeds.js');
 
 // https://stackoverflow.com/questions/4413590/javascript-get-array-of-dates-between-2-dates
@@ -28,6 +28,33 @@ const getOffset = (timeZone = 'UTC', date = new Date()) => {
   return [0 - Math.floor(minutesDiff / 60), 0 - (minutesDiff % 60)];
 }
 
+const convertDayScheduleIntoUsable = (day, folder) => {
+  let finalDay = {
+    stopMessage: [],
+  };
+
+  Object.keys(day).forEach((stopKey) => {
+    const stop = day[stopKey];
+    let finalStop = {
+      stopId: stopKey, //CHECK THIS ON ERROR
+      trainMessage: [],
+    };
+
+    stop.forEach((train) => {
+      finalStop.trainMessage.push({
+        timeDiff: train[0],
+        runNumber: feedConfigs[folder].scheduleRunNumbersRequired ? train[1] : null,
+        headsignId: train[2] != -1 ? train[2] : null, // CHECK ON ERROR
+        routeId: train[3] != -1 ? train[3] : null, // CHECK ON ERROR
+      })
+    })
+
+    finalDay.stopMessage.push(finalStop);
+  });
+
+  return finalDay;
+};
+
 const daysOfWeek = {
   0: 'sunday',
   1: 'monday',
@@ -40,10 +67,11 @@ const daysOfWeek = {
 
 const processShapes = (chunk) => {
   chunk.forEach(async (folder) => {
-    //if (folder != 'metra') return;
     if (!feedConfigs[folder].generateSchedules) return;
     let agencyTZ = undefined;
     let routes = {};
+    let routesArr = [];
+    let routesIndex = {};
     let trips = {};
     let services = {};
     let next10DaysOfServices = {};
@@ -51,6 +79,9 @@ const processShapes = (chunk) => {
     let headsignsIndex = {};
     let stops = {};
     let parentStops = {};
+
+    const root = await protobuf.load('schedules.proto');
+    const ScheduleMessage = root.lookupType('gobbler.ScheduleMessage');
 
     try {
       console.log(`Parsing agency for ${folder}`)
@@ -86,6 +117,14 @@ const processShapes = (chunk) => {
               }
             },
             complete: () => {
+              console.log(`Reprocessing routes for ${folder}`);
+
+              routesArr = Object.keys(routes);
+
+              routesArr.forEach((routeID, i) => {
+                routesIndex[routeID] = i;
+              })
+
               console.log(`Parsing trips for ${folder}`)
               const readStream = fs.createReadStream(`./csv/${folder}/trips.txt`);
 
@@ -225,7 +264,7 @@ const processShapes = (chunk) => {
                                     second: timeParsed[2],
                                     timeNum: parseInt(timeParsed.map((n) => n.toString().padStart(2, "0")).join('')),
                                     routeID: trip.routeID,
-                                    tripID: feedConfigs[folder].convertTripID ?
+                                    tripID: feedConfigs[folder].convertTripID ? 
                                       feedConfigs[folder].convertTripID(trip.tripID) : trip.tripID,
                                     headsign: headsign,
                                   })
@@ -290,25 +329,25 @@ const processShapes = (chunk) => {
                                               lastTimeStamp = todayCloneSeconds;
 
                                               let final = [
-                                                secondsDiff
+                                                secondsDiff,
+                                                trip.tripID,
                                               ];
 
                                               if (i == 0) {
                                                 final.push(headsignsIndex[trip.headsign]);
-                                                final.push(trip.routeID);
+                                                final.push(routesIndex[trip.routeID]);
                                                 return final;
                                               }
 
                                               //add headsign if not the same
                                               if (trip.headsign != arr[i - 1].headsign) {
                                                 final.push(headsignsIndex[trip.headsign]);
-                                              }
+                                              } else final.push(-1);
 
                                               //add route ID if not the same
                                               if (trip.routeID != arr[i - 1].routeID) {
-                                                if (final.length < 2) final.push(-1); // need to keep array order
-                                                final.push(trip.routeID);
-                                              }
+                                                final.push(routesIndex[trip.routeID]);
+                                              } else final.push(-1);
 
                                               return final;
                                             })
@@ -325,6 +364,7 @@ const processShapes = (chunk) => {
                                       `./schedules/${folder}/metadata.json`,
                                       JSON.stringify({
                                         headsigns: headsignsArr,
+                                        routes: routesArr,
                                       }),
                                       { encoding: 'utf8' }
                                     );
@@ -340,10 +380,14 @@ const processShapes = (chunk) => {
 
                                     //dates keys
                                     for (let i = 0; i < dateKeys.length; i++) {
+                                      const convertedDay = convertDayScheduleIntoUsable(next10DaysOfServices[dateKeys[i]], folder);
+
+                                      const protoMessage = ScheduleMessage.fromObject(convertedDay);
+                                      const bufProto = ScheduleMessage.encode(protoMessage).finish();
+
                                       fs.writeFileSync(
-                                        `./schedules/${folder}/${dateKeys[i]}.json`,
-                                        JSON.stringify(next10DaysOfServices[dateKeys[i]]),
-                                        { encoding: 'utf8' }
+                                        `./schedules/${folder}/${dateKeys[i]}.pbf`,
+                                        bufProto
                                       );
                                     }
 
