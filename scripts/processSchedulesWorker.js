@@ -68,7 +68,7 @@ const daysOfWeek = {
 const processShapes = async (chunk) => {
   for (let i = 0; i < chunk.length; i++) {
     const folder = chunk[i];
-    if (!feedConfigs[folder].generateSchedules) return;
+    if (!feedConfigs[folder].generateSchedules) continue;
     let agencyTZ = undefined;
     let routes = {};
     let routesArr = [];
