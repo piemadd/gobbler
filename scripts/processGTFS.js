@@ -1,5 +1,6 @@
 const fs = require('fs');
 const { Worker } = require("worker_threads");
+const { processSchedules } = require('./processSchedulesWorker');
 
 console.log('Cleaning up old files');
 
@@ -29,6 +30,9 @@ for (let i = 0; i < feeds.length; i += chunkSize) {
   }
   */
 
+  processSchedules(chunk);
+
+  /*
   new Worker(
     __dirname + "/processSchedulesWorker.js",
     {
@@ -40,4 +44,7 @@ for (let i = 0; i < feeds.length; i += chunkSize) {
       }
     }
   );
+  */
+
+
 }

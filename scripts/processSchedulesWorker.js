@@ -65,7 +65,7 @@ const daysOfWeek = {
   6: 'saturday',
 };
 
-const processShapes = async (chunk) => {
+const processSchedules = async (chunk) => {
   for (let i = 0; i < chunk.length; i++) {
     const folder = chunk[i];
     if (!feedConfigs[folder].generateSchedules) continue;
@@ -417,4 +417,6 @@ const processShapes = async (chunk) => {
   }
 }
 
-processShapes(workerData.chunk);
+//processSchedules(workerData.chunk);
+
+module.exports.processSchedules = processSchedules;
