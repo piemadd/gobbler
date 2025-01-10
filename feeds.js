@@ -129,7 +129,7 @@ const feeds = {
     convertTripID: ((id) => {
       const arr = id.split('_');
 
-      return arr[0] + '-' + arr[1].match(/(\d+)/)[0];
+      return arr[0].replaceAll('-', '') + '-' + arr[1].match(/(\d+)/)[0];
     }),
   },
   nyct_subway: {
