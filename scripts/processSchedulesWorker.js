@@ -1,4 +1,3 @@
-const { parentPort, workerData } = require("worker_threads");
 const fs = require('fs');
 const Papa = require('papaparse');
 const findTZ = require('geo-tz').find;
@@ -273,6 +272,9 @@ const processSchedules = async (chunk) => {
                                   headsignsIndex[headsign] = 1; // trust the process here
                                 },
                                 complete: () => {
+                                  //RAM SAVING
+                                  trips = null;
+
                                   try {
                                     // looping through twice because js is stupid and for some reason fucks up here
                                     console.log(`Reprocessing headsigns for ${folder}`)
@@ -380,6 +382,19 @@ const processSchedules = async (chunk) => {
                                       { encoding: 'utf8' }
                                     );
                                     console.log(`Done with ./schedules/${folder}/dateKeys.json`)
+
+                                    /*
+                                    console.log('agencyTZ', JSON.stringify(agencyTZ).length);
+                                    console.log('routes', JSON.stringify(routes).length);
+                                    console.log('routesArr', JSON.stringify(routesArr).length);
+                                    console.log('routesIndex', JSON.stringify(routesIndex).length);
+                                    console.log('trips', JSON.stringify(trips).length);
+                                    console.log('services', JSON.stringify(services).length);
+                                    console.log('next10DaysOfServices', JSON.stringify(next10DaysOfServices).length);
+                                    console.log('headsignsArr', JSON.stringify(headsignsArr).length);
+                                    console.log('headsignsIndex', JSON.stringify(headsignsIndex).length);
+                                    console.log('parentStops', JSON.stringify(parentStops).length);
+                                    */
 
                                     //dates keys
                                     for (let i = 0; i < dateKeys.length; i++) {
