@@ -381,10 +381,13 @@ const processSchedules = async (chunk) => {
 
                                     //dates keys
                                     for (let i = 0; i < dateKeys.length; i++) {
-                                      const convertedDay = convertDayScheduleIntoUsable(next10DaysOfServices[dateKeys[i]], folder);
+                                      let convertedDay = convertDayScheduleIntoUsable(next10DaysOfServices[dateKeys[i]], folder);
+                                      next10DaysOfServices = null; // reduing ram usage, possibly
 
-                                      const protoMessage = ScheduleMessage.fromObject(convertedDay);
-                                      const bufProto = ScheduleMessage.encode(protoMessage).finish();
+                                      let protoMessage = ScheduleMessage.fromObject(convertedDay);
+                                      convertedDay = null; // reducing ram usage, possibly
+                                      let bufProto = ScheduleMessage.encode(protoMessage).finish();
+                                      protoMessage = null; // reducing ram usage, possibly
 
                                       fs.writeFileSync(
                                         `./schedules/${folder}/${dateKeys[i]}.pbf`,
