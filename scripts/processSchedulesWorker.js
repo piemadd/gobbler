@@ -382,7 +382,7 @@ const processSchedules = async (chunk) => {
                                     //dates keys
                                     for (let i = 0; i < dateKeys.length; i++) {
                                       let convertedDay = convertDayScheduleIntoUsable(next10DaysOfServices[dateKeys[i]], folder);
-                                      next10DaysOfServices = null; // reduing ram usage, possibly
+                                      next10DaysOfServices[dateKeys[i]] = null; // reduing ram usage, possibly
 
                                       let protoMessage = ScheduleMessage.fromObject(convertedDay);
                                       convertedDay = null; // reducing ram usage, possibly
