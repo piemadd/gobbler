@@ -369,6 +369,7 @@ const processSchedules = async (chunk) => {
                                       }),
                                       { encoding: 'utf8' }
                                     );
+                                    console.log(`Done with ./schedules/${folder}/metadata.json`)
 
                                     const dateKeys = Object.keys(next10DaysOfServices);
 
@@ -378,6 +379,7 @@ const processSchedules = async (chunk) => {
                                       JSON.stringify(dateKeys),
                                       { encoding: 'utf8' }
                                     );
+                                    console.log(`Done with ./schedules/${folder}/dateKeys.json`)
 
                                     //dates keys
                                     for (let i = 0; i < dateKeys.length; i++) {
@@ -393,6 +395,7 @@ const processSchedules = async (chunk) => {
                                         `./schedules/${folder}/${dateKeys[i]}.pbf`,
                                         bufProto
                                       );
+                                      console.log(`Done with ./schedules/${folder}/${dateKeys[i]}.pbf`)
                                     }
 
                                     console.log(`Done with schedules for ${folder}`)
