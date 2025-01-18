@@ -187,8 +187,10 @@ const processSchedules = async (chunk) => {
                           switch (calendarDate.exception_type) {
                             case '1': //addition
                               services[calendarDate.service_id].additions.push(parseInt(calendarDate.date));
+                              break;
                             case '2': //removal
                               services[calendarDate.service_id].removals.push(parseInt(calendarDate.date));
+                              break;
                           }
                         },
                         complete: () => {
