@@ -288,7 +288,7 @@ const processSchedules = async (chunk) => {
 
                                     console.log(`Generating actual schedule for ${folder}`)
 
-                                    const now = new Date();
+                                    const now = new Date(Date.now() - (1000 * 60 * 60 * 24)); // yesterday
                                     const in10Days = new Date(now.valueOf() + (1000 * 60 * 60 * 24 * 10));
                                     const dates = getDaysArray(now, in10Days);
 
