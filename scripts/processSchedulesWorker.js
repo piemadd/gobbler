@@ -258,7 +258,7 @@ const processSchedules = async (chunk) => {
 
                                   const trip = trips[stopTime.trip_id];
 
-                                  const headsign = stopTime.stop_headsign.length > 0 ? stopTime.stop_headsign : (trips[stopTime.trip_id].headsign ?? "");
+                                  const headsign = stopTime.stop_headsign && stopTime.stop_headsign.length > 0 ? stopTime.stop_headsign : (trips[stopTime.trip_id].headsign ?? "");
 
                                   stops[stopID].services[trip.serviceID].trips.push({
                                     hour: timeParsed[0],
