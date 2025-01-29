@@ -81,7 +81,7 @@ const feeds = {
     headers: {},
     urlEnv: [],
     doAllShapes: false,
-    generateSchedules: false,
+    generateSchedules: true,
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
