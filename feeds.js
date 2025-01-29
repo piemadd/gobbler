@@ -85,8 +85,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: false,
-    activeTypes: []
+    activeTypes: ['0', '1']
   },
   RG: {
     name: "Regional GTFS",
