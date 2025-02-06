@@ -5,7 +5,7 @@ const feeds = {
     headers: {},
     urlEnv: [],
     doAllShapes: true,
-    generateSchedules: false,
+    generateSchedules: true,
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {
@@ -260,6 +260,22 @@ const feeds = {
     colorReplacements: {
       "565a5c": "949ca1"
     },
+    noSegments: true,
+    disabled: false,
+    activeTypes: [
+      "1"
+    ]
+  },
+  cdmx_metro: {
+    name: "Mexico City Metro",
+    url: "https://datos.cdmx.gob.mx/dataset/75538d96-3ade-4bc5-ae7d-d85595e4522d/resource/32ed1b6b-41cd-49b3-b7f0-b57acb0eb819/download/gtfs.zip",
+    headers: {},
+    urlEnv: [],
+    doAllShapes: false,
+    generateSchedules: false,
+    scheduleRunNumbersRequired: false,
+    colorOverrides: {},
+    colorReplacements: {},
     noSegments: true,
     disabled: false,
     activeTypes: [
