@@ -12,7 +12,7 @@ const feeds = {
       "CAE4F1": "5366c9",
       "000000": "5366c9"
     },
-    disabled: true,
+    disabledShapes: true,
     activeTypes: [
       "2"
     ]
@@ -27,7 +27,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: false,
+    disabledShapes: false,
     activeTypes: [
       "2"
     ]
@@ -42,7 +42,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: false,
+    disabledShapes: false,
     activeTypes: [
       "2"
     ]
@@ -57,7 +57,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: false,
+    disabledShapes: false,
     activeTypes: [
       "3"
     ]
@@ -72,7 +72,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: false,
+    disabledShapes: false,
     activeTypes: []
   },
   bart: {
@@ -99,7 +99,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: false,
+    disabledShapes: false,
     activeTypes: [
       "0",
       "1",
@@ -121,7 +121,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: false,
+    disabledShapes: false,
     activeTypes: [
       "2"
     ],
@@ -141,7 +141,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: false,
+    disabledShapes: false,
     activeTypes: []
   },
   lirr: {
@@ -154,7 +154,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: true,
+    disabledShapes: true,
     activeTypes: []
   },
   mnrr: {
@@ -167,7 +167,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: false,
+    disabledShapes: false,
     activeTypes: []
   },
   nyct_bronx: {
@@ -180,7 +180,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: false,
+    disabledShapes: false,
     activeTypes: []
   },
   nyct_brooklyn: {
@@ -193,7 +193,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: false,
+    disabledShapes: false,
     activeTypes: []
   },
   nyct_manhattan: {
@@ -206,7 +206,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: false,
+    disabledShapes: false,
     activeTypes: []
   },
   nyct_queens: {
@@ -219,7 +219,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: false,
+    disabledShapes: false,
     activeTypes: []
   },
   nyct_staten_island: {
@@ -232,7 +232,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: false,
+    disabledShapes: false,
     activeTypes: []
   },
   nyct_mta_bus_company: {
@@ -245,7 +245,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: false,
+    disabledShapes: false,
     activeTypes: []
   },
   cta: {
@@ -261,7 +261,7 @@ const feeds = {
       "565a5c": "949ca1"
     },
     noSegments: true,
-    disabled: false,
+    disabledShapes: false,
     activeTypes: [
       "1"
     ]
@@ -277,7 +277,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     noSegments: true,
-    disabled: false,
+    disabledShapes: false,
     activeTypes: [
       "1"
     ]
@@ -293,7 +293,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     noSegments: true,
-    disabled: false,
+    disabledShapes: false,
     activeTypes: [
       "1"
     ]
@@ -314,7 +314,7 @@ const feeds = {
     },
     colorReplacements: {},
     noSegments: false,
-    disabled: false,
+    disabledShapes: false,
     subfolder: "Working copy GTFS changes/",
     activeTypes: [
       "2"
@@ -330,7 +330,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: false,
+    disabledShapes: false,
     activeTypes: []
   },
   gp_metro: {
@@ -343,7 +343,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: false,
+    disabledShapes: false,
     activeTypes: []
   },
   south_portland: {
@@ -356,7 +356,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: false,
+    disabledShapes: false,
     activeTypes: []
   },
   marta: {
@@ -369,7 +369,7 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabled: false,
+    disabledShapes: false,
     activeTypes: [
       "1"
     ]

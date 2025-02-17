@@ -15,6 +15,7 @@ const processShapes = (chunk) => {
     };
 
     let doAllShapes = false;
+    if (feedConfigs[folder].disabledShapes) return; // we aren't generating shapes
     if (feedConfigs[folder].doAllShapes) doAllShapes = true;
 
     console.log(folder, doAllShapes)
