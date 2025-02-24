@@ -75,13 +75,19 @@ const processSchedules = async (chunk) => {
     let trips = {};
     let services = {};
     let next10DaysOfServices = {};
+    let servicesForEachDate = {};
     let headsignsArr = [];
     let headsignsIndex = {};
     let stops = {};
     let parentStops = {};
+    let timeBetweenStops = {};
+    let stoppingPatterns = {};
+    let stoppingPatternArray = [];
+    let stoppingPatternKeys = {}; 
 
     const root = await protobuf.load('schedules.proto');
     const ScheduleMessage = root.lookupType('gobbler.ScheduleMessage');
+    const MultipleVehiclesScheduleMessage = root.lookupType('gobbler.MultipleVehiclesScheduleMessage');
 
     try {
       console.log(`Parsing agency for ${folder}`)
@@ -274,8 +280,92 @@ const processSchedules = async (chunk) => {
                                   headsignsIndex[headsign] = 1; // trust the process here
                                 },
                                 complete: () => {
-                                  //RAM SAVING
-                                  trips = null;
+                                  console.log(`Done parsing CSV for ${folder}`)
+                                  let compressedTripsRaw = [];
+
+                                  let tripsArray = Object.values(trips);
+                                  trips = null;//RAM SAVING
+
+                                  for (let i = 0; i < tripsArray.length; i++) {
+                                    const trip = tripsArray[i];
+                                    const today = new Date();
+                                    today.setUTCHours(0);
+                                    today.setUTCMinutes(0);
+                                    today.setUTCSeconds(0);
+                                    let lastTimeStamp = parseInt(Math.floor(today.valueOf() / 1000));
+
+                                    const finalTrip = {
+                                      runNumber: trip.tripID,
+                                      routeId: trip.routeID,
+                                      serviceId: trip.serviceID,
+                                      vehicleStop: trip.times
+                                      .sort((a, b) => a.timeNum - b.timeNum)
+                                      .map((time, i, arr) => {
+                                        const stop = stops[time.stopID];
+                                        const todayClone = new Date(today);
+                                        todayClone.setUTCHours(time.hour + stop.tzOffset[0]);
+                                        todayClone.setUTCMinutes(time.minute + stop.tzOffset[1]);
+                                        todayClone.setUTCSeconds(time.second);
+                                        const todayCloneSeconds = Math.floor(todayClone.valueOf() / 1000);
+                                        const secondsDiff = todayCloneSeconds - lastTimeStamp;
+                                        lastTimeStamp = todayCloneSeconds;
+
+                                        if (i > 0) {
+                                          const lastStopID = arr[i - 1]['stopID'];
+
+                                          if (!timeBetweenStops[`${lastStopID}_${time.stopID}`]) {
+                                            timeBetweenStops[`${lastStopID}_${time.stopID}`] = secondsDiff;
+                                          };
+                                        };
+
+                                        return time.stopID
+                                      })
+                                    };
+
+                                    compressedTripsRaw.push(finalTrip)
+                                  }
+
+                                  tripsArray = null;
+
+                                  compressedTripsRaw.forEach((trip) => {
+                                    const tripStoppingPattern = trip.vehicleStop.join('-');
+                                    if (!stoppingPatterns[tripStoppingPattern]) {
+                                      stoppingPatterns[tripStoppingPattern] = trip.vehicleStop;
+                                    }
+                                  })
+
+                                  stoppingPatternArray = Object.keys(stoppingPatterns).sort();
+                                  stoppingPatternArray.forEach((stoppingPatternKey, i) => {
+                                    stoppingPatternKeys[stoppingPatternKey] = i;
+                                  })
+
+                                  compressedTripsRaw = compressedTripsRaw.map((trip) => {
+                                    const tripStoppingPattern = trip.vehicleStop.join('-');
+                                    return {
+                                      ...trip,
+                                      vehicleStop: stoppingPatternKeys[tripStoppingPattern],
+                                    }
+                                  })
+
+                                  try {
+                                    let compressedTripsProtoMessage = MultipleVehiclesScheduleMessage.fromObject({ vehicleScheduleMessage: compressedTripsRaw });
+                                    compressedTripsRaw = null;
+                                    let compressedTripsBufProto = MultipleVehiclesScheduleMessage.encode(compressedTripsProtoMessage).finish();
+                                    compressedTripsProtoMessage = null;
+
+                                    if (fs.existsSync(`./schedules/${folder}`)) fs.rmSync(`./schedules/${folder}`, { recursive: true, force: true })
+                                    fs.mkdirSync(`./schedules/${folder}`);
+
+                                    fs.writeFileSync(
+                                      `./schedules/${folder}/vehicles.pbf`,
+                                      compressedTripsBufProto
+                                    );
+                                    console.log(`Done with ./schedules/${folder}/vehicles.pbf`);
+
+                                    compressedTripsBufProto = null;
+                                  } catch (e) {
+                                    console.log(e)
+                                  }
 
                                   try {
                                     // looping through twice because js is stupid and for some reason fucks up here
@@ -304,6 +394,8 @@ const processSchedules = async (chunk) => {
                                         if (service.additions.includes(todayNum)) return true;
                                         return false;
                                       }).filter((service) => service[todayDayOfWeek]).map((service) => service.serviceID);
+
+                                      servicesForEachDate[todayKey] = validServices;
 
                                       next10DaysOfServices[todayKey] = {};
 
@@ -361,15 +453,15 @@ const processSchedules = async (chunk) => {
 
                                     console.log(`Saving files for ${folder}`)
 
-                                    if (fs.existsSync(`./schedules/${folder}`)) fs.rmSync(`./schedules/${folder}`, { recursive: true, force: true })
-                                    fs.mkdirSync(`./schedules/${folder}`);
-
                                     //metadata
                                     fs.writeFileSync(
                                       `./schedules/${folder}/metadata.json`,
                                       JSON.stringify({
                                         headsigns: headsignsArr,
                                         routes: routesArr,
+                                        services: servicesForEachDate,
+                                        stoppingPatterns: stoppingPatternArray,
+                                        stopTimes: timeBetweenStops,
                                       }),
                                       { encoding: 'utf8' }
                                     );

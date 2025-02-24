@@ -29,20 +29,4 @@ for (let i = 0; i < feeds.length; i += chunkSize) {
   }
 
   processSchedules(chunk);
-
-  /*
-  new Worker(
-    __dirname + "/processSchedulesWorker.js",
-    {
-      workerData: {
-        chunk
-      },
-      resourceLimits: {
-        maxOldGenerationSizeMb: 7900
-      }
-    }
-  );
-  */
-
-
 }
