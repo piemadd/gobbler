@@ -318,7 +318,7 @@ const processSchedules = async (chunk) => {
                                         if (i > 0) {
                                           const lastStopID = arr[i - 1]['stopID'];
 
-                                          if (!timeBetweenStops[`${lastStopID}_${time.stopID}`]) {
+                                          if (!timeBetweenStops[`${lastStopID}_${time.stopID}`] || timeBetweenStops[`${lastStopID}_${time.stopID}`] > secondsDiff) {
                                             timeBetweenStops[`${lastStopID}_${time.stopID}`] = secondsDiff;
                                           };
                                         };
