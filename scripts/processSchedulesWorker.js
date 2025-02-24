@@ -293,6 +293,7 @@ const processSchedules = async (chunk) => {
                                     today.setUTCMinutes(0);
                                     today.setUTCSeconds(0);
                                     let lastTimeStamp = parseInt(Math.floor(today.valueOf() / 1000));
+                                    let startTimeStamp = 0;
 
                                     const finalTrip = {
                                       runNumber: trip.tripID,
@@ -310,6 +311,10 @@ const processSchedules = async (chunk) => {
                                         const secondsDiff = todayCloneSeconds - lastTimeStamp;
                                         lastTimeStamp = todayCloneSeconds;
 
+                                        if (i == 0) {
+                                          startTimeStamp = Math.floor(todayClone.valueOf() / 1000);
+                                        }
+
                                         if (i > 0) {
                                           const lastStopID = arr[i - 1]['stopID'];
 
@@ -322,6 +327,7 @@ const processSchedules = async (chunk) => {
                                       })
                                     };
 
+                                    finalTrip['startTime'] = startTimeStamp; 
                                     compressedTripsRaw.push(finalTrip)
                                   }
 
