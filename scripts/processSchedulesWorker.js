@@ -466,7 +466,7 @@ const processSchedules = async (chunk) => {
                                         headsigns: headsignsArr,
                                         routes: routesArr,
                                         services: servicesForEachDate,
-                                        stoppingPatterns: stoppingPatternArray,
+                                        stoppingPatterns: stoppingPatternArray.map((stoppingPatternKey) => stoppingPatterns[stoppingPatternKey]),
                                         stopTimes: timeBetweenStops,
                                       }),
                                       { encoding: 'utf8' }
