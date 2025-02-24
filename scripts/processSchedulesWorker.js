@@ -312,7 +312,7 @@ const processSchedules = async (chunk) => {
                                         lastTimeStamp = todayCloneSeconds;
 
                                         if (i == 0) {
-                                          startTimeStamp = Math.floor(todayClone.valueOf() / 1000);
+                                          startTimeStamp = (Math.floor(todayClone.valueOf() / 1000)) - (Math.floor(today.valueOf() / 1000));
                                         }
 
                                         if (i > 0) {
