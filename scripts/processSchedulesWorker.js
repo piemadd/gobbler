@@ -83,7 +83,7 @@ const processSchedules = async (chunk) => {
     let timeBetweenStops = {};
     let stoppingPatterns = {};
     let stoppingPatternArray = [];
-    let stoppingPatternKeys = {}; 
+    let stoppingPatternKeys = {};
 
     const root = await protobuf.load('schedules.proto');
     const ScheduleMessage = root.lookupType('gobbler.ScheduleMessage');
@@ -180,7 +180,9 @@ const processSchedules = async (chunk) => {
                     },
                     complete: () => {
                       console.log(`Parsing calendar_dates for ${folder}`)
-                      const readStream = fs.createReadStream(`./csv/${folder}/calendar_dates.txt`);
+                      const readStream = fs.existsSync(`./csv/${folder}/calendar_dates.txt`) ?
+                        fs.createReadStream(`./csv/${folder}/calendar_dates.txt`) :
+                        fs.createReadStream(`./dummyEmptyFile.txt`);
 
                       Papa.parse(readStream, {
                         //delimiter: ',',
@@ -300,34 +302,34 @@ const processSchedules = async (chunk) => {
                                       routeId: trip.routeID,
                                       serviceId: trip.serviceID,
                                       vehicleStop: trip.times
-                                      .sort((a, b) => a.timeNum - b.timeNum)
-                                      .map((time, i, arr) => {
-                                        const stop = stops[time.stopID];
-                                        const todayClone = new Date(today);
-                                        todayClone.setUTCHours(time.hour + stop.tzOffset[0]);
-                                        todayClone.setUTCMinutes(time.minute + stop.tzOffset[1]);
-                                        todayClone.setUTCSeconds(time.second);
-                                        const todayCloneSeconds = Math.floor(todayClone.valueOf() / 1000);
-                                        const secondsDiff = todayCloneSeconds - lastTimeStamp;
-                                        lastTimeStamp = todayCloneSeconds;
+                                        .sort((a, b) => a.timeNum - b.timeNum)
+                                        .map((time, i, arr) => {
+                                          const stop = stops[time.stopID];
+                                          const todayClone = new Date(today);
+                                          todayClone.setUTCHours(time.hour + stop.tzOffset[0]);
+                                          todayClone.setUTCMinutes(time.minute + stop.tzOffset[1]);
+                                          todayClone.setUTCSeconds(time.second);
+                                          const todayCloneSeconds = Math.floor(todayClone.valueOf() / 1000);
+                                          const secondsDiff = todayCloneSeconds - lastTimeStamp;
+                                          lastTimeStamp = todayCloneSeconds;
 
-                                        if (i == 0) {
-                                          startTimeStamp = (Math.floor(todayClone.valueOf() / 1000)) - (Math.floor(today.valueOf() / 1000));
-                                        }
+                                          if (i == 0) {
+                                            startTimeStamp = (Math.floor(todayClone.valueOf() / 1000)) - (Math.floor(today.valueOf() / 1000));
+                                          }
 
-                                        if (i > 0) {
-                                          const lastStopID = arr[i - 1]['stopID'];
+                                          if (i > 0) {
+                                            const lastStopID = arr[i - 1]['stopID'];
 
-                                          if (!timeBetweenStops[`${lastStopID}_${time.stopID}`] || timeBetweenStops[`${lastStopID}_${time.stopID}`] > secondsDiff) {
-                                            timeBetweenStops[`${lastStopID}_${time.stopID}`] = secondsDiff;
+                                            if (!timeBetweenStops[`${lastStopID}_${time.stopID}`] || timeBetweenStops[`${lastStopID}_${time.stopID}`] > secondsDiff) {
+                                              timeBetweenStops[`${lastStopID}_${time.stopID}`] = secondsDiff;
+                                            };
                                           };
-                                        };
 
-                                        return time.stopID
-                                      })
+                                          return time.stopID
+                                        })
                                     };
 
-                                    finalTrip['startTime'] = startTimeStamp; 
+                                    finalTrip['startTime'] = startTimeStamp;
                                     compressedTripsRaw.push(finalTrip)
                                   }
 
