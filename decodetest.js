@@ -6,11 +6,13 @@ run().catch(err => console.log(err));
 async function run() {
   const root = await protobuf.load('schedules.proto');
 
-  const User = root.lookupType('gobbler.MultipleVehiclesScheduleMessage');
+  const Message = root.lookupType('gobbler.ScheduleMessage');
 
-  const buf = fs.readFileSync('./schedules/metra/vehicles.pbf');
+  const buf = fs.readFileSync('./schedules/metra/2025-03-15.pbf');
 
-  const obj = User.decode(buf);
+  const obj = Message.decode(buf);
 
-  console.log(obj.vehicleScheduleMessage)
+  const elburn = obj.toJSON().stopMessage.find((item) => item.stopId == 'ELBURN');
+
+  console.log(elburn)
 }

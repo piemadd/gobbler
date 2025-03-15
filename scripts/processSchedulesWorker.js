@@ -393,7 +393,7 @@ const processSchedules = async (chunk) => {
                                     dates.forEach((today) => {
                                       const todayKey = today.toISOString().split('T')[0];
                                       const todayNum = parseInt(todayKey.replaceAll('-', ''));
-                                      const todayDayOfWeek = daysOfWeek[today.getDay()];
+                                      const todayDayOfWeek = daysOfWeek[today.getUTCDay()];
                                       const todayStart = Math.floor(today.valueOf() / 1000);
 
                                       const validServices = Object.values(services).filter((service) => {
