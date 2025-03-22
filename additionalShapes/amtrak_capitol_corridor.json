@@ -3,7 +3,10 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "provider":"amtrak",
+        "routeColor":"#0578f2"
+      },
       "geometry": {
         "coordinates": [
           [
