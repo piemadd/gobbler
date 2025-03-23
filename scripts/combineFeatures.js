@@ -1,7 +1,13 @@
 const fs = require('fs');
 
 const shapesToCombine = fs.readdirSync('./shapes');
-const amtrakerFileNames = ['via_rail.geojson', 'nationalRoute.json', 'brightline.geojson', 'amtrak_capitol_corridor.json'];
+const amtrakerFileNames = [
+  'via_rail.geojson',
+  'nationalRoute.json',
+  'brightline.geojson',
+  'amtrak_capitol_corridor.json',
+  'amtrak_cascades.json'
+];
 
 let features = [];
 let amtrakerFeatures = [];
