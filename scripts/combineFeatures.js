@@ -12,15 +12,17 @@ const amtrakerFileNames = [
 let features = [];
 let amtrakerFeatures = [];
 
-shapesToCombine.forEach((fileName) => {
+for (let i = 0; i < shapesToCombine.length; i++) {
+  const fileName = shapesToCombine[i];
   const file = JSON.parse(fs.readFileSync(`./shapes/${fileName}`, { encoding: 'utf8' }));
   features.push(...file.features);
-});
+};
 
-amtrakerFileNames.forEach((fileName) => {
+for (let i = 0; i < amtrakerFileNames.length; i++) {
+  const fileName = amtrakerFileNames[i];
   const file = JSON.parse(fs.readFileSync(`./shapes/${fileName}`, { encoding: 'utf8' }));
   amtrakerFeatures.push(...file.features);
-});
+};
 
 fs.writeFileSync('./all.geojson', JSON.stringify({
   "type": "FeatureCollection",
