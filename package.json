@@ -11,7 +11,7 @@
     "combineFeatures": "node ./scripts/combineFeatures.js",
     "exportColors": "node ./scripts/exportColors.js",
     "all": "npm run downloadZips && npm run extractZips && npm run processGTFS && npm run fetchAdditionalShapes && npm run combineFeatures",
-    "allCF": "npm run downloadZips && npm run extractZips && npm run processGTFS && rm -rf zips csv"
+    "allCF": "npm run downloadZips && npm run extractZips && npm run processGTFS && rm -rf zips csv allAmtraker.geojson"
   },
   "keywords": [],
   "author": "",
