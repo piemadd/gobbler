@@ -282,6 +282,22 @@ const feeds = {
       "1"
     ]
   },
+  dekalb_il: {
+    name: "Dekalb, IL Huskie Lines",
+    url: "https://data.trilliumtransit.com/gtfs/cityofdekalb-il-us/cityofdekalb-il-us.zip",
+    headers: {},
+    urlEnv: [],
+    doAllShapes: false,
+    generateSchedules: false,
+    scheduleRunNumbersRequired: true,
+    colorOverrides: {},
+    colorReplacements: {},
+    noSegments: true,
+    disabledShapes: false,
+    activeTypes: [
+      "3"
+    ]
+  },
   mdot_metro: {
     name: "MDOT (Maryland) Metro",
     url: "https://feeds.mta.maryland.gov/gtfs/metro",
@@ -315,7 +331,7 @@ const feeds = {
     colorReplacements: {},
     noSegments: false,
     disabledShapes: false,
-    subfolder: "Working copy GTFS changes/",
+    subfolder: "new schedule/",
     activeTypes: [
       "2"
     ]
