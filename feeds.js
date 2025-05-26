@@ -288,7 +288,7 @@ const feeds = {
     headers: {},
     urlEnv: [],
     doAllShapes: false,
-    generateSchedules: false,
+    generateSchedules: true,
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
@@ -296,7 +296,8 @@ const feeds = {
     disabledShapes: false,
     activeTypes: [
       "3"
-    ]
+    ],
+    useRouteShortNameForID: true,
   },
   mdot_metro: {
     name: "MDOT (Maryland) Metro",

@@ -13,6 +13,7 @@ const processShapes = (chunk) => {
       "type": "FeatureCollection",
       "features": [],
     };
+    let routeIDReplacements = {};
 
     let doAllShapes = false;
     if (feedConfigs[folder].disabledShapes) return; // we aren't generating shapes
@@ -32,6 +33,11 @@ const processShapes = (chunk) => {
         step: async (row) => {
           const route = row.data;
 
+          if (feedConfigs[folder]['useRouteShortNameForID']) {
+            routeIDReplacements[route.route_id] = route.route_short_name;
+            route.route_id = route.route_short_name;
+          };
+
           routes[route.route_id] = {
             sName: route.route_short_name,
             lName: route.route_long_name,
@@ -50,6 +56,8 @@ const processShapes = (chunk) => {
             transform: (v) => v.trim(),
             step: async (row) => {
               const trip = row.data;
+
+              if (feedConfigs[folder]['useRouteShortNameForID']) trip.route_id = routeIDReplacements[trip.route_id];
 
               shapeIdToRouteId[trip.shape_id] = trip.route_id;
             },

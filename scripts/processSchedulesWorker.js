@@ -84,6 +84,7 @@ const processSchedules = async (chunk) => {
     let stoppingPatterns = {};
     let stoppingPatternArray = [];
     let stoppingPatternKeys = {};
+    let routeIDReplacements = {};
 
     const root = await protobuf.load('schedules.proto');
     const ScheduleMessage = root.lookupType('gobbler.ScheduleMessage');
@@ -115,6 +116,11 @@ const processSchedules = async (chunk) => {
             step: async (row) => {
               const route = row.data;
 
+              if (feedConfigs[folder]['useRouteShortNameForID']) {
+                routeIDReplacements[route.route_id] = route.route_short_name;
+                route.route_id = route.route_short_name;
+              };
+
               routes[route.route_id] = {
                 sName: route.route_short_name,
                 lName: route.route_long_name,
@@ -141,6 +147,8 @@ const processSchedules = async (chunk) => {
                 transform: (v) => v.trim(),
                 step: async (row) => {
                   const trip = row.data;
+
+                  if (feedConfigs[folder]['useRouteShortNameForID']) trip.route_id = routeIDReplacements[trip.route_id];
 
                   trips[trip.trip_id] = {
                     tripID: trip.trip_id,
