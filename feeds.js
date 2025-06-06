@@ -334,7 +334,7 @@ const feeds = {
     disabledShapes: false,
     subfolder: "new schedule/",
     activeTypes: [
-      "2"
+      //"2"
     ]
   },
   casco_bay_lines: {
