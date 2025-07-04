@@ -67,6 +67,9 @@ const daysOfWeek = {
 const processSchedules = async (chunk) => {
   for (let i = 0; i < chunk.length; i++) {
     const folder = chunk[i];
+
+    //if (folder != 'metra') continue; // FOR DEBUG
+
     if (!feedConfigs[folder].generateSchedules) continue;
     let agencyTZ = undefined;
     let routes = {};
@@ -406,10 +409,10 @@ const processSchedules = async (chunk) => {
 
                                       const validServices = Object.values(services).filter((service) => {
                                         if (service.removals.includes(todayNum)) return false;
-                                        if (todayNum <= service.endDate && todayNum >= service.startDate) return true;
+                                        if (todayNum <= service.endDate && todayNum >= service.startDate && service[todayDayOfWeek]) return true;
                                         if (service.additions.includes(todayNum)) return true;
                                         return false;
-                                      }).filter((service) => service[todayDayOfWeek]).map((service) => service.serviceID);
+                                      }).map((service) => service.serviceID);
 
                                       servicesForEachDate[todayKey] = validServices;
 
