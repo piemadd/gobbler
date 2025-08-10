@@ -284,7 +284,7 @@ const feeds = {
     noSegments: true,
     disabledShapes: false,
     activeTypes: [
-      "1"
+      //"1"
     ]
   },
   dekalb_il: {

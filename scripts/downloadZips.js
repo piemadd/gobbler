@@ -36,13 +36,19 @@ feedKeys.forEach((feedKey, i) => {
   })
     .then(
       (res) => {
-        if (res.status !== 200) throw new Error(`Error downloading ${feedKey}`)
+        if (res.status !== 200) {
 
-        const dest = fs.createWriteStream(`./zips/${feedKey}.zip`)
-        res.body.pipe(dest);
-        res.body.on("end", () => {
-          console.log(`Finished downloading feed: ${feedKey} (${i + 1} / ${feedKeys.length})`);
-        });
+          res.text().then((resText) => {
+            console.log(resText);
+            throw new Error(`Error downloading ${feedKey}`)
+          });
+        } else {
+          const dest = fs.createWriteStream(`./zips/${feedKey}.zip`)
+          res.body.pipe(dest);
+          res.body.on("end", () => {
+            console.log(`Finished downloading feed: ${feedKey} (${i + 1} / ${feedKeys.length})`);
+          });
+        }
       }
     )
     .catch(e => {

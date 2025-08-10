@@ -6,7 +6,8 @@ const amtrakerFileNames = [
   'nationalRoute.json',
   'brightline.geojson',
   'amtrak_capitol_corridor.json',
-  'amtrak_cascades.json'
+  'amtrak_cascades.json',
+  'amtrak_mardi_gras.json',
 ];
 
 let features = [];
