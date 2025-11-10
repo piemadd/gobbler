@@ -116,10 +116,8 @@ const feeds = {
   },
   metra: {
     name: "Metra",
-    url: "https://gtfsapi.metrarail.com/gtfs/raw/schedule.zip",
-    headers: {
-      Authorization: "env.metra_authorization"
-    },
+    url: "https://schedules.metrarail.com/gtfs/schedule.zip",
+    headers: {},
     urlEnv: [],
     doAllShapes: false,
     generateSchedules: true,
