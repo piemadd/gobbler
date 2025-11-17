@@ -153,12 +153,12 @@ const feeds = {
     headers: {},
     urlEnv: [],
     doAllShapes: false,
-    generateSchedules: false,
+    generateSchedules: true,
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    disabledShapes: true,
-    activeTypes: []
+    disabledShapes: false,
+    activeTypes: ['2']
   },
   mnrr: {
     name: "Metro North (MTA)",
@@ -166,12 +166,12 @@ const feeds = {
     headers: {},
     urlEnv: [],
     doAllShapes: false,
-    generateSchedules: false,
+    generateSchedules: true,
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: []
+    activeTypes: ['2']
   },
   nyct_bronx: {
     name: "NYC Bronx Buses",

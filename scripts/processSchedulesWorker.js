@@ -71,6 +71,7 @@ const processSchedules = async (chunk) => {
     //if (folder != 'metra') continue; // FOR DEBUG
 
     if (!feedConfigs[folder].generateSchedules) continue;
+    console.log('Generating schedules for', folder)
     let agencyTZ = undefined;
     let routes = {};
     let routesArr = [];
@@ -164,7 +165,9 @@ const processSchedules = async (chunk) => {
                 },
                 complete: () => {
                   console.log(`Parsing calendar for ${folder}`)
-                  const readStream = fs.createReadStream(`./csv/${folder}/calendar.txt`);
+                  const readStream = fs.existsSync(`./csv/${folder}/calendar.txt`) ?
+                    fs.createReadStream(`./csv/${folder}/calendar.txt`) :
+                    fs.createReadStream(`./dummyEmptyFile.txt`);
 
                   Papa.parse(readStream, {
                     //delimiter: ',',
@@ -202,6 +205,27 @@ const processSchedules = async (chunk) => {
                         transform: (v) => v.trim(),
                         step: async (row) => {
                           const calendarDate = row.data;
+
+
+                          if (!services[calendarDate.service_id]) {
+                            const weekAgo = new Date(Date.now() - (1000 * 60 * 60 * 24 * 7));
+                            const weekAhead = new Date(Date.now() + (1000 * 60 * 60 * 24 * 7));
+
+                            services[calendarDate.service_id] = {
+                              serviceID: calendarDate.service_id,
+                              startDate: parseInt(`${weekAgo.getFullYear()}0101`),
+                              endDate: parseInt(`${weekAhead.getFullYear()}1231`),
+                              monday: false,
+                              tuesday: false,
+                              wednesday: false,
+                              thursday: false,
+                              friday: false,
+                              saturday: false,
+                              sunday: false,
+                              additions: [],
+                              removals: [],
+                            }
+                          }
 
                           switch (calendarDate.exception_type) {
                             case '1': //addition

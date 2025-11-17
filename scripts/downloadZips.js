@@ -22,6 +22,8 @@ const feedKeys = Object.keys(feeds);
 feedKeys.forEach((feedKey, i) => {
   const feed = feeds[feedKey];
 
+  //if (feedKey != 'lirr' && feedKey != 'mnrr') return;
+
   if (feed.activeTypes.length == 0) {
     console.log(`${feed.name} is disabled`)
     return;
