@@ -89,6 +89,7 @@ const processSchedules = async (chunk) => {
     let stoppingPatternArray = [];
     let stoppingPatternKeys = {};
     let routeIDReplacements = {};
+    let shortTripIDs = {};
 
     const root = await protobuf.load('schedules.proto');
     const ScheduleMessage = root.lookupType('gobbler.ScheduleMessage');
@@ -153,9 +154,10 @@ const processSchedules = async (chunk) => {
                   const trip = row.data;
 
                   if (feedConfigs[folder]['useRouteShortNameForID']) trip.route_id = routeIDReplacements[trip.route_id];
+                  if (trip.trip_short_name) shortTripIDs[trip.trip_id] = trip.trip_short_name;
 
-                  trips[trip.trip_id] = {
-                    tripID: trip.trip_id,
+                  trips[trip.trip_short_name ?? trip.trip_id] = {
+                    tripID: trip.trip_short_name ?? trip.trip_id,
                     routeID: trip.route_id,
                     serviceID: trip.service_id,
                     times: [],
@@ -290,7 +292,7 @@ const processSchedules = async (chunk) => {
                                   if (!stopTime.arrival_time && !stopTime.departure_time) return;
                                   const timeParsed = (stopTime.departure_time ?? stopTime.arrival_time).split(':').map((n) => parseInt(n));
 
-                                  trips[stopTime.trip_id].times.push({
+                                  trips[shortTripIDs[stopTime.trip_id] ?? stopTime.trip_id].times.push({
                                     hour: timeParsed[0],
                                     minute: timeParsed[1],
                                     second: timeParsed[2],
@@ -299,9 +301,9 @@ const processSchedules = async (chunk) => {
                                     sequence: stopTime.stop_sequence,
                                   });
 
-                                  const trip = trips[stopTime.trip_id];
+                                  const trip = trips[shortTripIDs[stopTime.trip_id] ?? stopTime.trip_id];
 
-                                  const headsign = stopTime.stop_headsign && stopTime.stop_headsign.length > 0 ? stopTime.stop_headsign : (trips[stopTime.trip_id].headsign ?? "");
+                                  const headsign = stopTime.stop_headsign && stopTime.stop_headsign.length > 0 ? stopTime.stop_headsign : (trips[shortTripIDs[stopTime.trip_id] ?? stopTime.trip_id].headsign ?? "");
 
                                   stops[stopID].services[trip.serviceID].trips.push({
                                     hour: timeParsed[0],
