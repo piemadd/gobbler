@@ -154,10 +154,12 @@ const processSchedules = async (chunk) => {
                   const trip = row.data;
 
                   if (feedConfigs[folder]['useRouteShortNameForID']) trip.route_id = routeIDReplacements[trip.route_id];
-                  if (trip.trip_short_name) shortTripIDs[trip.trip_id] = trip.trip_short_name;
+                  
+                  const useShortNames = trip.trip_short_name && trip.trip_short_name.length > 0;
+                  if (useShortNames) shortTripIDs[trip.trip_id] = trip.trip_short_name;
 
-                  trips[trip.trip_short_name ?? trip.trip_id] = {
-                    tripID: trip.trip_short_name ?? trip.trip_id,
+                  trips[useShortNames ? trip.trip_short_name : trip.trip_id] = {
+                    tripID: useShortNames ? trip.trip_short_name : trip.trip_id,
                     routeID: trip.route_id,
                     serviceID: trip.service_id,
                     times: [],
