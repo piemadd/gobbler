@@ -2,6 +2,7 @@ const fs = require('fs');
 
 const shapesToCombine = fs.readdirSync('./shapes');
 const amtrakerFileNames = [
+  'cpkcHoliday.json',
   'via_rail.geojson',
   'nationalRoute.json',
   'brightline.geojson',
