@@ -147,6 +147,19 @@ const feeds = {
     disabledShapes: false,
     activeTypes: ["1", "2"]
   },
+  mbta: {
+    name: "MBTA",
+    url: "https://cdn.mbta.com/MBTA_GTFS.zip",
+    headers: {},
+    urlEnv: [],
+    doAllShapes: false,
+    generateSchedules: true,
+    scheduleRunNumbersRequired: true,
+    colorOverrides: {},
+    colorReplacements: {},
+    disabledShapes: false,
+    activeTypes: ['0', '1', '2', '4']
+  },
   lirr: {
     name: "Long Island Railroad (MTA)",
     url: "http://web.mta.info/developers/data/lirr/google_transit.zip",
