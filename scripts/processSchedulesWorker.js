@@ -154,7 +154,7 @@ const processSchedules = async (chunk) => {
                   const trip = row.data;
 
                   if (feedConfigs[folder]['useRouteShortNameForID']) trip.route_id = routeIDReplacements[trip.route_id];
-                  
+
                   const useShortNames = trip.trip_short_name && trip.trip_short_name.length > 0;
                   if (useShortNames) shortTripIDs[trip.trip_id] = trip.trip_short_name;
 
@@ -396,6 +396,7 @@ const processSchedules = async (chunk) => {
 
                                   try {
                                     let compressedTripsProtoMessage = MultipleVehiclesScheduleMessage.fromObject({ vehicleScheduleMessage: compressedTripsRaw });
+                                    //fs.writeFileSync(`./schedules/${folder}/vehicles.json`, JSON.stringify(compressedTripsRaw), { encoding: 'utf8' });
                                     compressedTripsRaw = null;
                                     let compressedTripsBufProto = MultipleVehiclesScheduleMessage.encode(compressedTripsProtoMessage).finish();
                                     compressedTripsProtoMessage = null;
@@ -540,6 +541,9 @@ const processSchedules = async (chunk) => {
                                     //dates keys
                                     for (let i = 0; i < dateKeys.length; i++) {
                                       let convertedDay = convertDayScheduleIntoUsable(next10DaysOfServices[dateKeys[i]], folder);
+
+                                      //fs.writeFileSync(`./schedules/${folder}/${dateKeys[i]}.json`, JSON.stringify(convertedDay, null, 2), { encoding: 'utf8' });
+
                                       next10DaysOfServices[dateKeys[i]] = null; // reduing ram usage, possibly
 
                                       let protoMessage = ScheduleMessage.fromObject(convertedDay);
