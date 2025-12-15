@@ -348,7 +348,7 @@ const feeds = {
     colorReplacements: {},
     noSegments: false,
     disabledShapes: false,
-    //subfolder: "new schedule/",
+    subfolder: "google_transit/",
     activeTypes: [
       "2"
     ]
