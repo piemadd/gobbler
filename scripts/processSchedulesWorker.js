@@ -95,9 +95,14 @@ const processSchedules = async (chunk) => {
     const ScheduleMessage = root.lookupType('gobbler.ScheduleMessage');
     const MultipleVehiclesScheduleMessage = root.lookupType('gobbler.MultipleVehiclesScheduleMessage');
 
+    let feedPath = `./csv/${folder}`;
+    if (feedConfigs[folder].subfolder) {
+      feedPath = `./csv/${folder}/${feedConfigs[folder].subfolder}`
+    }
+
     try {
       console.log(`Parsing agency for ${folder}`)
-      const readStream = fs.createReadStream(`./csv/${folder}/agency.txt`);
+      const readStream = fs.createReadStream(`${feedPath}/agency.txt`);
 
       Papa.parse(readStream, {
         //delimiter: ',',
@@ -111,7 +116,7 @@ const processSchedules = async (chunk) => {
         },
         complete: () => {
           console.log(`Parsing routes for ${folder}`)
-          const readStream = fs.createReadStream(`./csv/${folder}/routes.txt`);
+          const readStream = fs.createReadStream(`${feedPath}/routes.txt`);
 
           Papa.parse(readStream, {
             //delimiter: ',',
@@ -143,7 +148,7 @@ const processSchedules = async (chunk) => {
               })
 
               console.log(`Parsing trips for ${folder}`)
-              const readStream = fs.createReadStream(`./csv/${folder}/trips.txt`);
+              const readStream = fs.createReadStream(`${feedPath}/trips.txt`);
 
               Papa.parse(readStream, {
                 //delimiter: ',',
@@ -169,8 +174,8 @@ const processSchedules = async (chunk) => {
                 },
                 complete: () => {
                   console.log(`Parsing calendar for ${folder}`)
-                  const readStream = fs.existsSync(`./csv/${folder}/calendar.txt`) ?
-                    fs.createReadStream(`./csv/${folder}/calendar.txt`) :
+                  const readStream = fs.existsSync(`${feedPath}/calendar.txt`) ?
+                    fs.createReadStream(`${feedPath}/calendar.txt`) :
                     fs.createReadStream(`./dummyEmptyFile.txt`);
 
                   Papa.parse(readStream, {
@@ -198,8 +203,8 @@ const processSchedules = async (chunk) => {
                     },
                     complete: () => {
                       console.log(`Parsing calendar_dates for ${folder}`)
-                      const readStream = fs.existsSync(`./csv/${folder}/calendar_dates.txt`) ?
-                        fs.createReadStream(`./csv/${folder}/calendar_dates.txt`) :
+                      const readStream = fs.existsSync(`${feedPath}/calendar_dates.txt`) ?
+                        fs.createReadStream(`${feedPath}/calendar_dates.txt`) :
                         fs.createReadStream(`./dummyEmptyFile.txt`);
 
                       Papa.parse(readStream, {
@@ -242,7 +247,7 @@ const processSchedules = async (chunk) => {
                         },
                         complete: () => {
                           console.log(`Parsing stops for ${folder}`)
-                          const readStream = fs.createReadStream(`./csv/${folder}/stops.txt`);
+                          const readStream = fs.createReadStream(`${feedPath}/stops.txt`);
 
                           Papa.parse(readStream, {
                             //delimiter: ',',
@@ -280,7 +285,7 @@ const processSchedules = async (chunk) => {
                               })
 
                               console.log(`Parsing stop_times for ${folder}`)
-                              const readStream = fs.createReadStream(`./csv/${folder}/stop_times.txt`);
+                              const readStream = fs.createReadStream(`${feedPath}/stop_times.txt`);
 
                               Papa.parse(readStream, {
                                 //delimiter: ',',

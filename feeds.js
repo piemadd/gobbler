@@ -348,9 +348,9 @@ const feeds = {
     colorReplacements: {},
     noSegments: false,
     disabledShapes: false,
-    subfolder: "google_transit/",
+    subfolder: "google_transit/*",
     activeTypes: [
-      "2"
+      //"2"
     ]
   },
   casco_bay_lines: {
