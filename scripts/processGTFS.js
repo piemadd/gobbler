@@ -1,6 +1,8 @@
 const fs = require('fs');
 const { Worker } = require("worker_threads");
 const { processSchedules } = require('./processSchedulesWorker');
+const { processAtlasData } = require('./processAmtrakerAtlasWorker');
+
 
 console.log('Cleaning up old files');
 
@@ -29,4 +31,6 @@ for (let i = 0; i < feeds.length; i += chunkSize) {
   }
 
   processSchedules(chunk);
+  //processAtlasData(chunk);
+
 }

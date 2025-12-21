@@ -6,6 +6,8 @@ const feeds = {
     urlEnv: [],
     doAllShapes: true,
     generateSchedules: true,
+    generateAtlasData: true,
+    useRouteShortNameForID: false,
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {
@@ -23,7 +25,8 @@ const feeds = {
     headers: {},
     urlEnv: [],
     doAllShapes: true,
-    generateSchedules: false,
+    generateSchedules: true,
+    generateAtlasData: true,
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
@@ -39,6 +42,7 @@ const feeds = {
     urlEnv: [],
     doAllShapes: true,
     generateSchedules: true,
+    generateAtlasData: true,
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {

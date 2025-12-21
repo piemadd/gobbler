@@ -68,7 +68,7 @@ const processSchedules = async (chunk) => {
   for (let i = 0; i < chunk.length; i++) {
     const folder = chunk[i];
 
-    //if (folder != 'metra') continue; // FOR DEBUG
+    //if (folder != 'amtrak') continue; // FOR DEBUG
 
     if (!feedConfigs[folder].generateSchedules) continue;
     console.log('Generating schedules for', folder)
@@ -326,6 +326,17 @@ const processSchedules = async (chunk) => {
                                   headsignsIndex[headsign] = 1; // trust the process here
                                 },
                                 complete: () => {
+                                  console.log(`Reprocessing stop_times of trips for ${folder}`)
+                                  Object.values(trips)
+                                    .sort((a, b) => a.timeNum - b.timeNum)
+                                    .forEach((trip) => {
+                                      trips[trip.tripID].times = trips[trip.tripID].times.filter((time, timeIndex, self) =>
+                                        timeIndex === self.findIndex((timeTemp) => (
+                                          timeTemp.timeNum === time.timeNum && timeTemp.stopID === time.stopID
+                                        ))
+                                      )
+                                    });
+
                                   console.log(`Done parsing CSV for ${folder}`)
                                   let compressedTripsRaw = [];
 
