@@ -259,20 +259,20 @@ const processSchedules = async (chunk) => {
                               const stop = row.data;
 
                               if (stop.parent_station && stop.parent_station.length > 0) {
-                                parentStops[stop.stop_code ?? stop.stop_id] = stop.parent_station
+                                parentStops[stop.stop_id] = stop.parent_station
                               } else {
 
-                                stops[stop.stop_code ?? stop.stop_id] = {
+                                stops[stop.stop_id] = {
                                   name: stop.stop_name,
                                   tz: stop.stop_timezone ?? agencyTZ,
                                   services: {},
                                 };
 
-                                if (!stops[stop.stop_code ?? stop.stop_id].tz || stops[stop.stop_code ?? stop.stop_id].tz.length == 0) {
-                                  stops[stop.stop_code ?? stop.stop_id].tz = findTZ(stop.stop_lat, stop.stop_lon);
+                                if (!stops[stop.stop_id].tz || stops[stop.stop_id].tz.length == 0) {
+                                  stops[stop.stop_id].tz = findTZ(stop.stop_lat, stop.stop_lon);
                                 }
 
-                                stops[stop.stop_code ?? stop.stop_id].tzOffset = getOffset(stops[stop.stop_code ?? stop.stop_id].tz)
+                                stops[stop.stop_id].tzOffset = getOffset(stops[stop.stop_id].tz)
                               }
                             },
                             complete: () => {
@@ -295,7 +295,7 @@ const processSchedules = async (chunk) => {
                                 transform: (v) => v.trim(),
                                 step: async (row) => {
                                   const stopTime = row.data;
-                                  const stopID = parentStops[stop.stop_code ?? stopTime.stop_id] ?? stop.stop_code ?? stopTime.stop_id;
+                                  const stopID = parentStops[stopTime.stop_id] ?? stopTime.stop_id;
 
                                   if (!stopTime.arrival_time && !stopTime.departure_time) return;
                                   const timeParsed = (stopTime.departure_time ?? stopTime.arrival_time).split(':').map((n) => parseInt(n));
