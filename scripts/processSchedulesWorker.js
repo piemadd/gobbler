@@ -165,6 +165,7 @@ const processSchedules = async (chunk) => {
 
                   trips[useShortNames ? trip.trip_short_name : trip.trip_id] = {
                     tripID: useShortNames ? trip.trip_short_name : trip.trip_id,
+                    actualTripID: trip.trip_id,
                     routeID: trip.route_id,
                     serviceID: trip.service_id,
                     times: [],
@@ -299,14 +300,16 @@ const processSchedules = async (chunk) => {
                                   if (!stopTime.arrival_time && !stopTime.departure_time) return;
                                   const timeParsed = (stopTime.departure_time ?? stopTime.arrival_time).split(':').map((n) => parseInt(n));
 
-                                  trips[shortTripIDs[stopTime.trip_id] ?? stopTime.trip_id].times.push({
-                                    hour: timeParsed[0],
-                                    minute: timeParsed[1],
-                                    second: timeParsed[2],
-                                    timeNum: parseInt(timeParsed.map((n) => n.toString().padStart(2, "0")).join('')),
-                                    stopID: stopID,
-                                    sequence: stopTime.stop_sequence,
-                                  });
+                                  if (trips[shortTripIDs[stopTime.trip_id] ?? stopTime.trip_id].actualTripID == stopTime.trip_id) { // ensuring we're on the same trip rn
+                                    trips[shortTripIDs[stopTime.trip_id] ?? stopTime.trip_id].times.push({
+                                      hour: timeParsed[0],
+                                      minute: timeParsed[1],
+                                      second: timeParsed[2],
+                                      timeNum: parseInt(timeParsed.map((n) => n.toString().padStart(2, "0")).join('')),
+                                      stopID: stopID,
+                                      sequence: stopTime.stop_sequence,
+                                    });
+                                  }
 
                                   const trip = trips[shortTripIDs[stopTime.trip_id] ?? stopTime.trip_id];
 
