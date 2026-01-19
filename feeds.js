@@ -49,8 +49,25 @@ const feeds = {
       "F2E205": "FFDB00"
     },
     textColorReplacements: {
-      "0D0D0D": "363636"
+      //"0D0D0D": "363636"
     },
+    disabledShapes: false,
+    activeTypes: [
+      "2"
+    ]
+  },
+  metrolink_la: {
+    name: "LA Metrolink",
+    url: "https://metrolinktrains.com/globalassets/about/gtfs/gtfs.zip",
+    headers: {},
+    urlEnv: [],
+    doAllShapes: true,
+    generateSchedules: true,
+    generateAtlasData: true,
+    scheduleRunNumbersRequired: true,
+    colorOverrides: {},
+    colorReplacements: {},
+    textColorReplacements: {},
     disabledShapes: false,
     activeTypes: [
       "2"
