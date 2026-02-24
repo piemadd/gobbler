@@ -11,13 +11,26 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {
-      "CAE4F1": "5366c9",
-      "000000": "5366c9"
+      CAE4F1: "5366c9",
+      "000000": "5366c9",
     },
     disabledShapes: true,
-    activeTypes: [
-      "2"
-    ]
+    activeTypes: ["2"],
+  },
+  ctrail_hartford: {
+    name: "CTRail Hartford Line",
+    url: "https://ctrides.com/hlgtfs.zip",
+    headers: {},
+    urlEnv: [],
+    doAllShapes: true,
+    generateSchedules: true,
+    generateAtlasData: true,
+    useRouteShortNameForID: false,
+    scheduleRunNumbersRequired: true,
+    colorOverrides: {},
+    colorReplacements: {},
+    disabledShapes: true,
+    activeTypes: ["2"],
   },
   via_rail: {
     name: "VIA Rail",
@@ -31,9 +44,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: [
-      "2"
-    ]
+    activeTypes: ["2"],
   },
   brightline: {
     name: "Brightline",
@@ -46,15 +57,13 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {
-      "F2E205": "FFDB00"
+      F2E205: "FFDB00",
     },
     textColorReplacements: {
       //"0D0D0D": "363636"
     },
     disabledShapes: false,
-    activeTypes: [
-      "2"
-    ]
+    activeTypes: ["2"],
   },
   metrolink_la: {
     name: "LA Metrolink",
@@ -69,9 +78,7 @@ const feeds = {
     colorReplacements: {},
     textColorReplacements: {},
     disabledShapes: false,
-    activeTypes: [
-      "2"
-    ]
+    activeTypes: ["2"],
   },
   flixbus_us: {
     name: "Flixbus US",
@@ -84,9 +91,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: [
-      "3"
-    ]
+    activeTypes: ["3"],
   },
   pace: {
     name: "Pace Bus",
@@ -99,7 +104,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: []
+    activeTypes: [],
   },
   bart: {
     name: "BART",
@@ -111,29 +116,20 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
-    activeTypes: ['0', '1']
+    activeTypes: ["0", "1"],
   },
   RG: {
     name: "Regional GTFS",
     url: "https://api.511.org/transit/datafeeds?api_key=env.bay_511&operator_id=RG",
     headers: {},
-    urlEnv: [
-      "env.bay_511"
-    ],
+    urlEnv: ["env.bay_511"],
     doAllShapes: false,
     generateSchedules: false,
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
-    ]
+    activeTypes: ["0", "1", "2", "3", "4", "5"],
   },
   metra: {
     name: "Metra",
@@ -146,14 +142,12 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: [
-      "2"
-    ],
-    convertTripID: ((id) => {
-      const arr = id.split('_');
+    activeTypes: ["2"],
+    convertTripID: (id) => {
+      const arr = id.split("_");
 
-      return arr[0].replaceAll('-', '') + '-' + arr[1].match(/(\d+)/)[0];
-    }),
+      return arr[0].replaceAll("-", "") + "-" + arr[1].match(/(\d+)/)[0];
+    },
   },
   nyct_subway: {
     name: "NYC Subway",
@@ -166,7 +160,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: ["1", "2"]
+    activeTypes: ["1", "2"],
   },
   mbta: {
     name: "MBTA",
@@ -179,7 +173,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: ['0', '1', '2', '4']
+    activeTypes: ["0", "1", "2", "4"],
   },
   lirr: {
     name: "Long Island Railroad (MTA)",
@@ -192,7 +186,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: ['2']
+    activeTypes: ["2"],
   },
   mnrr: {
     name: "Metro North (MTA)",
@@ -205,7 +199,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: ['2']
+    activeTypes: ["2"],
   },
   nyct_bronx: {
     name: "NYC Bronx Buses",
@@ -218,7 +212,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: []
+    activeTypes: [],
   },
   nyct_brooklyn: {
     name: "NYC Brooklyn Buses",
@@ -231,7 +225,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: []
+    activeTypes: [],
   },
   nyct_manhattan: {
     name: "NYC Manhattan Buses",
@@ -244,7 +238,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: []
+    activeTypes: [],
   },
   nyct_queens: {
     name: "NYC Queens Buses",
@@ -257,7 +251,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: []
+    activeTypes: [],
   },
   nyct_staten_island: {
     name: "NYC Staten Island Buses",
@@ -270,7 +264,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: []
+    activeTypes: [],
   },
   nyct_mta_bus_company: {
     name: "NYC MTA Bus Company",
@@ -283,7 +277,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: []
+    activeTypes: [],
   },
   cta: {
     name: "Chicago Transit Authority",
@@ -295,13 +289,11 @@ const feeds = {
     scheduleRunNumbersRequired: false,
     colorOverrides: {},
     colorReplacements: {
-      "565a5c": "949ca1"
+      "565a5c": "949ca1",
     },
     noSegments: true,
     disabledShapes: false,
-    activeTypes: [
-      "1"
-    ]
+    activeTypes: ["1"],
   },
   cdmx_metro: {
     name: "Mexico City Metro",
@@ -317,7 +309,7 @@ const feeds = {
     disabledShapes: false,
     activeTypes: [
       //"1"
-    ]
+    ],
   },
   dekalb_il: {
     name: "Dekalb, IL Huskie Lines",
@@ -331,9 +323,7 @@ const feeds = {
     colorReplacements: {},
     noSegments: true,
     disabledShapes: false,
-    activeTypes: [
-      "3"
-    ],
+    activeTypes: ["3"],
     useRouteShortNameForID: true,
   },
   mdot_metro: {
@@ -348,9 +338,7 @@ const feeds = {
     colorReplacements: {},
     noSegments: true,
     disabledShapes: false,
-    activeTypes: [
-      "1"
-    ]
+    activeTypes: ["1"],
   },
   southshore: {
     name: "South Shore Line",
@@ -361,10 +349,7 @@ const feeds = {
     generateSchedules: true,
     scheduleRunNumbersRequired: true,
     colorOverrides: {
-      so_shore: [
-        "EA6E10",
-        "000000"
-      ]
+      so_shore: ["EA6E10", "000000"],
     },
     colorReplacements: {},
     noSegments: false,
@@ -372,7 +357,7 @@ const feeds = {
     subfolder: "google_transit/*",
     activeTypes: [
       //"2"
-    ]
+    ],
   },
   casco_bay_lines: {
     name: "Casco Bay Lines",
@@ -385,7 +370,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: []
+    activeTypes: [],
   },
   gp_metro: {
     name: "GP Metro",
@@ -398,7 +383,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: []
+    activeTypes: [],
   },
   south_portland: {
     name: "South Portland Bus Lines",
@@ -411,7 +396,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: []
+    activeTypes: [],
   },
   marta: {
     name: "MARTA",
@@ -424,10 +409,8 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: [
-      "1"
-    ]
-  }
+    activeTypes: ["1"],
+  },
 };
 
 module.exports = feeds;
