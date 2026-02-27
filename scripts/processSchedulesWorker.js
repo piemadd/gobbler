@@ -74,7 +74,7 @@ const processSchedules = async (chunk) => {
   for (let i = 0; i < chunk.length; i++) {
     const folder = chunk[i];
 
-    if (folder != "amtrak") continue; // FOR DEBUG
+    //if (folder != "amtrak") continue; // FOR DEBUG
 
     if (!feedConfigs[folder].generateSchedules) continue;
     console.log("Generating schedules for", folder);
