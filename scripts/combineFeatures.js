@@ -9,6 +9,7 @@ const amtrakerFileNames = [
   'amtrak_capitol_corridor.json',
   'amtrak_cascades.json',
   'amtrak_mardi_gras.json',
+  'bigboy_west_2026.json',
 ];
 
 let features = [];

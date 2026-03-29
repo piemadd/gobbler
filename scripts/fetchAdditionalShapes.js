@@ -4,6 +4,7 @@ const amtrak = require('../additionalShapes/amtrak.json');
 const amtrak_capitol_corridor = require('../additionalShapes/amtrak_capitol_corridor.json');
 const amtrak_cascades = require('../additionalShapes/amtrak_cascades.json');
 const amtrak_mardi_gras = require('../additionalShapes/amtrak_mardi_gras.json');
+const bigboy_west_2026 = require('../additionalShapes/bigboy_west_2026.json');
 const snowPiercer = require('../additionalShapes/snowPiercer.json');
 const mff = require('../additionalShapes/mff.json');
 //const cpkcHoliday = require('../additionalShapes/cpkcHoliday.json');
@@ -24,6 +25,7 @@ fs.writeFileSync('./shapes/nationalRoute.json', JSON.stringify(amtrak), { encodi
 fs.writeFileSync('./shapes/amtrak_capitol_corridor.json', JSON.stringify(amtrak_capitol_corridor), { encoding: 'utf8' });
 fs.writeFileSync('./shapes/amtrak_cascades.json', JSON.stringify(amtrak_cascades), { encoding: 'utf8' });
 fs.writeFileSync('./shapes/amtrak_mardi_gras.json', JSON.stringify(amtrak_mardi_gras), { encoding: 'utf8' });
+fs.writeFileSync('./shapes/bigboy_west_2026.json', JSON.stringify(bigboy_west_2026), { encoding: 'utf8' });
 fs.writeFileSync('./shapes/snowPiercer.json', JSON.stringify(snowPiercer), { encoding: 'utf8' });
 fs.writeFileSync('./shapes/mff.json', JSON.stringify(mff), { encoding: 'utf8' });
 //fs.writeFileSync('./shapes/cpkcHoliday.json', JSON.stringify(cpkcHoliday), { encoding: 'utf8' });

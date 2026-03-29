@@ -451,8 +451,6 @@ const processSchedules = async (chunk) => {
                                       headsignsIndex[headsign] = 1; // trust the process here
                                     },
                                     complete: () => {
-                                      console.log(trips["11"]);
-
                                       console.log(
                                         `Reprocessing stop_times of trips for ${folder}`,
                                       );
