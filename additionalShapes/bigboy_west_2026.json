@@ -94,8 +94,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 1,
         "OBJECTID": 0,
@@ -353,8 +355,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 2,
         "OBJECTID": 0,
@@ -1738,8 +1742,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 3,
         "OBJECTID": 0,
@@ -1874,8 +1880,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 4,
         "OBJECTID": 0,
@@ -3370,8 +3378,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 5,
         "OBJECTID": 0,
@@ -4830,8 +4840,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 6,
         "OBJECTID": 0,
@@ -5111,8 +5123,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 7,
         "OBJECTID": 0,
@@ -5585,8 +5599,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 8,
         "OBJECTID": 0,
@@ -5894,8 +5910,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 9,
         "OBJECTID": 0,
@@ -6034,8 +6052,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 10,
         "OBJECTID": 0,
@@ -6330,8 +6350,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 11,
         "OBJECTID": 0,
@@ -6814,8 +6836,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 12,
         "OBJECTID": 0,
@@ -6876,8 +6900,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 13,
         "OBJECTID": 0,
@@ -7002,8 +7028,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 14,
         "OBJECTID": 0,
@@ -7303,8 +7331,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 15,
         "OBJECTID": 0,
@@ -8505,8 +8535,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 16,
         "OBJECTID": 0,
@@ -8804,8 +8836,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 17,
         "OBJECTID": 0,
@@ -9952,8 +9986,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 18,
         "OBJECTID": 0,
@@ -10015,8 +10051,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 19,
         "OBJECTID": 0,
@@ -10092,8 +10130,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 20,
         "OBJECTID": 0,
@@ -10200,8 +10240,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 21,
         "OBJECTID": 0,
@@ -10260,8 +10302,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 22,
         "OBJECTID": 0,
@@ -10367,8 +10411,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 23,
         "OBJECTID": 0,
@@ -10770,8 +10816,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 24,
         "OBJECTID": 0,
@@ -11160,8 +11208,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 25,
         "OBJECTID": 0,
@@ -11422,8 +11472,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 26,
         "OBJECTID": 0,
@@ -11531,8 +11583,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 27,
         "OBJECTID": 0,
@@ -11559,8 +11613,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 28,
         "OBJECTID": 0,
@@ -13095,8 +13151,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 29,
         "OBJECTID": 0,
@@ -13124,8 +13182,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 30,
         "OBJECTID": 0,
@@ -13236,8 +13296,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 31,
         "OBJECTID": null,
@@ -13401,8 +13463,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 32,
         "OBJECTID": null,
@@ -15236,8 +15300,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 33,
         "OBJECTID": null,
@@ -15597,8 +15663,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 34,
         "OBJECTID": null,
@@ -15769,8 +15837,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 35,
         "OBJECTID": null,
@@ -16099,8 +16169,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 36,
         "OBJECTID": 0,
@@ -16380,8 +16452,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 37,
         "OBJECTID": 0,
@@ -16849,8 +16923,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 38,
         "OBJECTID": 0,
@@ -17493,8 +17569,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 39,
         "OBJECTID": 0,
@@ -18096,8 +18174,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 40,
         "OBJECTID": 0,
@@ -18392,8 +18472,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 41,
         "OBJECTID": 0,
@@ -18532,8 +18614,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 42,
         "OBJECTID": 0,
@@ -19034,8 +19118,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 43,
         "OBJECTID": 0,
@@ -19202,8 +19288,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 44,
         "OBJECTID": 0,
@@ -19367,8 +19455,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 45,
         "OBJECTID": 0,
@@ -19782,8 +19872,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 46,
         "OBJECTID": 0,
@@ -20348,8 +20440,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 47,
         "OBJECTID": 0,
@@ -20534,8 +20628,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 48,
         "OBJECTID": 0,
@@ -21052,8 +21148,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 49,
         "OBJECTID": 0,
@@ -21201,8 +21299,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 50,
         "OBJECTID": 0,
@@ -21554,8 +21654,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 51,
         "OBJECTID": 0,
@@ -21912,8 +22014,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 52,
         "OBJECTID": 0,
@@ -22915,8 +23019,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 53,
         "OBJECTID": 0,
@@ -24613,8 +24719,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 54,
         "OBJECTID": 0,
@@ -26229,8 +26337,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 55,
         "OBJECTID": 0,
@@ -26659,8 +26769,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 56,
         "OBJECTID": 0,
@@ -26843,8 +26955,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 57,
         "OBJECTID": 0,
@@ -27397,8 +27511,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 58,
         "OBJECTID": 0,
@@ -27996,8 +28112,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 59,
         "OBJECTID": 0,
@@ -29130,8 +29248,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 60,
         "OBJECTID": 0,
@@ -29745,8 +29865,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 61,
         "OBJECTID": 0,
@@ -30316,8 +30438,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 62,
         "OBJECTID": 0,
@@ -31460,8 +31584,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 63,
         "OBJECTID": 0,
@@ -32264,8 +32390,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 64,
         "OBJECTID": 0,
@@ -32291,8 +32419,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 65,
         "OBJECTID": 0,
@@ -32350,8 +32480,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 66,
         "OBJECTID": 0,
@@ -32410,8 +32542,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 67,
         "OBJECTID": 0,
@@ -33077,8 +33211,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 68,
         "OBJECTID": 0,
@@ -34390,8 +34526,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 69,
         "OBJECTID": 0,
@@ -35687,8 +35825,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 70,
         "OBJECTID": 0,
@@ -35808,8 +35948,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 71,
         "OBJECTID": 0,
@@ -36103,8 +36245,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 72,
         "OBJECTID": 0,
@@ -36130,8 +36274,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 73,
         "OBJECTID": 0,
@@ -36507,8 +36653,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 74,
         "OBJECTID": 0,
@@ -36711,8 +36859,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 75,
         "OBJECTID": 0,
@@ -36784,8 +36934,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 76,
         "OBJECTID": 0,
@@ -36855,8 +37007,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 77,
         "OBJECTID": 0,
@@ -36961,8 +37115,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 78,
         "OBJECTID": null,
@@ -37300,8 +37456,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 79,
         "OBJECTID": null,
@@ -37354,8 +37512,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 80,
         "OBJECTID": null,
@@ -37429,8 +37589,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 81,
         "OBJECTID": null,
@@ -39660,8 +39822,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 82,
         "OBJECTID": null,
@@ -40332,8 +40496,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 83,
         "OBJECTID": null,
@@ -40555,8 +40721,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 84,
         "OBJECTID": null,
@@ -42072,8 +42240,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 85,
         "OBJECTID": null,
@@ -42211,8 +42381,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 86,
         "OBJECTID": null,
@@ -45102,8 +45274,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 87,
         "OBJECTID": null,
@@ -45132,8 +45306,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 88,
         "OBJECTID": null,
@@ -45240,8 +45416,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 89,
         "OBJECTID": null,
@@ -45329,8 +45507,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 90,
         "OBJECTID": null,
@@ -45452,8 +45632,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 91,
         "OBJECTID": null,
@@ -45502,8 +45684,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 92,
         "OBJECTID": null,
@@ -45545,8 +45729,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 93,
         "OBJECTID": null,
@@ -45708,8 +45894,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 94,
         "OBJECTID": null,
@@ -45786,8 +45974,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 95,
         "OBJECTID": null,
@@ -45825,8 +46015,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 96,
         "OBJECTID": null,
@@ -45862,8 +46054,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 97,
         "OBJECTID": null,
@@ -45923,8 +46117,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 98,
         "OBJECTID": null,
@@ -48064,8 +48260,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 99,
         "OBJECTID": null,
@@ -48134,8 +48332,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 100,
         "OBJECTID": null,
@@ -48389,8 +48589,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 101,
         "OBJECTID": null,
@@ -48614,8 +48816,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 102,
         "OBJECTID": null,
@@ -54005,8 +54209,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 103,
         "OBJECTID": null,
@@ -54162,8 +54368,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 104,
         "OBJECTID": null,
@@ -54345,8 +54553,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 105,
         "OBJECTID": null,
@@ -54372,8 +54582,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 106,
         "OBJECTID": null,
@@ -54716,8 +54928,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 107,
         "OBJECTID": null,
@@ -55442,8 +55656,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 108,
         "OBJECTID": null,
@@ -55589,8 +55805,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 109,
         "OBJECTID": null,
@@ -56063,8 +56281,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 110,
         "OBJECTID": null,
@@ -56150,8 +56370,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 111,
         "OBJECTID": null,
@@ -56429,8 +56651,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 112,
         "OBJECTID": null,
@@ -56491,8 +56715,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 113,
         "OBJECTID": null,
@@ -58722,8 +58948,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 114,
         "OBJECTID": null,
@@ -59411,8 +59639,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 115,
         "OBJECTID": null,
@@ -59603,8 +59833,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 116,
         "OBJECTID": null,
@@ -59826,8 +60058,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 117,
         "OBJECTID": null,
@@ -59876,8 +60110,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 118,
         "OBJECTID": null,
@@ -59946,8 +60182,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 119,
         "OBJECTID": null,
@@ -60103,8 +60341,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 120,
         "OBJECTID": null,
@@ -60358,8 +60598,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 121,
         "OBJECTID": null,
@@ -60637,8 +60879,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 122,
         "OBJECTID": null,
@@ -60757,8 +61001,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 123,
         "OBJECTID": null,
@@ -63069,8 +63315,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 124,
         "OBJECTID": null,
@@ -63154,8 +63402,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 125,
         "OBJECTID": null,
@@ -63217,8 +63467,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 126,
         "OBJECTID": null,
@@ -63246,8 +63498,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 127,
         "OBJECTID": null,
@@ -63308,8 +63562,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 128,
         "OBJECTID": null,
@@ -63992,8 +64248,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 129,
         "OBJECTID": null,
@@ -64047,8 +64305,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 130,
         "OBJECTID": null,
@@ -64239,8 +64499,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 131,
         "OBJECTID": null,
@@ -64418,8 +64680,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 132,
         "OBJECTID": null,
@@ -64664,8 +64928,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 133,
         "OBJECTID": null,
@@ -64699,8 +64965,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 134,
         "OBJECTID": null,
@@ -65388,8 +65656,10 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
         "OBJECTID_1": 135,
         "OBJECTID": null,
@@ -65417,9 +65687,12 @@
         ]
       },
       "properties": {
-        "name": "UP Big Boy 2026 West",
-        "provider": "up",
+        "routeID": "bigboy",
+        "provider": "unionpacific",
+        "routeShortName": "Big Boy",
+        "routeLongName": "UP Big Boy",
         "routeColor": "#feca00",
+        "minZoom": 0,
         "OBJECTID_1": 136,
         "OBJECTID": null,
         "LINREFCOL": null,
