@@ -34,7 +34,7 @@ const feeds = {
   },
   via_rail: {
     name: "VIA Rail",
-    url: "https://www.viarail.ca/sites/all/files/gtfs/viarail.zip",
+    url: "https://tiles.transitstat.us/viarail.zip", // temp switch cuz via's servers suck "https://www.viarail.ca/sites/all/files/gtfs/viarail.zip",
     headers: {},
     urlEnv: [],
     doAllShapes: true,
