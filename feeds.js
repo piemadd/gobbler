@@ -342,7 +342,7 @@ const feeds = {
   },
   southshore: {
     name: "South Shore Line",
-    url: "http://www.mysouthshoreline.com/google/google_transit.zip",
+    url: "https://s3.amazonaws.com/etatransit.gtfs/southshore.etaspot.net/gtfs.zip",
     headers: {},
     urlEnv: [],
     doAllShapes: false,
