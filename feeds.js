@@ -311,6 +311,21 @@ const feeds = {
       //"1"
     ],
   },
+  dekalb_il: {
+    name: "Dekalb, IL Huskie Lines",
+    url: "https://data.trilliumtransit.com/gtfs/cityofdekalb-il-us/cityofdekalb-il-us.zip",
+    headers: {},
+    urlEnv: [],
+    doAllShapes: false,
+    generateSchedules: true,
+    scheduleRunNumbersRequired: true,
+    colorOverrides: {},
+    colorReplacements: {},
+    noSegments: true,
+    disabledShapes: false,
+    activeTypes: ["3"],
+    useRouteShortNameForID: true,
+  },
   mdot_metro: {
     name: "MDOT (Maryland) Metro",
     url: "https://feeds.mta.maryland.gov/gtfs/metro",
@@ -333,29 +348,15 @@ const feeds = {
     doAllShapes: false,
     generateSchedules: true,
     scheduleRunNumbersRequired: true,
-    colorOverrides: {},
+    colorOverrides: {
+      so_shore: ["EA6E10", "000000"],
+    },
     colorReplacements: {},
     noSegments: false,
     disabledShapes: false,
     //subfolder: "google_transit/*",
     activeTypes: [
       "2"
-    ],
-  },
-  dekalb_il: {
-    name: "Dekalb Huskie Lines",
-    url: "https://s3.amazonaws.com/etatransit.gtfs/dekalbpublic.etaspot.net/gtfs.zip",
-    headers: {},
-    urlEnv: [],
-    doAllShapes: false,
-    generateSchedules: true,
-    scheduleRunNumbersRequired: true,
-    colorOverrides: {},
-    colorReplacements: {},
-    noSegments: true,
-    disabledShapes: false,
-    activeTypes: [
-      "3"
     ],
   },
   casco_bay_lines: {
