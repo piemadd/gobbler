@@ -409,7 +409,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: ["1"],
+    activeTypes: [], //["1"],
   },
 };
 
