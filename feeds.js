@@ -173,7 +173,7 @@ const feeds = {
     colorOverrides: {},
     colorReplacements: {},
     disabledShapes: false,
-    activeTypes: ["0", "1", "2", "4"],
+    activeTypes: [],
   },
   lirr: {
     name: "Long Island Railroad (MTA)",
