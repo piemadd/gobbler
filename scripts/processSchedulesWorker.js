@@ -827,6 +827,7 @@ const processSchedules = async (chunk) => {
                                             headsigns: headsignsArr,
                                             routes: routesArr,
                                             services: servicesForEachDate,
+                                            agencyTZ,
                                             stoppingPatterns:
                                               stoppingPatternArray.map(
                                                 (stoppingPatternKey) =>
