@@ -11,8 +11,8 @@ const feeds = {
     scheduleRunNumbersRequired: true,
     colorOverrides: {},
     colorReplacements: {
-      CAE4F1: "5366c9",
-      "000000": "5366c9",
+      CAE4F1: "008fd6",
+      "000000": "008fd6",
     },
     disabledShapes: true,
     activeTypes: ["2"],
