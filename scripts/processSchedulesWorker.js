@@ -66,7 +66,7 @@ const processSchedules = async (chunk) => {
   for (let i = 0; i < chunk.length; i++) {
     const folder = chunk[i];
 
-    //if (folder != "amtrak") continue; // FOR DEBUG
+    if (folder != "amtrak") continue; // FOR DEBUG
 
     if (!feedConfigs[folder].generateSchedules) continue;
     console.log("Generating schedules for", folder);
@@ -176,7 +176,7 @@ const processSchedules = async (chunk) => {
 
                       const useShortNames = trip.trip_short_name && trip.trip_short_name.length > 0;
                       if (useShortNames) shortTripIDs[trip.trip_id] = trip.trip_short_name;
-                      const tripIDToUse = useShortNames ? trip.trip_short_name : trip.trip_id;
+                      const tripIDToUse = trip.trip_id; //useShortNames ? trip.trip_short_name : trip.trip_id;
 
                       if (
                         trips[tripIDToUse] &&
@@ -186,7 +186,7 @@ const processSchedules = async (chunk) => {
                         return;
 
                       trips[tripIDToUse] = {
-                        tripID: useShortNames ? trip.trip_short_name : trip.trip_id,
+                        tripID: trip.trip_id, //useShortNames ? trip.trip_short_name : trip.trip_id,
                         actualTripID: trip.trip_id,
                         routeID: trip.route_id,
                         serviceID: trip.service_id,
@@ -284,7 +284,7 @@ const processSchedules = async (chunk) => {
                                   } else {
                                     stops[stop.stop_id] = {
                                       name: stop.stop_name,
-                                      tz: stop.stop_timezone ?? agencyTZ,
+                                      tz: agencyTZ,
                                       services: {}
                                     };
 
@@ -322,29 +322,24 @@ const processSchedules = async (chunk) => {
                                         .split(":")
                                         .map((n) => parseInt(n));
 
-                                      if (
-                                        trips[shortTripIDs[stopTime.trip_id] ?? stopTime.trip_id].actualTripID ==
-                                        stopTime.trip_id
-                                      ) {
-                                        // ensuring we're on the same trip rn
-                                        trips[shortTripIDs[stopTime.trip_id] ?? stopTime.trip_id].times.push({
-                                          hour: timeParsed[0],
-                                          minute: timeParsed[1],
-                                          second: timeParsed[2],
-                                          timeNum: parseInt(
-                                            timeParsed.map((n) => n.toString().padStart(2, "0")).join("")
-                                          ),
-                                          stopID: stopID,
-                                          sequence: stopTime.stop_sequence
-                                        });
-                                      }
+                                      // ensuring we're on the same trip rn
+                                      trips[stopTime.trip_id].times.push({
+                                        hour: timeParsed[0],
+                                        minute: timeParsed[1],
+                                        second: timeParsed[2],
+                                        timeNum: parseInt(
+                                          timeParsed.map((n) => n.toString().padStart(2, "0")).join("")
+                                        ),
+                                        stopID: stopID,
+                                        sequence: stopTime.stop_sequence
+                                      });
 
-                                      const trip = trips[shortTripIDs[stopTime.trip_id] ?? stopTime.trip_id];
+                                      const trip = trips[stopTime.trip_id];
 
                                       const headsign =
                                         stopTime.stop_headsign && stopTime.stop_headsign.length > 0
                                           ? stopTime.stop_headsign
-                                          : (trips[shortTripIDs[stopTime.trip_id] ?? stopTime.trip_id].headsign ?? "");
+                                          : (trip.headsign ?? "");
 
                                       stops[stopID].services[trip.serviceID].trips.push({
                                         hour: timeParsed[0],
@@ -357,6 +352,7 @@ const processSchedules = async (chunk) => {
                                         tripID: feedConfigs[folder].convertTripID
                                           ? feedConfigs[folder].convertTripID(trip.tripID)
                                           : trip.tripID,
+                                        shortTripID: shortTripIDs[trip.tripID],
                                         headsign: headsign
                                       });
 
@@ -538,18 +534,20 @@ const processSchedules = async (chunk) => {
                                                 todayClone.setUTCSeconds(trip.second);
                                                 const todayCloneSeconds = Math.floor(todayClone.valueOf() / 1000);
 
+                                                if (
+                                                  !nextDepForEachTrip[trip.tripID] ||
+                                                  nextDepForEachTrip[trip.tripID].time > todayClone.valueOf()
+                                                )
+                                                  nextDepForEachTrip[trip.tripID] = {
+                                                    trip,
+                                                    todayKey,
+                                                    time: todayClone.valueOf()
+                                                  };
+
                                                 const secondsDiff = todayCloneSeconds - lastTimeStamp;
                                                 lastTimeStamp = todayCloneSeconds;
 
                                                 let final = [secondsDiff, trip.tripID];
-
-                                                // adding to next
-                                                if (
-                                                  !nextDepForEachTrip[trip.tripID] &&
-                                                  Date.now() < todayClone.valueOf()
-                                                ) {
-                                                  nextDepForEachTrip[trip.tripID] = { eta: todayClone.valueOf(), trip };
-                                                }
 
                                                 if (i == 0) {
                                                   final.push(headsignsIndex[trip.headsign]);
@@ -598,6 +596,27 @@ const processSchedules = async (chunk) => {
                                         );
                                         console.log(`Done with ./schedules/${folder}/nextDeps.json`);
 
+                                        let tempTripIDtoShortID = {};
+
+                                        // first time to prioritize ones that are used in nextdeps
+                                        Object.keys(shortTripIDs).forEach((tripID) => {
+                                          if (nextDepForEachTrip[tripID])
+                                            tempTripIDtoShortID[shortTripIDs[tripID]] = tripID;
+                                        });
+
+                                        // second time to fill in the gaps with whatever we've got
+                                        Object.keys(shortTripIDs).forEach((tripID) => {
+                                          if (!tempTripIDtoShortID[shortTripIDs[tripID]])
+                                            tempTripIDtoShortID[shortTripIDs[tripID]] = tripID;
+                                        });
+
+                                        fs.writeFileSync(
+                                          `./schedules/${folder}/shortTripToTrip.json`,
+                                          JSON.stringify(tempTripIDtoShortID),
+                                          { encoding: "utf8" }
+                                        );
+                                        console.log(`Done with ./schedules/${folder}/shortTripToTrip.json`);
+
                                         const dateKeys = Object.keys(next10DaysOfServices);
 
                                         //date keys
@@ -608,25 +627,40 @@ const processSchedules = async (chunk) => {
                                         );
                                         console.log(`Done with ./schedules/${folder}/dateKeys.json`);
 
-                                        /*
-                                    console.log('agencyTZ', JSON.stringify(agencyTZ).length);
-                                    console.log('routes', JSON.stringify(routes).length);
-                                    console.log('routesArr', JSON.stringify(routesArr).length);
-                                    console.log('routesIndex', JSON.stringify(routesIndex).length);
-                                    console.log('trips', JSON.stringify(trips).length);
-                                    console.log('services', JSON.stringify(services).length);
-                                    console.log('next10DaysOfServices', JSON.stringify(next10DaysOfServices).length);
-                                    console.log('headsignsArr', JSON.stringify(headsignsArr).length);
-                                    console.log('headsignsIndex', JSON.stringify(headsignsIndex).length);
-                                    console.log('parentStops', JSON.stringify(parentStops).length);
-                                    */
-
                                         //dates keys
                                         for (let i = 0; i < dateKeys.length; i++) {
-                                          let convertedDay = convertDayScheduleIntoUsable(
-                                            next10DaysOfServices[dateKeys[i]],
-                                            folder
-                                          );
+                                          const thisDay = next10DaysOfServices[dateKeys[i]];
+
+                                          let convertedDay = { stopMessage: [] };
+
+                                          Object.keys(thisDay).forEach((stopKey) => {
+                                            const stop = thisDay[stopKey];
+                                            let finalStop = {
+                                              stopId: stopKey, //CHECK THIS ON ERROR
+                                              trainMessage: []
+                                            };
+
+                                            let stopTimeOffset = new Date(`${dateKeys[i]}T00:00:00.000Z`).valueOf();
+
+                                            stop.forEach((train) => {
+                                              // adding time
+                                              stopTimeOffset += train[0] * 1000;
+
+                                              if (!nextDepForEachTrip[train[1]])
+                                                nextDepForEachTrip[train[1]] = { runNum: train[1], et: stopTimeOffset };
+
+                                              finalStop.trainMessage.push({
+                                                timeDiff: train[0],
+                                                runNumber: feedConfigs[folder].scheduleRunNumbersRequired
+                                                  ? train[1]
+                                                  : null,
+                                                headsignId: train[2] != -1 ? train[2] : null, // CHECK ON ERROR
+                                                routeId: train[3] != -1 ? train[3] : null // CHECK ON ERROR
+                                              });
+                                            });
+
+                                            convertedDay.stopMessage.push(finalStop);
+                                          });
 
                                           //fs.writeFileSync(`./schedules/${folder}/${dateKeys[i]}.json`, JSON.stringify(convertedDay, null, 2), { encoding: 'utf8' });
 
