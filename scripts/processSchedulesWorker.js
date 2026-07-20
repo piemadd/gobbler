@@ -4,23 +4,6 @@ const findTZ = require("geo-tz").find;
 const protobuf = require("protobufjs");
 const feedConfigs = require("../feeds.js");
 
-const getMidnightInTimeZone = (timeZone) => {
-  const formatter = new Intl.DateTimeFormat("en-CA", {
-    timeZone: timeZone,
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit"
-  });
-  const dateParts = formatter.format(new Date()); // Outputs "YYYY-MM-DD"
-  const targetMidnight = new Date(`${dateParts}T00:00:00`);
-  const tzFormatter = new Intl.DateTimeFormat("en-US", { timeZone: timeZone, timeZoneName: "longOffset" });
-
-  const offsetString = tzFormatter.formatToParts(new Date()).find((part) => part.type === "timeZoneName").value;
-  const isoOffset = offsetString === "GMT" ? "Z" : offsetString.replace("GMT", "");
-
-  return new Date(`${dateParts}T00:00:00${isoOffset}`);
-};
-
 // https://stackoverflow.com/questions/4413590/javascript-get-array-of-dates-between-2-dates
 const getDaysArray = (start, end) => {
   const arr = [];
@@ -429,6 +412,14 @@ const processSchedules = async (chunk) => {
                                                 startTimeStamp =
                                                   Math.floor(todayClone.valueOf() / 1000) -
                                                   Math.floor(today.valueOf() / 1000);
+
+                                                // adding to next
+                                                if (
+                                                  !nextDepForEachTrip[trip.tripID] &&
+                                                  Date.now() < todayClone.valueOf()
+                                                ) {
+                                                  nextDepForEachTrip[trip.tripID] = {eta: todayClone.valueOf(), time}
+                                                }
                                               }
 
                                               if (i > 0) {
@@ -447,6 +438,7 @@ const processSchedules = async (chunk) => {
                                         };
 
                                         finalTrip["startTime"] = startTimeStamp;
+
                                         compressedTripsRaw.push(finalTrip);
                                       }
 
@@ -469,12 +461,6 @@ const processSchedules = async (chunk) => {
                                         return { ...trip, vehicleStop: stoppingPatternKeys[tripStoppingPattern] };
                                       });
 
-                                      const midnightInThisTimeZone = getMidnightInTimeZone(agencyTZ).valueOf();
-                                      compressedTripsRaw.forEach((trip) => {
-                                        nextDepForEachTrip[trip.runNumber] =
-                                          midnightInThisTimeZone + trip.startTime * 1000;
-                                      });
-
                                       try {
                                         let compressedTripsProtoMessage = MultipleVehiclesScheduleMessage.fromObject({
                                           vehicleScheduleMessage: compressedTripsRaw
@@ -488,13 +474,6 @@ const processSchedules = async (chunk) => {
                                         if (fs.existsSync(`./schedules/${folder}`))
                                           fs.rmSync(`./schedules/${folder}`, { recursive: true, force: true });
                                         fs.mkdirSync(`./schedules/${folder}`);
-
-                                        fs.writeFileSync(
-                                          `./schedules/${folder}/nextDeps.json`,
-                                          JSON.stringify(nextDepForEachTrip),
-                                          { encoding: "utf8" }
-                                        );
-                                        console.log(`Done with ./schedules/${folder}/nextDeps.json`);
 
                                         fs.writeFileSync(`./schedules/${folder}/vehicles.pbf`, compressedTripsBufProto);
                                         console.log(`Done with ./schedules/${folder}/vehicles.pbf`);
@@ -611,6 +590,13 @@ const processSchedules = async (chunk) => {
                                           { encoding: "utf8" }
                                         );
                                         console.log(`Done with ./schedules/${folder}/metadata.json`);
+
+                                        fs.writeFileSync(
+                                          `./schedules/${folder}/nextDeps.json`,
+                                          JSON.stringify(nextDepForEachTrip),
+                                          { encoding: "utf8" }
+                                        );
+                                        console.log(`Done with ./schedules/${folder}/nextDeps.json`);
 
                                         const dateKeys = Object.keys(next10DaysOfServices);
 
