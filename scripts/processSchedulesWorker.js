@@ -412,14 +412,6 @@ const processSchedules = async (chunk) => {
                                                 startTimeStamp =
                                                   Math.floor(todayClone.valueOf() / 1000) -
                                                   Math.floor(today.valueOf() / 1000);
-
-                                                // adding to next
-                                                if (
-                                                  !nextDepForEachTrip[trip.tripID] &&
-                                                  Date.now() < todayClone.valueOf()
-                                                ) {
-                                                  nextDepForEachTrip[trip.tripID] = {eta: todayClone.valueOf(), time}
-                                                }
                                               }
 
                                               if (i > 0) {
@@ -550,6 +542,14 @@ const processSchedules = async (chunk) => {
                                                 lastTimeStamp = todayCloneSeconds;
 
                                                 let final = [secondsDiff, trip.tripID];
+
+                                                // adding to next
+                                                if (
+                                                  !nextDepForEachTrip[trip.tripID] &&
+                                                  Date.now() < todayClone.valueOf()
+                                                ) {
+                                                  nextDepForEachTrip[trip.tripID] = { eta: todayClone.valueOf(), trip };
+                                                }
 
                                                 if (i == 0) {
                                                   final.push(headsignsIndex[trip.headsign]);
