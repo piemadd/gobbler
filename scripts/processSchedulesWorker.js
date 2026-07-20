@@ -611,11 +611,11 @@ const processSchedules = async (chunk) => {
                                         });
 
                                         fs.writeFileSync(
-                                          `./schedules/${folder}/shortTripToTrip.json`,
-                                          JSON.stringify(tempTripIDtoShortID),
+                                          `./schedules/${folder}/tripToShortTrip.json`,
+                                          JSON.stringify(shortTripIDs),
                                           { encoding: "utf8" }
                                         );
-                                        console.log(`Done with ./schedules/${folder}/shortTripToTrip.json`);
+                                        console.log(`Done with ./schedules/${folder}/tripToShortTrip.json`);
 
                                         const dateKeys = Object.keys(next10DaysOfServices);
 
