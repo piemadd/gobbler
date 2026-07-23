@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "provider":"amtrak",
-        "routeColor":"#0578f2"
+        "routeColor":"#008fd6"
       },
       "geometry": {
         "coordinates": [
